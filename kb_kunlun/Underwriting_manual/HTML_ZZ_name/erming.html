@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>耳鸣</title>
+    <style>
+        body {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+            *font-size: small;
+            *font: x-small;
+        }
+        
+        .ui-widget .ui-widget {
+            font-size: 1em;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .ui-widget-content {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+            color: #222;
+        }
+        
+        .uwm-topic-tabs,
+        .uwm-topic-subtabs {
+            border: 0;
+            padding: 0;
+            background: none;
+        }
+        
+        .ui-widget {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-right,
+        .ui-corner-br {
+            border-bottom-right-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-left,
+        .ui-corner-bl {
+            border-bottom-left-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-top,
+        .ui-corner-left,
+        .ui-corner-tl {
+            border-top-left-radius: 4px;
+        }
+        
+        .ui-widget {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1.1em;
+        }
+        
+        .ui-tabs {
+            position: relative;
+            padding: 0.2em;
+        }
+        
+        .ui-tabs .ui-tabs-nav {
+            margin: 0;
+            padding: 0.2em 0.2em 0;
+        }
+        
+        div.tabs ul {
+            list-style-type: none;
+        }
+        
+        ul.ui-tabs-nav {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .uwm-topic-tabs>ul,
+        .uwm-topic-subtabs>ul {
+            background: none;
+            border: 0;
+            padding: 0!important;
+        }
+        
+        .uwm-topic-subtabs ul {
+            list-style-type: circle!important;
+        }
+        
+        .ui-widget-header {
+            border: 1px solid #aaa;
+            background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+            color: #222;
+            font-weight: 700;
+        }
+        
+        .ui-helper-clearfix {
+            min-height: 0;
+        }
+        
+        .ui-helper-reset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            line-height: 1.3;
+            text-decoration: none;
+            font-size: 100%;
+            list-style: none;
+        }
+        
+        .ui-helper-clearfix:before,
+        .ui-helper-clearfix:after {
+            content: "";
+            display: table;
+            border-collapse: collapse;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .uwm-topic-subtabs li.ui-tabs-active {
+            background-color: #00315a !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-color: #d3d3d3 !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-image: none!important;
+            border: 0;
+            /* background-color: #555858; */
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .ui-tabs .ui-tabs-nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            /* border-bottom-width: 0; */
+            padding: 0;
+            white-space: nowrap;
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-active {
+            background-image: none;
+            background-color: #333133 !important;
+        }
+        
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #212121;
+        }
+        
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default {
+            border: 1px solid #d3d3d3;
+            background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #555;
+        }
+        
+        .ui-state-active {
+            background: #dadada url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+        }
+        
+        .tabs a.ui-tabs-anchor {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #fff;
+            text-decoration: none !important;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+        .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+        .ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+            cursor: text;
+        }
+        
+        .tabs li.ui-tabs-active a,
+        .tabs li.ui-state-default a:hover {
+            color: #fff !important;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #000 !important;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #fff;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a,
+        .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+            cursor: pointer;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #00315a !important;
+            text-decoration: none !important;
+        }
+        
+        .ui-state-active a,
+        .ui-state-active a:link,
+        .ui-state-active a:visited {
+            color: #212121;
+            text-decoration: none;
+        }
+        
+        .ui-state-default a,
+        .ui-state-default a:link,
+        .ui-state-default a:visited {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .ui-widget-header a {
+            color: #222;
+        }
+        
+        .ui-widget-content a {
+            color: #222;
+        }
+        
+        a {
+            color: #00315a;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        .ui-helper-clearfix:after {
+            clear: both;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            background-color: transparent!important;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            /* height: 565px; */
+            overflow-y: auto;
+            /* background-color: #333133 !important; */
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-panel {
+            border-width: 1px;
+            background-color: transparent!important;
+        }
+        
+        .ui-tabs .ui-tabs-panel {
+            display: block;
+            /* border-width: 0; */
+            padding: 1em 1.4em;
+            background: 0;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .table {
+            border: solid 1px #e6e6e6;
+            border-collapse: collapse;
+            margin-bottom: 0.8em;
+            margin-top: 10pt;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table {
+            font-size: inherit;
+            font: 100%;
+        }
+        
+        .table .clas {
+            min-width: 350px;
+            max-width: 350px;
+            width: 350px;
+        }
+        
+        .table th {
+            background-color: #00315a;
+        }
+        
+        .table th {
+            background-color: #5e5e5e;
+            color: #fff !important;
+            text-align: left;
+        }
+        
+        .table td,
+        .table th {
+            border: solid 1px #000;
+            font-weight: normal;
+            min-width: 100px;
+            max-width: 150px;
+            padding: 3px;
+        }
+        
+        .table .prod {
+            min-width: 100px;
+            max-width: 150px;
+            width: 100px;
+        }
+        
+        .active {
+            background-color: #00315a !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs uwm-topic-subtabs ui-tabs ui-widget ui-widget-content ui-corner-all" style="">
+      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab_ratingtables_Life" aria-labelledby="ui-id-15" aria-selected="true"><a data-key="Life" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_Life" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-15">
+          寿险
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_ADB" aria-labelledby="ui-id-16" aria-selected="false"><a data-key="ADB" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_ADB" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-16">
+          意外险种
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_CI" aria-labelledby="ui-id-17" aria-selected="false"><a data-key="CI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_CI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-17">
+          重疾和癌症
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_DI" aria-labelledby="ui-id-18" aria-selected="false"><a data-key="DI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_DI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-18">
+          失能收入
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" aria-selected="false"><a data-key="WPTPD" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_WPTPD" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-19">
+          豁免保费和永久完全性失能
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_HI" aria-labelledby="ui-id-20" aria-selected="false"><a data-key="HI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_HI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-20">
+          住院收入保障
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_LTC" aria-labelledby="ui-id-21" aria-selected="false"><a data-key="LTC" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_LTC" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-21">
+          长期护理险
+        </a></li>
+      </ul>
+      <div id="tab_ratingtables_Life" aria-labelledby="ui-id-15" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="Life">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="Life">
+      寿险
+    </th>
+            </tr>
+            <tr id="Life_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">待确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="Life_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">已确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">有潜在病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="Life_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">无病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="200f88ae-c658-5ac8-50a7-aaf3c65150b6">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="fe4f5cb1-c329-1c2f-8079-dc4cc97a7572">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="d60b727a-3765-6d7f-ae26-10e9c3899203">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">显著的听力受损</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="260fcb6a-099c-9d7d-ee9d-9f0ce9ed50d8">听力下降和耳聋</a>评点</div>
+              </td>
+            </tr>
+            <tr id="Life_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">伴随抑郁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="1bacad12-ee17-d34f-bbb3-8b195c9bb59d">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_ADB" aria-labelledby="ui-id-16" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="ADB">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="ADB">
+      意外死亡
+    </th>
+              <th class="prod" data-product="ADD">
+      意外残疾
+    </th>
+            </tr>
+            <tr id="ADB_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">待确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="ADB_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">已确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">有潜在病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">无病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="6aceeb9f-7f5f-bb2d-8cd8-59a8c4ee8570">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="0650f230-cb10-a91e-04c7-15a80e040f26">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="c5243454-34b8-853c-a157-28d462195f42">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">显著的听力受损</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="72c47251-0082-d366-ee35-f62bb9bf4af1">听力下降和耳聋</a>评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="15df81c7-02b0-c287-918a-085b052bcc67">听力下降和耳聋</a>评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">伴随抑郁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="067c842b-972d-fc6c-d3fc-40cf4c100604">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="9f0ddef1-0e2a-875f-5660-d75f144641fa">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_CI" aria-labelledby="ui-id-17" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <ul>
+            <li>
+              <div class="p">如果失聪是重疾责任之一，则需要除外此项责任。否则，建议拒保。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="CI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="CI">
+      重疾
+    </th>
+              <th class="prod" data-product="CAN">
+      癌症
+    </th>
+            </tr>
+            <tr id="CI_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">待确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="CI_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">已确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">有潜在病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="CI_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">无病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="8986201c-4869-1a86-5925-f187973b1024">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="CI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="3871801e-933e-82ff-12f8-4b7d7d9cbcc8">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="CI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="2f286851-7ebf-1d2b-91a6-65ac8b4531f4">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：由于耳聋或听力障碍而导致的保险责任。">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">已排除恶性疾病导致，对于单纯癌症险种，则+0</div>
+              </td>
+            </tr>
+            <tr id="CI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">显著的听力受损</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="2641fa7e-3459-0f43-e800-3260f4903e7f">听力下降和耳聋</a>评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="6d81c0b6-3901-716d-bff1-eaa4734114f5">听力下降和耳聋</a>评点</div>
+              </td>
+            </tr>
+            <tr id="CI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">伴随抑郁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="ecef8708-c3fa-53de-ad90-c910f30c538f">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="61555161-5836-ee0f-589f-f71ab05323d9">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_DI" aria-labelledby="ui-id-18" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <ul>
+            <li>
+              <div class="p">要慎重考虑听力下降对于职业的影响，尤其是对听力要求高的职业。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="DI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="D4">
+      失能收入保障-4周等待期
+    </th>
+              <th class="prod" data-product="D13">
+      失能收入保障-13周等待期
+    </th>
+            </tr>
+            <tr id="DI_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">待确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="DI_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">已确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">有潜在病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="DI_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">无病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="94d71675-f445-5ea7-bd2d-87f828230611">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="8b8d54bf-157e-5241-127c-0c2efcd74483">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：由于耳部疾患（包括耳聋/听力障碍）而导致的保险责任">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="f51069ca-303b-0a9d-a1b2-376684645d30">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：由于耳部疾患（包括耳聋/听力障碍）而导致的保险责任">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：由于耳部疾患（包括耳聋/听力障碍）而导致的保险责任">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+            </tr>
+            <tr id="DI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">显著的听力受损</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="0772e0c9-adee-969f-da29-0681e5df7666">听力下降和耳聋</a>评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="10621527-dc95-a97c-f65f-149a57c864f7">听力下降和耳聋</a>评点</div>
+              </td>
+            </tr>
+            <tr id="DI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">伴随抑郁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="5ee5bde9-c851-58d1-b391-a0ca41135526">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="548a13b3-f8ff-eed5-c6df-a5b582275d70">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <ul>
+            <li>
+              <div class="p">要慎重考虑听力下降对于职业的影响，尤其是对听力要求高的职业。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="WPTPD">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="WP">
+      豁免保费
+    </th>
+              <th class="prod" data-product="TPDOwn">
+      永久完全性失能-职业
+    </th>
+              <th class="prod" data-product="TPDActivity">
+      永久完全性失能-基本日常生活活动
+    </th>
+            </tr>
+            <tr id="WPTPD_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">待确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">已确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">有潜在病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">无病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="92109714-5734-dc63-da09-91842be8850b">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="6edf9f18-41df-fd54-2f99-535a4e24e075">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：由于耳部疾患（包括耳聋/听力障碍）而导致的保险责任">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="1201cb43-abb8-e3c8-6f15-2b92a99f66a8">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：由于耳部疾患（包括耳聋/听力障碍）而导致的保险责任">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：由于耳部疾患（包括耳聋/听力障碍）而导致的保险责任">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">显著的听力受损</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="9fb658c7-4214-c676-0d82-f70aaf866aac">听力下降和耳聋</a>评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="93007f25-176b-5f4a-bd65-7b648aeecd60">听力下降和耳聋</a>评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="92014346-e9f1-1479-5eeb-43be258d0130">听力下降和耳聋</a>评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">伴随抑郁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="c58e1889-dcd3-fb9b-f9fd-9e5eee5b667d">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="ed75f08c-3cad-8141-4f6f-6571778877d5">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="ef91d732-6a53-b073-3bee-eed9230f969d">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_HI" aria-labelledby="ui-id-20" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="HI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="HI">
+      住院收入保障
+    </th>
+            </tr>
+            <tr id="HI_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">待确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="HI_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">已确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">有潜在病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="HI_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">无病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="4055de57-51c7-2bce-41a1-952507bc5bf7">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="HI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="333a40e4-00e7-f4f9-1a36-b3eb70aff4a2">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="HI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="90c9b0ed-71d4-ccd9-3eb6-09ac7df12c8f">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">显著的听力受损</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="cbbd721c-24e7-87b9-d96a-7519c541d6b5">听力下降和耳聋</a>评点</div>
+              </td>
+            </tr>
+            <tr id="HI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">伴随抑郁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="f5794635-bb45-1ba5-4c96-c28c24dc584f">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_LTC" aria-labelledby="ui-id-21" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="LTC">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="LTC">
+      长期护理险
+    </th>
+            </tr>
+            <tr id="LTC_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">待确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="LTC_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">已确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">有潜在病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">无病因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="e8cfe0b5-4e07-0e8b-648a-828f5d9e3ba6">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="668275b1-1faa-8b00-7d04-563657e636a9">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="LTC_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,4,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E2E" id="60662538-6011-cf84-703e-8003828cbe21">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="LTC_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">显著的听力受损</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="H90" id="7ba22a32-ff7f-d400-f8a5-5509a80cce3d">听力下降和耳聋</a>评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">伴随抑郁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按<a href="#" data-type="topic" data-id="F30 - 39" id="8c101985-e409-5e01-bba5-6f65c805492e">心境障碍</a>-“抑郁”进行的评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function() {
+        // $("body").scrollTop(10); //控制滚动条下移10px
+        // if ($("body").scrollTop() > 0) {
+        //     alert("有滚动条");
+        // } else {
+        //     alert("没有滚动条");
+        // }
+        //寿险
+        $('#tab_ratingtables_Life').attr('id', 'tab_ratingtables_Life1');
+        //意外险种
+        $('#tab_ratingtables_ADB').attr('id', 'tab_ratingtables_ADB1');
+        //重疾
+        $('#tab_ratingtables_CI').attr('id', 'tab_ratingtables_CI1');
+        //失能收入
+        $('#tab_ratingtables_DI').attr('id', 'tab_ratingtables_DI1');
+        //豁免
+        $('#tab_ratingtables_WPTPD').attr('id', 'tab_ratingtables_WPTPD1');
+        //住院
+        $('#tab_ratingtables_HI').attr('id', 'tab_ratingtables_HI1');
+        //长期护理险
+        $('#tab_ratingtables_LTC').attr('id', 'tab_ratingtables_LTC1');
+        console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+        console.log($("body").scrollTop(), 'idaofijofwio');
+        // $("body").scrollTop(0); //滚动条返回顶部
+        $('.ui-tabs-nav li').click(function() {
+            $(this).addClass('active');
+            $(this).children('a').css({
+                'color': '#fff'
+            })
+            console.log($("body").scrollTop(), 'idaofijofwio1');
+            $('.ui-tabs-panel').scrollTop('-20px');
+            console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+            // console.log('tab栏切换');
+            var tabTitle = $(this).children('a').attr('href');
+            console.log(tabTitle, 'a标签的href属性');
+            $(this).addClass('ui-state-active').removeClass('ui-state-default');
+            $(this).siblings().removeClass('ui-state-active').addClass('ui-state-default');
+            //意外险种
+            if (tabTitle == '#tab_ratingtables_ADB') {
+                console.log('1111');
+                $('#tab_ratingtables_ADB1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_ADB1').css('display', 'block');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').css('display', 'none');
+                //重疾
+            } else if (tabTitle == '#tab_ratingtables_CI') {
+                $('#tab_ratingtables_CI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_CI1').css('display', 'block');
+                $('#tab_ratingtables_CI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_CI1').siblings().not('ul').css('display', 'none');
+                //寿险
+            } else if (tabTitle == '#tab_ratingtables_Life') {
+                $('#tab_ratingtables_Life1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_Life1').css('display', 'block');
+                $('#tab_ratingtables_Life1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_Life1').siblings().not('ul').css('display', 'none');
+                //失能收入
+            } else if (tabTitle == '#tab_ratingtables_DI') {
+                $('#tab_ratingtables_DI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_DI1').css('display', 'block');
+                $('#tab_ratingtables_DI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_DI1').siblings().not('ul').css('display', 'none');
+                //豁免
+            } else if (tabTitle == '#tab_ratingtables_WPTPD') {
+                $('#tab_ratingtables_WPTPD1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_WPTPD1').css('display', 'block');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').css('display', 'none');
+                //住院
+            } else if (tabTitle == '#tab_ratingtables_HI') {
+                $('#tab_ratingtables_HI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_HI1').css('display', 'block');
+                $('#tab_ratingtables_HI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_HI1').siblings().not('ul').css('display', 'none');
+                //长期护理险
+            } else if (tabTitle == '#tab_ratingtables_LTC') {
+                $('#tab_ratingtables_LTC1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_LTC1').css('display', 'block');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').css('display', 'none');
+            }
+        })
+    })
+</script>

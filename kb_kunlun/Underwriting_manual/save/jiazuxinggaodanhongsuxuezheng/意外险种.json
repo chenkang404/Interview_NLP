@@ -1,0 +1,60 @@
+[
+  {
+    "questions": [
+      "Gilbert综合征/Dubin-Johnson综合征/Rotor综合征",
+      "已确诊"
+    ],
+    "level": [
+      0,
+      20
+    ],
+    "conclustions": [
+      [
+        {
+          "意外死亡": "+0"
+        },
+        {
+          "意外残疾": "+0"
+        }
+      ]
+    ]
+  },
+  {
+    "questions": [
+      "Gilbert综合征/Dubin-Johnson综合征/Rotor综合征",
+      "未确诊"
+    ],
+    "level": [
+      0,
+      20
+    ],
+    "conclustions": [
+      [
+        {
+          "意外死亡": "咨询首席核保师；通常延期到全面检查，明确诊断后"
+        },
+        {
+          "意外残疾": "咨询首席核保师；通常延期到全面检查，明确诊断后"
+        }
+      ]
+    ]
+  },
+  {
+    "questions": [
+      "Crigler-Najjar综合征"
+    ],
+    "level": [
+      0
+    ],
+    "conclustions": [
+      [
+        {
+          "意外死亡": "拒保"
+        },
+        {
+          "意外残疾": "拒保"
+        }
+      ]
+    ]
+  }
+]

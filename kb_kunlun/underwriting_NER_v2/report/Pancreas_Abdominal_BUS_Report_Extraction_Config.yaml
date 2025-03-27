@@ -1,0 +1,117 @@
+# Pancreas_Abdominal_BUS_Report_Extraction_Config.yaml
+
+report_information:
+  report_id: "string"            # 报告唯一标识
+  patient_id: "string"           # 患者唯一标识
+  exam_date: "YYYY-MM-DD"        # 检查日期，格式：YYYY-MM-DD
+  exam_location: "string"        # 检查部位，如“腹部B超”
+  conclusion: "string"           # 结论
+  CDFI: "string"                 # CDFI相关信息（如适用）
+
+patient_basic_information:
+  name: "string"                 # 姓名
+  gender: "string"               # 性别
+  age: "integer"                 # 年龄
+  birth_date: "YYYY-MM-DD"       # 出生日期，格式：YYYY-MM-DD
+  height_cm: "float"             # 身高，单位：厘米
+  weight_kg: "float"             # 体重，单位：公斤
+  medical_record_number: "string" # 病历号
+  contact_information: "string"  # 联系方式
+  allergy_history: "string"      # 过敏史
+  family_history: "string"       # 家族病史
+  past_medical_history: "string" # 既往病史
+  smoking_history: "string"      # 吸烟史
+  occupational_exposure_history: "string" # 职业暴露史
+
+organ_extraction:
+  pancreas:
+    size_length_cm: "float"          # 胰腺长度，单位：厘米
+    size_width_cm: "float"           # 胰腺宽度，单位：厘米
+    size_thickness_cm: "float"       # 胰腺厚度，单位：厘米
+    echotexture: "string"            # 胰腺回声特性，如“均匀回声”、“杂乱回声”等
+    borders: "string"                # 胰腺边界描述，如“清晰”、“模糊”等
+    duct_visibility: "string"        # 胰管可见性，如“可见”、“不可见”
+    main_pancreatic_duct: "string"   # 主胰管情况，如“未见扩张”、“轻度扩张”等
+    surrounding_tissues: "string"     # 周围组织描述，如“未见肿块”等
+    adjacent_organs: "string"         # 邻近器官描述，如“脾脏形态正常”
+
+pancreas_lesions:
+  masses:
+    - lesion_id: "string"             # 肿块唯一标识
+      location: "string"              # 肿块具体位置，如“胰头”、“胰体”、“胰尾”
+      size_cm: "float"                # 肿块大小，单位：厘米
+      shape: "string"                 # 形态描述，如“圆形”、“椭圆形”、“不规则形”
+      margins: "string"               # 边缘描述，如“清晰”、“模糊”、“不规则”
+      echogenicity: "string"           # 回声特性，如“低回声”、“等回声”、“高回声”
+      posterior_features: "string"    # 后方特征，如“后方声影”、“后方声像增强”、“无后方改变”
+      vascularity: "string"           # 血流情况，如“血流丰富”、“血流少”、“无血流”
+      suspected_diagnosis: "string"   # 疑似诊断，如“良性”、“恶性”
+      additional_features: "string"   # 其他特征描述，如“钙化”、“囊性变”等
+
+  cysts:
+    - cyst_id: "string"               # 囊肿唯一标识
+      location: "string"              # 囊肿具体位置，如“胰头部”、“胰体部”、“胰尾部”
+      size_cm: "float"                # 囊肿大小，单位：厘米
+      shape: "string"                 # 形态描述，如“圆形”、“椭圆形”、“不规则形”
+      margins: "string"               # 边缘描述，如“清晰”、“模糊”、“不规则”
+      echogenicity: "string"           # 回声特性，如“无回声”、“低回声”、“混合回声”
+      posterior_features: "string"    # 后方特征，如“无后方改变”、“后方声影”
+      vascularity: "string"           # 血流情况，如“无血流”
+      suspected_diagnosis: "string"   # 疑似诊断，如“单纯性囊肿”、“复杂囊肿”
+      additional_features: "string"   # 其他特征描述，如“囊壁增厚”、“分隔”等
+
+  other_lesions:
+    - lesion_id: "string"             # 其他病变唯一标识
+      type: "string"                  # 病变类型，如“胰腺炎性假性囊肿”、“血管瘤”等
+      location: "string"              # 病变具体位置，如“胰头部”
+      size_cm: "float"                # 病变大小，单位：厘米
+      shape: "string"                 # 形态描述，如“不规则形”、“结节状”等
+      margins: "string"               # 边缘描述，如“模糊”、“分叶”等
+      echogenicity: "string"           # 回声特性，如“高回声”、“等回声”等
+      posterior_features: "string"    # 后方特征，如“后方声影”、“后方声像增强”
+      vascularity: "string"           # 血流情况，如“少”、“无血流”
+      suspected_diagnosis: "string"   # 疑似诊断，如“良性”、“恶性”
+      additional_features: "string"   # 其他特征描述，如“钙化”、“空洞形成”等
+
+lymph_nodes:
+  - node_id: "string"                  # 淋巴结唯一标识
+    size_cm: "float"                    # 淋巴结大小，单位：厘米
+    location: "string"                  # 位置，如“腹主动脉旁”、“肝门”等
+    morphology: "string"                # 形态描述，如“圆形”、“卵圆形”、“结节状”等
+    hilum_visibility: "string"          # 门静脉可见性，如“可见”、“不可见”
+    suspicious_features: "string"       # 可疑特征，如“形态不规则”、“边缘模糊”等
+    suspected_diagnosis: "string"       # 疑似诊断，如“转移性淋巴结”等
+
+quantitative_metrics:
+  pancreas_volume_ml: "float"            # 胰腺体积，单位：毫升
+  nodules_volume_statistics: "string"     # 结节体积统计
+  blood_vessels_distribution: "string"    # 血管分布和直径描述
+
+diagnostic_opinion:
+  accurate_diagnosis: "string"            # 准确的诊断名称
+
+comparative_study:
+  compared_with_past_ultrasound: "string" # 与既往超声影像对比描述
+  change_description: "string"            # 变化描述，如“增大”、“缩小”等
+
+report_details:
+  report_generated_date: "YYYY-MM-DD"     # 报告生成日期
+  report_generated_time: "HH:MM"          # 报告生成时间
+  radiologist_name: "string"              # 放射科医生姓名
+  radiologist_signature: "string"         # 放射科医生签名
+  report_number: "string"                 # 报告编号
+  remarks: "string"                       # 备注
+
+attachments_and_additional_info:
+  image_links:                            # 影像图像链接列表
+    - "string"
+    - "string"
+  contrast_enhanced_images:               # 对比增强图像链接列表（如适用）
+    - "string"
+    - "string"
+  MPR_images:                             # 多平面重建图像链接列表（如适用）
+    - "string"
+    - "string"
+  reconstructed_3D_images:                # 三维重建图像链接列表（如适用）
+    - "string"
+    - "string"

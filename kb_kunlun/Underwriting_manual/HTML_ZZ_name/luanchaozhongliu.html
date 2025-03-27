@@ -1,0 +1,3938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卵巢肿瘤</title>
+    <style>
+        body {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+            *font-size: small;
+            *font: x-small;
+        }
+        
+        .ui-widget .ui-widget {
+            font-size: 1em;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .ui-widget-content {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+            color: #222;
+        }
+        
+        .uwm-topic-tabs,
+        .uwm-topic-subtabs {
+            border: 0;
+            padding: 0;
+            background: none;
+        }
+        
+        .ui-widget {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-right,
+        .ui-corner-br {
+            border-bottom-right-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-left,
+        .ui-corner-bl {
+            border-bottom-left-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-top,
+        .ui-corner-left,
+        .ui-corner-tl {
+            border-top-left-radius: 4px;
+        }
+        
+        .ui-widget {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1.1em;
+        }
+        
+        .ui-tabs {
+            position: relative;
+            padding: 0.2em;
+        }
+        
+        .ui-tabs .ui-tabs-nav {
+            margin: 0;
+            padding: 0.2em 0.2em 0;
+        }
+        
+        div.tabs ul {
+            list-style-type: none;
+        }
+        
+        ul.ui-tabs-nav {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .uwm-topic-tabs>ul,
+        .uwm-topic-subtabs>ul {
+            background: none;
+            border: 0;
+            padding: 0!important;
+        }
+        
+        .uwm-topic-subtabs ul {
+            list-style-type: circle!important;
+        }
+        
+        .ui-widget-header {
+            border: 1px solid #aaa;
+            background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+            color: #222;
+            font-weight: 700;
+        }
+        
+        .ui-helper-clearfix {
+            min-height: 0;
+        }
+        
+        .ui-helper-reset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            line-height: 1.3;
+            text-decoration: none;
+            font-size: 100%;
+            list-style: none;
+        }
+        
+        .ui-helper-clearfix:before,
+        .ui-helper-clearfix:after {
+            content: "";
+            display: table;
+            border-collapse: collapse;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .uwm-topic-subtabs li.ui-tabs-active {
+            background-color: #00315a !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-color: #d3d3d3 !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-image: none!important;
+            border: 0;
+            /* background-color: #555858; */
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .ui-tabs .ui-tabs-nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            /* border-bottom-width: 0; */
+            padding: 0;
+            white-space: nowrap;
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-active {
+            background-image: none;
+            background-color: #333133 !important;
+        }
+        
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #212121;
+        }
+        
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default {
+            border: 1px solid #d3d3d3;
+            background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #555;
+        }
+        
+        .ui-state-active {
+            background: #dadada url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+        }
+        
+        .tabs a.ui-tabs-anchor {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #fff;
+            text-decoration: none !important;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+        .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+        .ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+            cursor: text;
+        }
+        
+        .tabs li.ui-tabs-active a,
+        .tabs li.ui-state-default a:hover {
+            color: #fff !important;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #000 !important;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #fff;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a,
+        .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+            cursor: pointer;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #00315a !important;
+            text-decoration: none !important;
+        }
+        
+        .ui-state-active a,
+        .ui-state-active a:link,
+        .ui-state-active a:visited {
+            color: #212121;
+            text-decoration: none;
+        }
+        
+        .ui-state-default a,
+        .ui-state-default a:link,
+        .ui-state-default a:visited {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .ui-widget-header a {
+            color: #222;
+        }
+        
+        .ui-widget-content a {
+            color: #222;
+        }
+        
+        a {
+            color: #00315a;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        .ui-helper-clearfix:after {
+            clear: both;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            background-color: transparent!important;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            /* height: 565px; */
+            overflow-y: auto;
+            /* background-color: #333133 !important; */
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-panel {
+            border-width: 1px;
+            background-color: transparent!important;
+        }
+        
+        .ui-tabs .ui-tabs-panel {
+            display: block;
+            /* border-width: 0; */
+            padding: 1em 1.4em;
+            background: 0;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .table {
+            border: solid 1px #e6e6e6;
+            border-collapse: collapse;
+            margin-bottom: 0.8em;
+            margin-top: 10pt;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table {
+            font-size: inherit;
+            font: 100%;
+        }
+        
+        .table .clas {
+            min-width: 350px;
+            max-width: 350px;
+            width: 350px;
+        }
+        
+        .table th {
+            background-color: #00315a;
+        }
+        
+        .table th {
+            background-color: #5e5e5e;
+            color: #fff !important;
+            text-align: left;
+        }
+        
+        .table td,
+        .table th {
+            border: solid 1px #000;
+            font-weight: normal;
+            min-width: 100px;
+            max-width: 150px;
+            padding: 3px;
+        }
+        
+        .table .prod {
+            min-width: 100px;
+            max-width: 150px;
+            width: 100px;
+        }
+        
+        .active {
+            background-color: #00315a !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs uwm-topic-subtabs ui-tabs ui-widget ui-widget-content ui-corner-all" style="">
+      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab_ratingtables_Life" aria-labelledby="ui-id-15" aria-selected="true"><a data-key="Life" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_Life" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-15">
+          寿险
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_ADB" aria-labelledby="ui-id-16" aria-selected="false"><a data-key="ADB" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_ADB" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-16">
+          意外险种
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_CI" aria-labelledby="ui-id-17" aria-selected="false"><a data-key="CI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_CI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-17">
+          重疾和癌症
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_DI" aria-labelledby="ui-id-18" aria-selected="false"><a data-key="DI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_DI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-18">
+          失能收入
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" aria-selected="false"><a data-key="WPTPD" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_WPTPD" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-19">
+          豁免保费和永久完全性失能
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_HI" aria-labelledby="ui-id-20" aria-selected="false"><a data-key="HI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_HI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-20">
+          住院收入保障
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_LTC" aria-labelledby="ui-id-21" aria-selected="false"><a data-key="LTC" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_LTC" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-21">
+          长期护理险
+        </a></li>
+      </ul>
+      <div id="tab_ratingtables_Life" aria-labelledby="ui-id-15" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期具体见：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期 - 卵巢肿瘤</div>
+            </li>
+            <li>
+              <div class="p">AJCC分期 - 卵巢肿瘤</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="Life">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="Life">
+      寿险
+    </th>
+            </tr>
+            <tr id="Life_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">细胞分化程度是低分化/未分化</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="b0b9db05-87d0-f569-4512-bf32560ac0a3">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="3176175e-451f-6dfa-0f12-4aeb49f0dc16">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="Life_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="e304282c-ba95-cbf4-5acd-ebdd5bb2544e">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="Life_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="bd95d9a2-971c-f96a-ca96-62c39286f93e">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="Life_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Ⅱ期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="582b74b3-9c5b-63fe-2f11-08d30168ac32">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">支持细胞-间质细胞瘤（即睾丸母细胞瘤）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">勃勒纳氏瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">硬纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">无性细胞瘤、颗粒细胞瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,13</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA或ⅠB期：T1a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="43d2b221-32aa-2b3a-087d-85c6ffe8d4b5">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="Life_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡA或ⅡB期： T1cN0M0，T2a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="14356c3f-ec37-7ce3-f223-078713e9c4dc">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="Life_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡC期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="7f523382-37d4-6b70-2815-5ca0f60cceb2">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="Life_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">库肯勃瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="84d84be1-15cf-9a5f-ae8f-e5f2ad04da30">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_20">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">交界性黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_23" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">23,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="26c30e62-8822-a8ac-b933-30774bd137cf">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXCAE" id="d9b9c267-e535-5e57-768b-15a2071a50a4">4类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵泡膜细胞瘤、畸胎瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_ADB" aria-labelledby="ui-id-16" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期具体见：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期 - 卵巢肿瘤</div>
+            </li>
+            <li>
+              <div class="p">AJCC分期 - 卵巢肿瘤</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="ADB">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="ADB">
+      意外死亡
+    </th>
+              <th class="prod" data-product="ADD">
+      意外残疾
+    </th>
+            </tr>
+            <tr id="ADB_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">细胞分化程度是低分化/未分化</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="60cad77f-e4ab-fb8f-d0ff-95f7841de731">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="bc1463f7-a662-bc9b-6ff7-658926252e43">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="bf3b1207-561f-e3c1-7f64-6b3c0ba84edb">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="e7b00005-91b7-65ad-776b-97b558266f35">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="ADB_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="44c6c52a-3994-d710-0146-b175093090cb">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="8a44a0f1-ec98-553b-8a15-8f35c7d77430">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="ADB_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="9c42b6f1-9f1c-6484-bf83-2359d13ff58e">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="cbd795d0-13de-d0fa-0440-1e6f6fc6245e">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="ADB_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Ⅱ期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="0bd0372d-77d4-aacc-2bf4-4f152cfd0dc5">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="08d6c553-597c-de73-7ea3-b66dc4c6587b">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">支持细胞-间质细胞瘤（即睾丸母细胞瘤）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="382d1d86-c96b-c079-f899-f3a2afb1216d">5类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="f3eb4406-0b39-6b76-9d96-38368c8b6bd4">5类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">勃勒纳氏瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">硬纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">无性细胞瘤、颗粒细胞瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,13</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA或ⅠB期：T1a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="312ac83a-496b-52e7-1761-1d0b483c4d2c">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="89f49156-5bad-fa2f-c9dc-f2cc76ea156a">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="ADB_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡA或ⅡB期： T1cN0M0，T2a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="d10abb63-98cc-e6b9-5504-af4d2bc4182e">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="877b5667-b6e1-e7ed-43dc-c187702fd09f">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="ADB_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡC期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="38c8eda7-ad49-b669-6d01-71de411a1b21">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="d54a7c3e-3684-6743-97f4-b5825790011e">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="ADB_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">库肯勃瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="cd1bf5cf-9a6b-e233-9f69-a5d116d081dc">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="9c75313c-cb6b-c0f9-662a-604e0950c86d">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_20">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">交界性黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_23" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">23,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="21268b0e-c167-dc35-4583-c081a8685f2b">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="7a497dab-116e-d8c5-78c8-c4808039d1f9">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="fed6b5c2-1ad1-4e0d-271b-8dfc313592f6">4类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EOGAE" id="d6d72b6c-19f3-3bc4-a672-8020b4f674fc">4类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵泡膜细胞瘤、畸胎瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_CI" aria-labelledby="ui-id-17" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期具体见：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期 - 卵巢肿瘤</div>
+            </li>
+            <li>
+              <div class="p">AJCC分期 - 卵巢肿瘤</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="CI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="CI">
+      重疾
+    </th>
+              <th class="prod" data-product="CAN">
+      癌症
+    </th>
+            </tr>
+            <tr id="CI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">细胞分化程度是低分化/未分化</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="72ee6e17-461c-0ce6-f41b-7b5bbb9a0c9a">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="4d663b40-67e9-21be-9463-3e0a0914d7f4">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="b103f972-c223-b068-457c-bb42a152932a">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="59d82e70-055e-1a17-a68e-6ca3b8b8fa29">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="CI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="c8b49c72-65d7-0ab1-7e64-7353ddde837b">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="fa270e37-00a6-ebdb-2612-0f77fe9398cc">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="CI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="225841fe-8ac1-ad00-bdfd-048e2f7fb7ab">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="ccc4b2f2-b30e-c5aa-75fd-a183660ce0c3">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="CI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Ⅱ期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="82876dc0-590a-f7f1-d833-fe6259903db0">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="1b943ea7-b640-3745-ba9c-b5776d184a60">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">支持细胞-间质细胞瘤（即睾丸母细胞瘤）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="2fdd6c91-f7bf-648f-e1e1-0bb83c2bc426">5类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="6cf2ae2b-3dec-cb71-c045-18330d7e58a4">5类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">勃勒纳氏瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">硬纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="CI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">无性细胞瘤、颗粒细胞瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,13</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="CI_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA或ⅠB期：T1a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="a82b1fe2-6954-b851-b66d-06a2c09823f5">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="e86d4d11-916b-7f55-4e4d-f83afd0f174d">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="CI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡA或ⅡB期： T1cN0M0，T2a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="45da68ad-95cd-096b-a9c4-017cfee276ce">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="319494e3-8afe-2a08-c076-8e1f7d6b0361">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="CI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡC期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="31295d9c-8f1a-9ab9-4c22-b4c693f3293a">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="abf9d3ca-7c22-94d0-7a4d-bcd675d874b8">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="CI_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">库肯勃瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="b11c269e-8597-5797-8266-0412aee0a6ae">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="2100f285-86bc-2189-7ba3-9690637e5a4e">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_20">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="CI_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">交界性黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_23" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">23,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="cfa68e0a-4e2c-f0b1-691f-6255cb2b9113">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="d4b96c92-5d71-d5fa-855a-6a12fc8174be">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="1f0b1646-78eb-99d8-0887-25d380fa2d16">4类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EFKAE" id="aebbe86b-79b9-599d-2e09-726aad971569">4类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵泡膜细胞瘤、畸胎瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_DI" aria-labelledby="ui-id-18" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期具体见：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期 - 卵巢肿瘤</div>
+            </li>
+            <li>
+              <div class="p">AJCC分期 - 卵巢肿瘤</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="DI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="D4">
+      失能收入保障-4周等待期
+    </th>
+              <th class="prod" data-product="D13">
+      失能收入保障-13周等待期
+    </th>
+            </tr>
+            <tr id="DI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">细胞分化程度是低分化/未分化</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="704b21d3-c529-ec42-6eaa-85260b984ec7">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="5b73f484-82de-15d3-a6a1-d8e62154b6ee">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="DI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="f60411fe-027e-655d-1da4-c9a651c7a9d2">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="DI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="0d0f2115-41f5-80b4-e89b-718d630a624e">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="DI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Ⅱ期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="befb4808-65ae-6386-a4e8-103e061499e4">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">支持细胞-间质细胞瘤（即睾丸母细胞瘤）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="0aae2a24-3e64-1403-a2f4-6b278675d5d5">5类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">勃勒纳氏瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">硬纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">无性细胞瘤、颗粒细胞瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,13</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA或ⅠB期：T1a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="c717c2cb-6398-1c0b-6fec-4839f7c4a6a4">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="d00c1b56-df33-4d94-4331-8ae3662be9e5">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="DI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡA或ⅡB期： T1cN0M0，T2a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="9179208f-56d7-5e98-7337-bdcd1205e5c6">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="DI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡC期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="0be9689a-5aae-f380-8b41-3dc306dea1e8">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="DI_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">库肯勃瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="9aa06c20-b99d-25d0-0df5-46fef26276c1">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_20">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">交界性黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_23" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">23,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="5044bf0a-937a-8991-310b-b87f56b37fca">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="c3f8547f-8289-8265-144f-27dc629e0949">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0ETNAE" id="b0c57dd2-1021-0752-ed8b-04441b629248">4类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵泡膜细胞瘤、畸胎瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期具体见：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期 - 卵巢肿瘤</div>
+            </li>
+            <li>
+              <div class="p">AJCC分期 - 卵巢肿瘤</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="WPTPD">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="WP">
+      豁免保费
+    </th>
+              <th class="prod" data-product="TPDOwn">
+      永久完全性失能-职业
+    </th>
+              <th class="prod" data-product="TPDActivity">
+      永久完全性失能-基本日常生活活动
+    </th>
+            </tr>
+            <tr id="WPTPD_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">细胞分化程度是低分化/未分化</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="14783d4a-b2f4-d710-d146-405bdbef4a7b">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="2e2ce016-0e54-b42d-2a52-8874b4bb5369">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="11e6dae3-2f88-36c2-bb3a-84788d9872c3">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="0982b053-750a-9023-36dd-eb1089364c00">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="a3a70132-7518-f3c0-058b-7fa2ae84839c">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="788f380e-5438-3438-1988-ae70def62851">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="c917bcb8-f56b-12a7-d4bc-e4a0d70d8fff">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="afb14031-cd8e-20f2-cb51-4bcc139e431b">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="56e0c254-1085-2920-135c-c0fa4dde9244">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="2c5fabeb-be32-832c-3040-5960593a5b11">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="d15c4cb9-c70c-7a24-f5a5-768e7744bf07">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="2a24e518-440e-c559-b214-8d91b84a2cc3">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Ⅱ期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="246f111c-dd58-5734-9deb-b5d614f4081c">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="6ed96326-e648-28d0-266d-53e15fbf5651">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="e6f7727d-4f96-7e98-84c0-99794d76e052">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">支持细胞-间质细胞瘤（即睾丸母细胞瘤）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="4b10517d-fefb-2e43-7cec-8884e0309ecd">5类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="f3a0916f-5ebc-1f23-7c07-0206bd251b86">5类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="37c4bef0-0b4b-927e-9045-4e73989ad643">5类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">勃勒纳氏瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">硬纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">无性细胞瘤、颗粒细胞瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,13</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA或ⅠB期：T1a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="8558edbc-de62-3f97-3dfb-39b2a8028af6">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="c3a6fd06-0c24-4c6e-b6db-e6b18b2fe654">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="82f6477a-352f-94fd-f525-409cda4ae4f0">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡA或ⅡB期： T1cN0M0，T2a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="b557340f-46d3-c5d0-8e2d-baf7500cfc9c">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="b8e228b8-a8ea-8f30-aa22-a09860d2b9ed">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="e96dd3c5-5b7c-7f01-f5e2-70b764ab5112">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡC期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="33c024f6-0f87-48ca-1943-039ce11e44bc">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="1371f971-8a3f-09eb-f2df-e232fcc808af">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="acf90f87-938b-8e22-3dc6-fbff3c32e25d">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">库肯勃瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="e6a77b42-ab90-215f-e51f-5b49ef0e44a0">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="cf64f5c0-920f-6937-ab6f-0742e358b546">7类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="479a642e-7bbe-b0b0-1659-56e7c70e073a">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_20">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">交界性黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_23" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">23,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="d6fd52cd-d207-e65a-dd2c-d688134c37c1">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="e8c32d2a-6222-9e01-580c-bfbf5f9db828">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="0a62459f-3a86-fd1e-5022-93915d3fa5b7">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="2c2ede45-4688-d998-8040-8b82cc048fc0">4类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EKRAE" id="b433a455-4a62-9251-8941-08b46774f8dc">4类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EBVAE" id="e2745a4e-8073-7e45-a51f-45575d3987db">4类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵泡膜细胞瘤、畸胎瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_HI" aria-labelledby="ui-id-20" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期具体见：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期 - 卵巢肿瘤</div>
+            </li>
+            <li>
+              <div class="p">AJCC分期 - 卵巢肿瘤</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="HI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="HI">
+      住院收入保障
+    </th>
+            </tr>
+            <tr id="HI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">细胞分化程度是低分化/未分化</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="0490c396-a64d-d0ba-1c61-c9efb718436b">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="f58e2c50-ba2b-fee6-8fff-39b3b7805d41">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="HI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="6125d262-e9ce-b3b6-755c-cd4b2ee601ae">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="HI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="de2b41a9-1aa9-f5d4-131d-defa0098e6d7">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="HI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Ⅱ期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="810bbead-d507-bcaa-e534-fb4a735eea43">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">支持细胞-间质细胞瘤（即睾丸母细胞瘤）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="ed3d06f6-9cc3-5cf1-4e88-688d68dda8c1">5类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">勃勒纳氏瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">硬纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="HI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">无性细胞瘤、颗粒细胞瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,13</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="HI_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA或ⅠB期：T1a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="a2cd2332-1d20-d2bc-5b88-a982127e3745">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="HI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡA或ⅡB期： T1cN0M0，T2a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="94afa49e-f28e-dab7-af45-c143304e1694">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="HI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡC期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="2bb8d354-7ddb-d152-64ab-fad5780c65db">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="HI_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">库肯勃瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="5f03ff8a-c678-6e66-3087-d1f5b326759d">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_20">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="HI_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">交界性黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_23" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">23,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="d8cc71e8-5306-efeb-c1da-2ddb8b4ed788">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EYYAE" id="ac2f9dc2-27fb-4095-08bb-98a73afd2bf9">4类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵泡膜细胞瘤、畸胎瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_LTC" aria-labelledby="ui-id-21" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期具体见：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期 - 卵巢肿瘤</div>
+            </li>
+            <li>
+              <div class="p">AJCC分期 - 卵巢肿瘤</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="LTC">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="LTC">
+      长期护理险
+    </th>
+            </tr>
+            <tr id="LTC_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">细胞分化程度是低分化/未分化</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="d6a8862f-3139-7b33-eab2-978b4415a7f8">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="ab26b744-73b8-5bfe-e30a-a41706bdc2ba">3类</a>进行评点或者按4类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="LTC_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="f1787cf1-01eb-3d5d-6e3d-406254bafddc">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="LTC_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="4805a652-2522-c6e9-d2da-37765d1fc65c">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="LTC_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Ⅱ期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="c48c9a7f-97be-aa58-a0bb-37f28aeb4141">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">支持细胞-间质细胞瘤（即睾丸母细胞瘤）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="2dd3ab0e-44c5-0a95-ba22-2f50f47e0818">5类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">勃勒纳氏瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢黏液性囊腺瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">硬纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">无性细胞瘤、颗粒细胞瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,13</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA或ⅠB期：T1a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="97046541-4f1d-8bca-96bb-fda0bdbc9645">2类</a>进行评点或者按3类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="LTC_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡA或ⅡB期： T1cN0M0，T2a-bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="3175335d-332e-4460-7268-7d2cd51d73af">4类</a>进行评点或者按5类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="LTC_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,15,13</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅡC期及以上</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="5a25ad5c-9771-488a-0c58-5c6521feb986">6类</a>进行评点或者按7类进行评点（如果细胞分化程度良好（即高分化），则可应用较低的评点）</div>
+              </td>
+            </tr>
+            <tr id="LTC_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">库肯勃瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="f205c0a9-0f8a-c32f-fb9d-4a2443b918b5">7类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_20">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵巢黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">确诊为良性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">交界性黏液性囊腺瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_23" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">23,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠA期：T1aN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="b1d31d0a-2fe5-6d99-e859-d1542fa0c6eb">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠB期：T1bN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EP3AE" id="dcc30179-78e2-6d5e-04c4-468bced8b0a7">4类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,22,20</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">ⅠC期：T1cN0M0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,20</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">恶性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按卵巢癌进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">卵泡膜细胞瘤、畸胎瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按无性细胞瘤进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function() {
+        // $("body").scrollTop(10); //控制滚动条下移10px
+        // if ($("body").scrollTop() > 0) {
+        //     alert("有滚动条");
+        // } else {
+        //     alert("没有滚动条");
+        // }
+        //寿险
+        $('#tab_ratingtables_Life').attr('id', 'tab_ratingtables_Life1');
+        //意外险种
+        $('#tab_ratingtables_ADB').attr('id', 'tab_ratingtables_ADB1');
+        //重疾
+        $('#tab_ratingtables_CI').attr('id', 'tab_ratingtables_CI1');
+        //失能收入
+        $('#tab_ratingtables_DI').attr('id', 'tab_ratingtables_DI1');
+        //豁免
+        $('#tab_ratingtables_WPTPD').attr('id', 'tab_ratingtables_WPTPD1');
+        //住院
+        $('#tab_ratingtables_HI').attr('id', 'tab_ratingtables_HI1');
+        //长期护理险
+        $('#tab_ratingtables_LTC').attr('id', 'tab_ratingtables_LTC1');
+        console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+        console.log($("body").scrollTop(), 'idaofijofwio');
+        // $("body").scrollTop(0); //滚动条返回顶部
+        $('.ui-tabs-nav li').click(function() {
+            $(this).addClass('active');
+            $(this).children('a').css({
+                'color': '#fff'
+            })
+            console.log($("body").scrollTop(), 'idaofijofwio1');
+            $('.ui-tabs-panel').scrollTop('-20px');
+            console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+            // console.log('tab栏切换');
+            var tabTitle = $(this).children('a').attr('href');
+            console.log(tabTitle, 'a标签的href属性');
+            $(this).addClass('ui-state-active').removeClass('ui-state-default');
+            $(this).siblings().removeClass('ui-state-active').addClass('ui-state-default');
+            //意外险种
+            if (tabTitle == '#tab_ratingtables_ADB') {
+                console.log('1111');
+                $('#tab_ratingtables_ADB1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_ADB1').css('display', 'block');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').css('display', 'none');
+                //重疾
+            } else if (tabTitle == '#tab_ratingtables_CI') {
+                $('#tab_ratingtables_CI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_CI1').css('display', 'block');
+                $('#tab_ratingtables_CI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_CI1').siblings().not('ul').css('display', 'none');
+                //寿险
+            } else if (tabTitle == '#tab_ratingtables_Life') {
+                $('#tab_ratingtables_Life1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_Life1').css('display', 'block');
+                $('#tab_ratingtables_Life1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_Life1').siblings().not('ul').css('display', 'none');
+                //失能收入
+            } else if (tabTitle == '#tab_ratingtables_DI') {
+                $('#tab_ratingtables_DI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_DI1').css('display', 'block');
+                $('#tab_ratingtables_DI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_DI1').siblings().not('ul').css('display', 'none');
+                //豁免
+            } else if (tabTitle == '#tab_ratingtables_WPTPD') {
+                $('#tab_ratingtables_WPTPD1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_WPTPD1').css('display', 'block');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').css('display', 'none');
+                //住院
+            } else if (tabTitle == '#tab_ratingtables_HI') {
+                $('#tab_ratingtables_HI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_HI1').css('display', 'block');
+                $('#tab_ratingtables_HI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_HI1').siblings().not('ul').css('display', 'none');
+                //长期护理险
+            } else if (tabTitle == '#tab_ratingtables_LTC') {
+                $('#tab_ratingtables_LTC1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_LTC1').css('display', 'block');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').css('display', 'none');
+            }
+        })
+    })
+</script>

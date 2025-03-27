@@ -1,0 +1,5069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蛋白尿</title>
+    <style>
+        body {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+            *font-size: small;
+            *font: x-small;
+        }
+        
+        .ui-widget .ui-widget {
+            font-size: 1em;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .ui-widget-content {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+            color: #222;
+        }
+        
+        .uwm-topic-tabs,
+        .uwm-topic-subtabs {
+            border: 0;
+            padding: 0;
+            background: none;
+        }
+        
+        .ui-widget {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-right,
+        .ui-corner-br {
+            border-bottom-right-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-left,
+        .ui-corner-bl {
+            border-bottom-left-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-top,
+        .ui-corner-left,
+        .ui-corner-tl {
+            border-top-left-radius: 4px;
+        }
+        
+        .ui-widget {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1.1em;
+        }
+        
+        .ui-tabs {
+            position: relative;
+            padding: 0.2em;
+        }
+        
+        .ui-tabs .ui-tabs-nav {
+            margin: 0;
+            padding: 0.2em 0.2em 0;
+        }
+        
+        div.tabs ul {
+            list-style-type: none;
+        }
+        
+        ul.ui-tabs-nav {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .uwm-topic-tabs>ul,
+        .uwm-topic-subtabs>ul {
+            background: none;
+            border: 0;
+            padding: 0!important;
+        }
+        
+        .uwm-topic-subtabs ul {
+            list-style-type: circle!important;
+        }
+        
+        .ui-widget-header {
+            border: 1px solid #aaa;
+            background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+            color: #222;
+            font-weight: 700;
+        }
+        
+        .ui-helper-clearfix {
+            min-height: 0;
+        }
+        
+        .ui-helper-reset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            line-height: 1.3;
+            text-decoration: none;
+            font-size: 100%;
+            list-style: none;
+        }
+        
+        .ui-helper-clearfix:before,
+        .ui-helper-clearfix:after {
+            content: "";
+            display: table;
+            border-collapse: collapse;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .uwm-topic-subtabs li.ui-tabs-active {
+            background-color: #00315a !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-color: #d3d3d3 !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-image: none!important;
+            border: 0;
+            /* background-color: #555858; */
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .ui-tabs .ui-tabs-nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            /* border-bottom-width: 0; */
+            padding: 0;
+            white-space: nowrap;
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-active {
+            background-image: none;
+            background-color: #333133 !important;
+        }
+        
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #212121;
+        }
+        
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default {
+            border: 1px solid #d3d3d3;
+            background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #555;
+        }
+        
+        .ui-state-active {
+            background: #dadada url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+        }
+        
+        .tabs a.ui-tabs-anchor {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #fff;
+            text-decoration: none !important;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+        .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+        .ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+            cursor: text;
+        }
+        
+        .tabs li.ui-tabs-active a,
+        .tabs li.ui-state-default a:hover {
+            color: #fff !important;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #000 !important;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #fff;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a,
+        .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+            cursor: pointer;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #00315a !important;
+            text-decoration: none !important;
+        }
+        
+        .ui-state-active a,
+        .ui-state-active a:link,
+        .ui-state-active a:visited {
+            color: #212121;
+            text-decoration: none;
+        }
+        
+        .ui-state-default a,
+        .ui-state-default a:link,
+        .ui-state-default a:visited {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .ui-widget-header a {
+            color: #222;
+        }
+        
+        .ui-widget-content a {
+            color: #222;
+        }
+        
+        a {
+            color: #00315a;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        .ui-helper-clearfix:after {
+            clear: both;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            background-color: transparent!important;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            /* height: 565px; */
+            overflow-y: auto;
+            /* background-color: #333133 !important; */
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-panel {
+            border-width: 1px;
+            background-color: transparent!important;
+        }
+        
+        .ui-tabs .ui-tabs-panel {
+            display: block;
+            /* border-width: 0; */
+            padding: 1em 1.4em;
+            background: 0;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .table {
+            border: solid 1px #e6e6e6;
+            border-collapse: collapse;
+            margin-bottom: 0.8em;
+            margin-top: 10pt;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table {
+            font-size: inherit;
+            font: 100%;
+        }
+        
+        .table .clas {
+            min-width: 350px;
+            max-width: 350px;
+            width: 350px;
+        }
+        
+        .table th {
+            background-color: #00315a;
+        }
+        
+        .table th {
+            background-color: #5e5e5e;
+            color: #fff !important;
+            text-align: left;
+        }
+        
+        .table td,
+        .table th {
+            border: solid 1px #000;
+            font-weight: normal;
+            min-width: 100px;
+            max-width: 150px;
+            padding: 3px;
+        }
+        
+        .table .prod {
+            min-width: 100px;
+            max-width: 150px;
+            width: 100px;
+        }
+        
+        .active {
+            background-color: #00315a !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs uwm-topic-subtabs ui-tabs ui-widget ui-widget-content ui-corner-all" style="">
+      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab_ratingtables_Life" aria-labelledby="ui-id-15" aria-selected="true"><a data-key="Life" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_Life" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-15">
+          寿险
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_ADB" aria-labelledby="ui-id-16" aria-selected="false"><a data-key="ADB" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_ADB" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-16">
+          意外险种
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_CI" aria-labelledby="ui-id-17" aria-selected="false"><a data-key="CI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_CI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-17">
+          重疾和癌症
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_DI" aria-labelledby="ui-id-18" aria-selected="false"><a data-key="DI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_DI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-18">
+          失能收入
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" aria-selected="false"><a data-key="WPTPD" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_WPTPD" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-19">
+          豁免保费和永久完全性失能
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_HI" aria-labelledby="ui-id-20" aria-selected="false"><a data-key="HI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_HI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-20">
+          住院收入保障
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_LTC" aria-labelledby="ui-id-21" aria-selected="false"><a data-key="LTC" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_LTC" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-21">
+          长期护理险
+        </a></li>
+      </ul>
+      <div id="tab_ratingtables_Life" aria-labelledby="ui-id-15" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+        <div>
+          <ul>
+            <li>
+              <div class="p">如果有多次尿液检测结果，则需计算尿蛋白量或尿微量白蛋白量（定量或尿蛋白试纸检查）的平均值，按平均值进行相应的评点</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="Life">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="Life">
+      寿险
+    </th>
+            </tr>
+            <tr id="Life_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">蛋白尿的原因</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖尿病</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按&lt;&lt;糖尿病&gt;&gt;进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="Life_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高血压</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按&lt;&lt;高血压&gt;&gt;进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="Life_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">动脉粥样硬化性疾病（如冠心病、周围血管病或脑中风）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按相应疾病进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="Life_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿史或微量白蛋白尿史</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="Life_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因未明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">尿镜检结果和肾功能检查结果均正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿现症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="Life_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">本周蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">体位性或直立性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅有尿微量白蛋白异常，而尿蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="8e4eb1fb-f580-882f-3726-248bcf6841d5">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25至+50</div>
+              </td>
+            </tr>
+            <tr id="Life_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="238c8240-5350-5377-39b8-585d051d4eab">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50至+75</div>
+              </td>
+            </tr>
+            <tr id="Life_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="a785f821-2048-9717-ef45-40fb4ef2601e">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少+100</div>
+              </td>
+            </tr>
+            <tr id="Life_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="5eaacd16-73c9-95dc-6ad5-cf77d1b39f4a">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="Life_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">伴有蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按间歇性蛋白尿或持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">间歇性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="4179c23b-2478-3979-9d5e-4ae5a40a11b1">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="649ecabb-4958-da63-e796-95cad350d2fa">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="Life_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="4a20d6da-d94c-e8d1-2e34-05604d844d53">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="Life_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="63099562-2985-6a0f-b0c2-398cd7005414">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_28">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">持续性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_29">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="b08cb406-11fd-777d-33e5-cba4b14c5ca0">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25 (如果其他评点&lt;50，则可+0) </div>
+              </td>
+            </tr>
+            <tr id="Life_31" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">31,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="54160e97-3279-248a-f7a2-748e7887c8df">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50 (如果其他评点&lt;50，则可+25) </div>
+              </td>
+            </tr>
+            <tr id="Life_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="f9c5a0ce-4bbc-93fa-f62b-e8e171153c19">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100 (如果其他评点&lt;50，则可+50) </div>
+              </td>
+            </tr>
+            <tr id="Life_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="74b7d725-d66f-07fc-2160-39fa60ee2b12">显著</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师，至少+150</div>
+              </td>
+            </tr>
+            <tr id="Life_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="f3bbf543-29d6-3390-83cc-5bd39f157e7b">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="Life_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">血尿和/或红细胞管型</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常按 <a href="#" data-type="topic" data-id="N00 N01 N02 N03 N05 N08" id="258e7cab-94bb-1f9d-d2e7-28fa55b0ee7a">肾小球肾炎</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能检查异常；未确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="Life_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减点，最多减50点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_ADB" aria-labelledby="ui-id-16" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <ul>
+            <li>
+              <div class="p">如果有多次尿液检测结果，则需计算尿蛋白量或尿微量白蛋白量（定量或尿蛋白试纸检查）的平均值，按平均值进行相应的评点</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="ADB">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="ADB">
+      意外死亡
+    </th>
+              <th class="prod" data-product="ADD">
+      意外残疾
+    </th>
+            </tr>
+            <tr id="ADB_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">蛋白尿的原因：</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖尿病</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按&lt;&lt;糖尿病&gt;&gt;进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="ADB_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高血压</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按&lt;&lt;高血压&gt;&gt;进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+              <td class="prod">
+                <div class="p">按&lt;&lt;高血压&gt;&gt;进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="ADB_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">动脉粥样硬化性疾病（如冠心病、周围血管病或脑中风）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按相应疾病进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+              <td class="prod">
+                <div class="p">按相应疾病进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="ADB_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿史或微量白蛋白尿史</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="ADB_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因未明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">尿镜检结果和肾功能检查结果均正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿现症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="ADB_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">本周蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">体位性或直立性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅有尿微量白蛋白异常，而尿蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="1cdb60a5-704a-0ff3-edd0-43055de9c7aa">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="42f0d5e4-02c5-5cbf-f535-a94f3b401a1b">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="ada80767-30ce-025f-4ab8-44f645129df2">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="ADB_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="01b9cd40-6e6b-797f-5426-517869324bbc">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="ADB_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">伴有蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按间歇性蛋白尿或持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按间歇性蛋白尿或持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">间歇性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="8175e7f4-eb21-c0ba-c9b0-50fb3d41b0b5">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="975a622b-f09f-ade7-590d-425689467c3f">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="416b7aa0-71f4-cb7f-f82b-5350a3c2d7e4">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="1b93d257-0e3a-208f-d499-e46a7384f178">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_28">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">持续性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_29">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="6cb2b709-db49-0d40-be2d-7a85506a5cac">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_31" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">31,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="ca258019-6b04-e88c-5457-972a44e5bf63">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="43faf22c-3813-d986-df83-9db253912e24">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="ADB_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="4432133d-a527-f758-42c1-1cb2dc1bb2f0">显著</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="ADB_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="eea6ff27-4135-a204-670c-7c06be11c6e5">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="ADB_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">血尿和/或红细胞管型</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常按 <a href="#" data-type="topic" data-id="N00 N01 N02 N03 N05 N08" id="2a351547-015a-7812-e84c-bb35838d8468">肾小球肾炎</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常按 <a href="#" data-type="topic" data-id="N00 N01 N02 N03 N05 N08" id="8d724ed7-dc95-e26d-ac56-99fe11f4cf00">肾小球肾炎</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能检查异常；未确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="ADB_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减点，最多减50点</div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减点，最多减50点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_CI" aria-labelledby="ui-id-17" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <ul>
+            <li>
+              <div class="p">如果有多次尿液检测结果，则需计算尿蛋白量或尿微量白蛋白量（定量或尿蛋白试纸检查）的平均值，按平均值进行相应的评点</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="CI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="CI">
+      重疾
+    </th>
+              <th class="prod" data-product="CAN">
+      癌症
+    </th>
+            </tr>
+            <tr id="CI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">蛋白尿的原因：</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖尿病</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则仅按潜在病因进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高血压</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则仅按潜在病因进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">动脉粥样硬化性疾病（如冠心病、周围血管病或脑中风）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则累加按潜在病因及风险因素进行的评点</div>
+              </td>
+            </tr>
+            <tr id="CI_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿史或微量白蛋白尿史</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="CI_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因未明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">尿镜检结果和肾功能检查结果均正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="CI_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿现症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="CI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">本周蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则按潜在病因进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">体位性或直立性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="CI_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅有尿微量白蛋白异常，而尿蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="6378ad24-c90d-aaf0-d55e-591119ebad73">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师，至少+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则咨询首席核保师，通常按潜在病因进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="a3fdb814-f9e6-5530-55f5-a2e15856c7f4">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师，至少+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则咨询首席核保师，通常按潜在病因进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="341b712d-af50-ca3b-9c57-db7e45d888fc">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则咨询首席核保师，通常按潜在病因进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="8fb020be-69e6-f3ea-401d-f9ae069954a8">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则咨询首席核保师，通常按潜在病因进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">伴有蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按间歇性蛋白尿或持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按间歇性蛋白尿或持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">间歇性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="ed327234-3e8c-b9e7-b2f8-1320f187d124">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25或者咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="CI_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="fb5c53e7-d414-3037-c14f-2e5c2e72ea91">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50或者咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="CI_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="f68014a0-ae52-3b28-eaae-47b932a887f9">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="674c4011-1b40-b49f-ef2b-26016d56aa4f">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_28">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">持续性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_29">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="b17aa53d-67fd-e3c1-6454-9e6f14fc20fa">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50或者咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="CI_31" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">31,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="7fa6de2c-cedf-4870-076a-15a0c7ad6153">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+100或者咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="CI_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="f24c7f54-fd69-2b7c-4b5c-cb7069f9a578">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，通常按潜在病因进行评点，如潜在病因不明，则通常拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="3f8bb692-529b-72e6-f7e0-3ce7e1f8d55a">显著</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，通常按潜在病因进行评点，如潜在病因不明，则通常拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="e69129c5-7ebc-1c11-c65f-4ab1863c5811">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，通常按潜在病因进行评点，如潜在病因不明，则通常拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">血尿和/或红细胞管型</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，通常按潜在病因进行评点，如潜在病因不明，则通常拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能检查异常；未确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，通常按潜在病因进行评点，如潜在病因不明，则通常拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减少评点，最多减25点</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，通常按潜在病因进行评点，如潜在病因不明，则通常拒保</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_DI" aria-labelledby="ui-id-18" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <ul>
+            <li>
+              <div class="p">如果有多次尿液检测结果，则需计算尿蛋白量或尿微量白蛋白量（定量或尿蛋白试纸检查）的平均值，按平均值进行相应的评点</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="DI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="D4">
+      失能收入保障-4周等待期
+    </th>
+              <th class="prod" data-product="D13">
+      失能收入保障-13周等待期
+    </th>
+            </tr>
+            <tr id="DI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">蛋白尿的原因：</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖尿病</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高血压</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">动脉粥样硬化性疾病（如冠心病、周围血管病或脑中风）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿史或微量白蛋白尿史</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="DI_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因未明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">尿镜检结果和肾功能检查结果均正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿现症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="DI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">本周蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">体位性或直立性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅有尿微量白蛋白异常，而尿蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="ffa48d58-bb82-0c81-78d9-ea38808f51ab">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="DI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="7863b9ec-c253-6fd6-2897-41da5ef3e60a">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="DI_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="3b44c285-a435-adc1-4bd3-a215291942be">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="DI_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="fc33f984-61de-dda4-96e4-ab9c9af4a79a">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="DI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">伴有蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">间歇性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="f918a558-2bd7-be04-0fee-5d772c9e5552">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="DI_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="360300f0-fa83-3df4-7a93-7222acc3a4b7">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="DI_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="cad298b2-e0cd-03da-a67c-d87a0c3d5d8f">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="DI_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="643e78c3-104e-7f55-8859-a2eabac7ccc7">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="DI_28">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">持续性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_29">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="1ef81ab9-76be-833e-1602-a0efd61cddcc">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="DI_31" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">31,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="95e64ee2-77be-4ae3-a791-eb24c82b8a10">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="DI_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="4cc1bd27-12d2-fe31-cace-971a011e209d">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="991bce47-59c5-972a-4d29-ad49ccf99319">显著</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="46292dbc-1efb-5fda-fb64-29848eb429e2">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">血尿和/或红细胞管型</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能检查异常；未确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减少评点，最多减25点</div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减少评点，最多减25点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <ul>
+            <li>
+              <div class="p">如果有多次尿液检测结果，则需计算尿蛋白量或尿微量白蛋白量（定量或尿蛋白试纸检查）的平均值，按平均值进行相应的评点</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="WPTPD">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="WP">
+      豁免保费
+    </th>
+              <th class="prod" data-product="TPDOwn">
+      永久完全性失能-职业
+    </th>
+              <th class="prod" data-product="TPDActivity">
+      永久完全性失能-基本日常生活活动
+    </th>
+            </tr>
+            <tr id="WPTPD_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">蛋白尿的原因：</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖尿病</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高血压</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按&lt;&lt;高血压&gt;&gt;进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+              <td class="prod">
+                <div class="p">按&lt;&lt;高血压&gt;&gt;进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+              <td class="prod">
+                <div class="p">按&lt;&lt;高血压&gt;&gt;进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">动脉粥样硬化性疾病（如冠心病、周围血管病或脑中风）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按相应疾病进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+              <td class="prod">
+                <div class="p">按相应疾病进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+              <td class="prod">
+                <div class="p">按相应疾病进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿史或微量白蛋白尿史</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因未明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">尿镜检结果和肾功能检查结果均正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿现症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">本周蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">体位性或直立性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅有尿微量白蛋白异常，而尿蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="c2960301-6df3-5799-60bc-c159b5fd7919">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="b098863d-3293-cb32-9017-bc9501f887de">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="199a5620-ea23-47bb-472a-3ef190a2e89c">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="81e9e4a4-04ba-79d5-cc28-68508eac233d">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">伴有蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按间歇性蛋白尿或持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按间歇性蛋白尿或持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按间歇性蛋白尿或持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">间歇性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="2e73e8ef-3b9b-c7cd-2926-a984bfe1d7c1">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="1849e0ab-e692-c6eb-7ab6-01c603018993">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="2bc3971d-463f-a543-3f60-46f9e2b883a4">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="725e8557-d5b0-7c17-bc9f-3c28acf04847">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_28">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">持续性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_29">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="f7910f55-9cbf-a728-80f9-3a2a5eb77015">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_31" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">31,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="963f1262-2f71-667e-585f-c9b76de58022">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="e1a27b26-4e12-350b-2211-e968e3dde779">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="0636b7f6-556f-a3ce-d3d4-43c91b22dc21">显著</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="33ba9e4a-cf5a-6b61-6507-5bd90899f198">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">血尿和/或红细胞管型</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常按 <a href="#" data-type="topic" data-id="N00 N01 N02 N03 N05 N08" id="3865d629-0f04-2cfd-1787-7c3a2b45a8a6">肾小球肾炎</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常按 <a href="#" data-type="topic" data-id="N00 N01 N02 N03 N05 N08" id="1771558d-9a74-4178-ee16-77e526360e28">肾小球肾炎</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常按 <a href="#" data-type="topic" data-id="N00 N01 N02 N03 N05 N08" id="2b78b545-a0f1-c903-e4bb-bae99c415276">肾小球肾炎</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能检查异常；未确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常延期到全面检查后</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减点，最多减50点</div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减点，最多减50点</div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减点，最多减50点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_HI" aria-labelledby="ui-id-20" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <ul>
+            <li>
+              <div class="p">如果有多次尿液检测结果，则需计算尿蛋白量或尿微量白蛋白量（定量或尿蛋白试纸检查）的平均值，按平均值进行相应的评点</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="HI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="HI">
+      住院收入保障
+    </th>
+            </tr>
+            <tr id="HI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">蛋白尿的原因：</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖尿病</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高血压</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">动脉粥样硬化性疾病（如冠心病、周围血管病或脑中风）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿史或微量白蛋白尿史</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="HI_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因未明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">尿镜检结果和肾功能检查结果均正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="HI_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿现症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="HI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">本周蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">体位性或直立性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="HI_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅有尿微量白蛋白异常，而尿蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="f7405350-32c4-ba14-fa5c-02841b1a85c9">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="HI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="728c5c79-fca5-4be7-da64-b6dfcff289fc">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="HI_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="8cb1acc8-8c5d-7e46-a954-d9a9ee0bbbd4">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="HI_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="7814c131-3fe8-afc2-bae8-3f960cdd7d7c">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">伴有蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">间歇性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="39e8bc8e-35bd-c437-4976-7130ae4914ec">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="HI_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="3a7314ab-ceeb-919d-7b40-da4e33c47498">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="HI_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="e55316f4-3c52-37f2-2e8c-1dfaa9221d96">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="HI_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="654576ef-4200-392b-c29b-6b57cae132f6">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="HI_28">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">持续性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_29">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="4f9b7f28-11ff-1dd6-8121-0bba40861b80">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="HI_31" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">31,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="fe7e7770-43d3-94a8-0abe-5c6d40949dc6">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="8d6ccb50-ca6f-a3f3-0344-d4eb4ef01bee">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="136b1826-5ef2-d287-2f30-751e5251cf1b">显著</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="49ca9bf4-4201-fc17-c84e-15eef377d998">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">血尿和/或红细胞管型</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能检查异常；未确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减少评点，最多减25点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_LTC" aria-labelledby="ui-id-21" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <ul>
+            <li>
+              <div class="p">如果有多次尿液检测结果，则需计算尿蛋白量或尿微量白蛋白量（定量或尿蛋白试纸检查）的平均值，按平均值进行相应的评点</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="LTC">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="LTC">
+      长期护理险
+    </th>
+            </tr>
+            <tr id="LTC_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">蛋白尿的原因：</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖尿病</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高血压</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按&lt;&lt;高血压&gt;&gt;进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="LTC_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">动脉粥样硬化性疾病（如冠心病、周围血管病或脑中风）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按相应疾病进行评点并累加按蛋白尿进行相应评点的值</div>
+              </td>
+            </tr>
+            <tr id="LTC_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿史或微量白蛋白尿史</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="LTC_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">全面检查后，病因未明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">尿镜检结果和肾功能检查结果均正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,6,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">其他</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按蛋白尿现症进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">蛋白尿现症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">病因明确</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点.</div>
+              </td>
+            </tr>
+            <tr id="LTC_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">本周蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">体位性或直立性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅有尿微量白蛋白异常，而尿蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="d66d20d1-3973-b71b-da26-147912d808d7">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25至+50</div>
+              </td>
+            </tr>
+            <tr id="LTC_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="365aa439-abbe-f74b-a0e8-26ed2fb27ab0">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50至+75</div>
+              </td>
+            </tr>
+            <tr id="LTC_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="3038f611-0a6a-68fa-acc8-6dffec508960">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="LTC_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,15,11,5</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="251e74b8-4ade-6ec9-1a6c-447dd577777e">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="LTC_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,11,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">伴有蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按间歇性蛋白尿或持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">间歇性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="d7d9f0d7-cd85-e272-9b77-97d441c7fef2">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="LTC_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="054e561a-9c2c-8af6-c960-5b052e3222dc">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="LTC_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="6c42c751-cbdf-d23d-0b84-8a7c2ccf686e">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,23,22,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="3481b013-91fd-656d-c99a-a40fee6bf1dd">显著/重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按持续性蛋白尿进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_28">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">持续性蛋白尿</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_29">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">蛋白尿程度分类((分类 - 蛋白尿))</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="cec23440-1f72-b011-5967-4d3fdf389863">微量</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="LTC_31" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">31,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="b4490b77-63ac-56ae-d1d2-6159c000ca19">轻度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="LTC_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="46852802-0286-531a-789d-03396bf94d5c">中度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="c4076517-adf1-eb64-05d7-dc593557613f">显著</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,29,28,5</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0E4F" id="67afaa4f-bc34-951f-3b92-7e21c9741f03">重度</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">血尿和/或红细胞管型</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常按 <a href="#" data-type="topic" data-id="N00 N01 N02 N03 N05 N08" id="e818337c-1df4-000c-26d0-d621969bd327">肾小球肾炎</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能检查异常；未确诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到全面检查后</div>
+              </td>
+            </tr>
+            <tr id="LTC_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肾功能正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">适当减少评点，最多减25点 </div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function() {
+        // $("body").scrollTop(10); //控制滚动条下移10px
+        // if ($("body").scrollTop() > 0) {
+        //     alert("有滚动条");
+        // } else {
+        //     alert("没有滚动条");
+        // }
+        //寿险
+        $('#tab_ratingtables_Life').attr('id', 'tab_ratingtables_Life1');
+        //意外险种
+        $('#tab_ratingtables_ADB').attr('id', 'tab_ratingtables_ADB1');
+        //重疾
+        $('#tab_ratingtables_CI').attr('id', 'tab_ratingtables_CI1');
+        //失能收入
+        $('#tab_ratingtables_DI').attr('id', 'tab_ratingtables_DI1');
+        //豁免
+        $('#tab_ratingtables_WPTPD').attr('id', 'tab_ratingtables_WPTPD1');
+        //住院
+        $('#tab_ratingtables_HI').attr('id', 'tab_ratingtables_HI1');
+        //长期护理险
+        $('#tab_ratingtables_LTC').attr('id', 'tab_ratingtables_LTC1');
+        console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+        console.log($("body").scrollTop(), 'idaofijofwio');
+        // $("body").scrollTop(0); //滚动条返回顶部
+        $('.ui-tabs-nav li').click(function() {
+            $(this).addClass('active');
+            $(this).children('a').css({
+                'color': '#fff'
+            })
+            console.log($("body").scrollTop(), 'idaofijofwio1');
+            $('.ui-tabs-panel').scrollTop('-20px');
+            console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+            // console.log('tab栏切换');
+            var tabTitle = $(this).children('a').attr('href');
+            console.log(tabTitle, 'a标签的href属性');
+            $(this).addClass('ui-state-active').removeClass('ui-state-default');
+            $(this).siblings().removeClass('ui-state-active').addClass('ui-state-default');
+            //意外险种
+            if (tabTitle == '#tab_ratingtables_ADB') {
+                console.log('1111');
+                $('#tab_ratingtables_ADB1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_ADB1').css('display', 'block');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').css('display', 'none');
+                //重疾
+            } else if (tabTitle == '#tab_ratingtables_CI') {
+                $('#tab_ratingtables_CI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_CI1').css('display', 'block');
+                $('#tab_ratingtables_CI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_CI1').siblings().not('ul').css('display', 'none');
+                //寿险
+            } else if (tabTitle == '#tab_ratingtables_Life') {
+                $('#tab_ratingtables_Life1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_Life1').css('display', 'block');
+                $('#tab_ratingtables_Life1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_Life1').siblings().not('ul').css('display', 'none');
+                //失能收入
+            } else if (tabTitle == '#tab_ratingtables_DI') {
+                $('#tab_ratingtables_DI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_DI1').css('display', 'block');
+                $('#tab_ratingtables_DI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_DI1').siblings().not('ul').css('display', 'none');
+                //豁免
+            } else if (tabTitle == '#tab_ratingtables_WPTPD') {
+                $('#tab_ratingtables_WPTPD1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_WPTPD1').css('display', 'block');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').css('display', 'none');
+                //住院
+            } else if (tabTitle == '#tab_ratingtables_HI') {
+                $('#tab_ratingtables_HI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_HI1').css('display', 'block');
+                $('#tab_ratingtables_HI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_HI1').siblings().not('ul').css('display', 'none');
+                //长期护理险
+            } else if (tabTitle == '#tab_ratingtables_LTC') {
+                $('#tab_ratingtables_LTC1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_LTC1').css('display', 'block');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').css('display', 'none');
+            }
+        })
+    })
+</script>

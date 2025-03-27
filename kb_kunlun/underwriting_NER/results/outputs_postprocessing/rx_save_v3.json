@@ -1,0 +1,3096 @@
+{
+    "0": {
+        "description": "双侧乳腺腺体内部结构稍紊乱，回声欠均匀,CDFI:腺体内未见异常血流信号+双侧乳腺增生,符合BI-RADS[2]类",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "1",
+                "patient_id": "1001",
+                "exam_date": "2024-12-17",
+                "layer_structure": "双侧乳腺腺体内部结构稍紊乱",
+                "gland_arrangement": "回声欠均匀",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "腺体内未见异常血流信号"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "1": {
+        "description": "双侧乳腺腺体结构轻度紊乱、回声欠均匀。右侧乳腺约9点钟位置腺体内可见3.6x1.5mm囊性回声，形态规整。左侧乳腺约2-3点钟位置乳头旁腺体内可见9.3x4.0mm低回声区+右侧乳腺囊性结节（BI--RADS2类）；左侧乳腺低回声区（考虑腺病、建议复查）",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "2": {
+        "description": "双侧乳腺腺体组织强弱相间，回声不均乳，导管不扩张，左乳腺9点方向见一7.5mm*4.3mm稍低回声结节，边界清，CDFI未见明显血流信号，双侧腋窝探及，淋巴结回声，左侧约9.1mm*4.9mm，右侧约7.8mm*3.4mm，CDFI，未探及异常血流+左乳腺结节BI-RADS3类；右侧乳腺未见明显占位病变；双侧腋窝淋巴结",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "3": {
+        "description": "双乳腺层次结构清晰,腺体排列尚可,左侧乳晕下导管无扩张。左侧乳腺可见多个低回声结节节，较大者位于11约点钟位置距乳头约2.5cm处腺体层内，大小约0.4×0.2cm，界清，形态规则，周边及内部未见明显血流信号。右侧乳腺可见数支导管局限性增宽，较宽处内径约0.23cm，内透声可。双侧腋下探查：未见明显异常肿大淋巴结回声。双侧锁骨上探查：未见明显异常占位回声。CDFI：未见异常血流信号+左侧乳腺多发低回声结节--BIRADSIII类;右侧乳腺局部导管扩张",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "4": {
+        "description": "右乳见散在囊性回声结节，大者位于9点距乳头约2.1cm处，大小约0.4cmx0.3cmx0.2cm界清，形态规则，内透声尚可，内未探及血流信号；余双侧乳腺层次清晰,腺体不厚,结构紊乱，腺导管未见扩张，内未见明确异常血流信号。双侧腋下未见明显肿大淋巴结。+右乳囊性回声结节。BI-RADS分级2级;双乳结构不良声像图改变。",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "5": {
+        "description": "双侧乳腺腺体结构轻度紊乱、回声欠均匀。左侧乳腺约9-10点钟位置腺体内可见10.7x3.5mm囊性回声，形态规整。右侧乳腺约12-1点钟位置腺体内可见29.4x21.4mm低回声，形态不规整,内部回声不均匀。CDFI:其内可见条状血流信号+左侧乳腺囊性结节（BI--RADS2类)。右侧乳腺低回声包块（BI--RADS4a类",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "6": {
+        "description": "双侧乳房切面形态，轮廓正常体积增大，边界光滑完整，内部回声增强，乳腺内部结构紊乱，分布不均，呈粗大的光点光斑及高低不等的海绵状回声，于右侧乳腺相当于时钟10点处，可探及一低回声结节大小约0.6cm×0.3cm，边界光滑、清晰，形态规则，内部回声均匀，后方回声无衰减，CDFI显示双乳未见明显异常血流信号+双侧乳腺增生；右侧乳腺结节",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "7": {
+        "description": "双侧乳腺腺体形态正常，结构清晰,双乳可见多个低回声团块，左乳大的约1.5×0.7cm，右乳大的约1.6×0.9cm，境界清,有包膜，形态规则，内回声均质，CDFI检及点条状血流信号.双乳腋下引流区探查未见明显肿大淋巴结声像+双乳多发实质性肿块（BI-RADS3）",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "8": {
+        "description": "双乳腺腺体层稍厚，腺体结构紊乱，组织分布不均匀，未见乳导管局限性扩张，右乳2点方向可见大小约4.5×4.3×4.0mm低回声结节，边界欠清，表面可见钙化，CDFI未见明显血流信号双，腋下及锁骨下，未探及明显异常肿大淋巴结+右乳结节（BI-RADS3类）",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "9": {
+        "description": "双侧乳腺隆乳术后改变，隆乳区边界尚光整，内透声好。乳腺腺体不厚，结构正常，回声尚均匀，未见明显囊、实性占位性病变。CDFI:双侧乳腺未见明显异常血流信号。左侧腋窝可探及稍低回声区，大小约10.6mmx9.3mm，椭圆形，轮廓清晰，边界光滑，内部回声稍增强。CDFI:未见明显异常血流信号。右侧腋窝未见明显肿大淋巴结。双侧锁骨下未探及明显肿大淋巴结。+双乳腺隆乳术后,未见明显占位声像,左侧腋窝淋巴结可见,请定期复查",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "10": {
+        "description": "双乳皮肤和皮下脂肪层回声清楚，未见异常，双乳腺体层结构紊乱，回声呈强弱相间，分布不均匀，导管无扩张。右乳约9点钟方向距乳头3.3cm腺体层内低回声结节0.3x0.2cm，轮廓清晰，边界规整。左乳约8点钟方向距乳头3.2cm腺体层内低回声结节0.3x0.2cm，轮廓清晰，边界规整，5点钟方向距乳头1.1cm腺体层内低回声结节0.4x0.4x0.3cm，11点半方向距乳头4.4cm腺体层内低回声结节0.3x0.2cm，局部似与脂肪组织相连，形态不规则，略呈纵向生长，边界尚清。CDFI双乳腺无异常血流信号。双侧腋下未见明显异常肿大淋巴结+双乳低回声结节BI-RADS3类；左乳低回声结节BI-RADS4a类",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "11": {
+        "description": "双侧乳房切面形态轮廓正常，层次清楚，边界光滑完整，内部回声增强，结构紊乱，分布不均，局部腺体增厚，回声减低，右侧乳腺12点方向可见一个大小约7. 1X4.6mm的无回声结节，边界尚清，左侧乳腺可见几个大小不等，最大约8. 7X6mm (12点方向)的低回声结节，边界尚清。双侧腋窝扫查未见明显异常肿大淋巴结回声。+右侧乳腺内囊性结节,符合BI-RADS2类,左侧乳腺内低回声结节,符合BI-RADS3类",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "12": {
+        "description": "双侧乳腺组织厚度正常，内部回声均匀，乳腺导管未见扩张，双侧乳腺未见确切占位，双侧腋窝未见确切异常淋巴结+未见明显异常",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "13": {
+        "description": "双侧乳腺组织层次清楚,乳腺组织回声增强,光点增粗,排列紊乱,内见条索状低回声带,呈豹纹征双侧乳腺见多个低回声,边缘规则,内部回声均匀,左侧乳腺较大的7x4mm位于2点;右侧乳腺较大的8x6nm.位于10点。右侧乳腺8点处可见12x8mm无回声边界清,透声好。双侧腋下未见明显肿大淋巴结。CDFI双侧乳腺低回声周边及内、右侧乳腺无回声未见明显血流信号显示。+1、双侧乳腺低回声,BI-RADS3类建议定期复查。2、右侧乳腺无回声,BI-RADS2类。",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "14": {
+        "description": "两侧乳房形态饱满,层次清楚,腺体稍增厚,腺体内回声强弱相间,分布欠均匀。双侧乳腺导管扩张,最大内径分别约2.8mm(右侧)、3.2mm(左侧),管壁光滑,管腔内透声好,未见明显异常团状回声。右乳腺9点钟见一囊性暗区,大小约7×6mm,边清,透声尚可。CDFI显示暗区血供0级;双侧乳腺内见较丰富血流信号。双侧腋窝探查未见明显异常回声+哺乳期乳腺声像，右乳腺囊肿，乳腺BI-RADS分级(2类)",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "15": {
+        "description": "双侧乳腺对称,外形正常。右侧乳腺见1个类椭圆形低回声肿块,大小约5.7mm×3.3mm(10点钟左右方向距离乳头约35mm)边界清,稍欠规整,纵横比＜1,内回声分布尚均匀,未见点状强回声,后方回声增强。CDFII:肿块周边及内部未见明显彩流信号。左侧乳腺见数个类椭圆形囊性暗区其中一个大小约2.9mm×2.4mm(8点钟左右方向),囊壁薄,光滑,规整,可见侧壁声影,暗区内透声尚可,后方回声增强。CDFI暗区周边及内部未见明显彩流信号显示乳腺其余组织结构欠清晰,腺组织欠均质,呈细蜂窝状低回声。乳腺导管未见增宽+右侧乳腺实性局灶性病变(性质待定)未排增生结节或其它?(BI-RADS分类，4A类)，左侧乳腺囊性局灶性病变(BI-RADS分类2类)，建议6个月左右复查",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "16": {
+        "description": "双侧乳房切面形态轮廓正常,腺体层回声增强增粗,结构稍紊乱,双侧乳腺导管未见扩张。左侧乳腺腺体内探及一低回声结节,大小约5.8mmx2.7mm(1点距乳头1cm)边界尚清,尚规则,内回声欠均匀。CDFI低回声结节周边及内部未见明显异常血流信号CDFI乳腺腺体内未见明显异常彩色血流+双侧乳腺小叶增生，左侧乳腺低回声结节(增生结节)BI-RADS3级，BI-RADS0级影像学评估不完全,需要进一步评估(临床有体征,超声检查无征象者)1，级阴性发现(常规体检一年一次)2级良性发现(6个月到1年复查一次)3级可能良性发，现(恶性可能＜2%(建议定期内随访3-6个月复查)4级4a级低度可疑恶性(恶性可能，3%-8%)(3个月复查);4h级中度可疑恶性(恶性可能9%-49%(活检)4c级高度可疑恶性，(恶性可能50%-95%)(手术)5级典型恶性征象(恶性可能≥95%(几乎认定ca手术处，理)6级已行活检证实的恶性肿瘤",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "17": {
+        "description": "双侧乳腺结构层次清晰,乳腺导管增粗乳腺组织回声紊乱,见增粗的片索状回声减低区与稍高回声相间,未见肿块回声。右乳10点钟方向导管局限性扩张,前后径0.2cm双侧腋窝未见明显异常淋巴结回声CDFI未见明显异常血流信号。+双侧乳腺小叶增生(BI-RADS1类)，右乳导管局限性扩张",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "18": {
+        "description": "右侧乳腺切除术后;右侧胸壁皮下软组织未见明显异常的实性及囊性包块CDFI未见明显异常血流信 号。 左侧乳腺各组织结构清晰,腺组织较均质,呈细蜂窝状较强回声+右侧乳腺切除术后",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "19": {
+        "description": "双乳腺体层显示清晰，回声呈强弱相间,分布欠均匀,呈粗大点状及斑片状，左乳部分导管扩张,内径2.6mm,右乳见数个大小不等的无回声，其中最大一个位于7点钟方向乳头旁，大小约8.9mm×6.1mm,彩色多普勒检查未见明显血流信号：右乳11点钟方向距乳头5mm处见大小约5.5mm×3.0mm低回声，边界清楚,形态规则,彩色多普勒检查未见明显血流信号。左乳见数个低回声,其中一个位于11点钟方向距乳头30mm处，大小约5mm×3.3mm,边界滴楚,形态规则,彩色多普勒检查未见明显血流信号显示+双乳异常低回声,BI-RADS3类：。&amp;&amp;双乳增生图像,右乳多发性囊肿,左乳部分导管扩张。",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "20": {
+        "description": "双侧乳腺轻度增生。左侧乳腺低回声结节（大小约0.5cm×0.3cm，位于10点钟方向）+双侧乳腺轻度增生；左侧乳腺低回声结节",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "1",
+                "patient_id": "1001",
+                "exam_date": "2024-12-17",
+                "layer_structure": "层次结构清晰",
+                "gland_arrangement": "腺体排列尚可",
+                "axillary_findings": "双侧腋窝及锁骨下未见明显肿大的淋巴结回声",
+                "supraclavicular_findings": "双侧锁骨上未见明显异常占位回声",
+                "CDFI_findings": "未见明显血流信号"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "21": {
+        "description": "双侧乳房切面形态轮廓正常，腺体层结构紊乱回声不均呈条素状改变。右侧乳腺局部导管扩张。内径最觉处约2.9mm右乳12点方向探及大小约8x5mm囊性结节，包膜完整,运声好,其内可见分隔,CDFI:未见异常血流信号+2.双侧乳腺增生。3.右侧乳腺导管扩张;4.右侧乳腺囊肿。",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "22": {
+        "description": "左侧乳腺囊性结节（大小约0.4cm×0.2cm，位于2点钟方向,边界清晰,形态规则) 双侧乳腺轻度增生。 *科室小结左侧乳腺囊性结节。 双侧乳腺轻度增生+左侧乳腺囊性结节&&双侧乳腺轻度增生",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "23": {
+        "description": "左侧乳腺低回声结节（大小约0.9cm×0.6cm，位于2点钟方向,边界清晰,形态规则,内回声均匀;右侧乳腺低回声结节（大小约0.4cm×0.3cm,位于9点钟方向,边界清晰,形态规则,内回声均匀+双侧乳腺轻度增生;双侧乳腺低回声结节。",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "24": {
+        "description": "双侧乳腺层次清楚：双侧乳腺腺体不厚腺体回声杂乱：分布不均：双侧乳腺均见数个类似脂防样低回声区：右侧乳腺外下象限脂肪层见大小约5mmXm稍高回声区CDFI周边及其内未见明显血董+双侧乳腺腺体回声不均匀;右侧乳腺稍高回声区",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "25": {
+        "description": "双侧乳腺组织结构清晰，双侧乳腺导管未见扩张。右乳内上象限可见大小约0.64*0.55cm低回声结节,边界清,形态规则。CDFI:双侧乳腺未见明显异常彩色血流信号+右侧乳腺低回声结节(BI-RADS4类a)",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "26": {
+        "description": "双侧乳房对称,结构层次清楚乳腺组织无增厚内回声增强增粗不均匀乳腺管无明显扩张右侧乳腺12点位A区深层见-0.4×0.3cm低回声结节，界清。CDFI显示双侧乳腺组织未见明显异常血流信号+双侧乳腺增生右侧乳腺低回声结节（建议定期门诊复查）、双侧乳腺增生",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "27": {
+        "description": "双侧乳腺组织萎缩变薄，部分乳腺组织回声紊乱左侧乳腺外上象限可见边界清晰的低回声区，大小约4×3mm。双侧腋下未见明显肿大淋巴结。CDFI:血流未见明显异常+双乳腺老年性退化改变伴局部增生声像图；左侧乳腺结节待查",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "28": {
+        "description": "双乳腺扫查显示：双乳腺腺体不均匀性增厚，结构紊乱,条索状偏强回声与偏低回声 相兼。于双乳均可见多个囊性回声大者位于左侧，大小约1.0*0.8cm,内透声可。CDFI: (-)+双侧乳腺增生并双乳多发囊性回声（定期复查）",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "29": {
+        "description": "双侧乳腺扫查：。 双侧乳腺内部回声不均，呈豹纹征改变,右侧乳腺内约9点钟处见大小约0.74X0.29cm无回声 区,边界清,左侧乳腺内未见明显局限性异常回声。 双乳内未见异常血流信号+双侧乳腺呈增生样改变&&右侧乳腺囊性结节",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "30": {
+        "description": "腺体回声减低、欠均质，腺体层内见较多管状无回声，以乳头为中心呈放射状分布，较宽处约3.4mm，CDFI内未见明显彩色血流信号。+双乳腺体层内未见明显占位性病变（BI-RADS1类）",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "31": {
+        "description": "乳腺超声：双侧乳腺腺体层轻度增厚，内部结构稍紊乱,回声欠均匀,CDFI:腺体内未见异常血流信号。注：受内分泌及仪器等因素影响，结节的存在与否,大小,位置,血供分类情况均可能发生变化，部分乳管内小占位超声检查不到，如有不适,请进一步检查。+双侧乳腺轻度增生",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "32": {
+        "description": "乳腺超声：绝经期,双侧乳腺腺体层增厚，内部结构紊乱,回声不均,右乳头上方局部腺体回声减低。左侧乳腺腺体层内见低回声，大小约3mm×2mm（12点位），边界清,形态规则,未见血流。CDFI：内未见异常血流信号+双侧乳腺退化不全;左侧乳腺结节（BI-RADS3类）",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "33": {
+        "description": "双侧乳腺层次较清晰,结构排列较整齐,未见囊、实性占位病变。CDFI:双侧乳腺内未见异常血 流信号+双侧乳腺未见明显肿块,拟BI-RADS-US:1类。",
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "layer_structure": "NULL",
+                "gland_arrangement": "NULL",
+                "axillary_findings": "NULL",
+                "supraclavicular_findings": "NULL",
+                "CDFI_findings": "NULL"
+            },
+            "左侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "左侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "左侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺信息": {
+                "side": "NULL",
+                "duct_dilation": "NULL",
+                "duct_dilation_details": "NULL",
+                "blood_flow_present": "NULL",
+                "blood_flow_details": "NULL",
+                "nodules_present": "NULL",
+                "nodules_count": "NULL"
+            },
+            "右侧乳腺结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "右侧乳腺结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "distance_from_nipple_cm": "NULL",
+                "size_x_cm": "NULL",
+                "size_y_cm": "NULL",
+                "boundary": "NULL",
+                "shape": "NULL",
+                "blood_flow": "NULL",
+                "blood_flow_details": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    }
+}

@@ -1,0 +1,5609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前列腺肿瘤</title>
+    <style>
+        body {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+            *font-size: small;
+            *font: x-small;
+        }
+        
+        .ui-widget .ui-widget {
+            font-size: 1em;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .ui-widget-content {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+            color: #222;
+        }
+        
+        .uwm-topic-tabs,
+        .uwm-topic-subtabs {
+            border: 0;
+            padding: 0;
+            background: none;
+        }
+        
+        .ui-widget {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-right,
+        .ui-corner-br {
+            border-bottom-right-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-left,
+        .ui-corner-bl {
+            border-bottom-left-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-top,
+        .ui-corner-left,
+        .ui-corner-tl {
+            border-top-left-radius: 4px;
+        }
+        
+        .ui-widget {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1.1em;
+        }
+        
+        .ui-tabs {
+            position: relative;
+            padding: 0.2em;
+        }
+        
+        .ui-tabs .ui-tabs-nav {
+            margin: 0;
+            padding: 0.2em 0.2em 0;
+        }
+        
+        div.tabs ul {
+            list-style-type: none;
+        }
+        
+        ul.ui-tabs-nav {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .uwm-topic-tabs>ul,
+        .uwm-topic-subtabs>ul {
+            background: none;
+            border: 0;
+            padding: 0!important;
+        }
+        
+        .uwm-topic-subtabs ul {
+            list-style-type: circle!important;
+        }
+        
+        .ui-widget-header {
+            border: 1px solid #aaa;
+            background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+            color: #222;
+            font-weight: 700;
+        }
+        
+        .ui-helper-clearfix {
+            min-height: 0;
+        }
+        
+        .ui-helper-reset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            line-height: 1.3;
+            text-decoration: none;
+            font-size: 100%;
+            list-style: none;
+        }
+        
+        .ui-helper-clearfix:before,
+        .ui-helper-clearfix:after {
+            content: "";
+            display: table;
+            border-collapse: collapse;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .uwm-topic-subtabs li.ui-tabs-active {
+            background-color: #00315a !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-color: #d3d3d3 !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-image: none!important;
+            border: 0;
+            /* background-color: #555858; */
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .ui-tabs .ui-tabs-nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            /* border-bottom-width: 0; */
+            padding: 0;
+            white-space: nowrap;
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-active {
+            background-image: none;
+            background-color: #333133 !important;
+        }
+        
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #212121;
+        }
+        
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default {
+            border: 1px solid #d3d3d3;
+            background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #555;
+        }
+        
+        .ui-state-active {
+            background: #dadada url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+        }
+        
+        .tabs a.ui-tabs-anchor {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #fff;
+            text-decoration: none !important;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+        .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+        .ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+            cursor: text;
+        }
+        
+        .tabs li.ui-tabs-active a,
+        .tabs li.ui-state-default a:hover {
+            color: #fff !important;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #000 !important;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #fff;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a,
+        .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+            cursor: pointer;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #00315a !important;
+            text-decoration: none !important;
+        }
+        
+        .ui-state-active a,
+        .ui-state-active a:link,
+        .ui-state-active a:visited {
+            color: #212121;
+            text-decoration: none;
+        }
+        
+        .ui-state-default a,
+        .ui-state-default a:link,
+        .ui-state-default a:visited {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .ui-widget-header a {
+            color: #222;
+        }
+        
+        .ui-widget-content a {
+            color: #222;
+        }
+        
+        a {
+            color: #00315a;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        .ui-helper-clearfix:after {
+            clear: both;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            background-color: transparent!important;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            /* height: 565px; */
+            overflow-y: auto;
+            /* background-color: #333133 !important; */
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-panel {
+            border-width: 1px;
+            background-color: transparent!important;
+        }
+        
+        .ui-tabs .ui-tabs-panel {
+            display: block;
+            /* border-width: 0; */
+            padding: 1em 1.4em;
+            background: 0;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .table {
+            border: solid 1px #e6e6e6;
+            border-collapse: collapse;
+            margin-bottom: 0.8em;
+            margin-top: 10pt;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table {
+            font-size: inherit;
+            font: 100%;
+        }
+        
+        .table .clas {
+            min-width: 350px;
+            max-width: 350px;
+            width: 350px;
+        }
+        
+        .table th {
+            background-color: #00315a;
+        }
+        
+        .table th {
+            background-color: #5e5e5e;
+            color: #fff !important;
+            text-align: left;
+        }
+        
+        .table td,
+        .table th {
+            border: solid 1px #000;
+            font-weight: normal;
+            min-width: 100px;
+            max-width: 150px;
+            padding: 3px;
+        }
+        
+        .table .prod {
+            min-width: 100px;
+            max-width: 150px;
+            width: 100px;
+        }
+        
+        .active {
+            background-color: #00315a !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs uwm-topic-subtabs ui-tabs ui-widget ui-widget-content ui-corner-all" style="">
+      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab_ratingtables_Life" aria-labelledby="ui-id-15" aria-selected="true"><a data-key="Life" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_Life" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-15">
+          寿险
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_ADB" aria-labelledby="ui-id-16" aria-selected="false"><a data-key="ADB" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_ADB" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-16">
+          意外险种
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_CI" aria-labelledby="ui-id-17" aria-selected="false"><a data-key="CI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_CI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-17">
+          重疾和癌症
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_DI" aria-labelledby="ui-id-18" aria-selected="false"><a data-key="DI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_DI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-18">
+          失能收入
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" aria-selected="false"><a data-key="WPTPD" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_WPTPD" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-19">
+          豁免保费和永久完全性失能
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_HI" aria-labelledby="ui-id-20" aria-selected="false"><a data-key="HI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_HI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-20">
+          住院收入保障
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_LTC" aria-labelledby="ui-id-21" aria-selected="false"><a data-key="LTC" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_LTC" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-21">
+          长期护理险
+        </a></li>
+      </ul>
+      <div id="tab_ratingtables_Life" aria-labelledby="ui-id-15" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期：TNM分期 - 前列腺肿瘤。</div>
+            </li>
+            <li>
+              <div class="p">前列腺肿瘤的临床分期：临床分期 - 前列腺肿瘤 。</div>
+            </li>
+            <li>
+              <div class="p">评分：分类 - Gleason评分</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="Life">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="Life">
+      寿险
+    </th>
+            </tr>
+            <tr id="Life_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">良性前列腺增生症(BPH)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">已确诊，已排除前列腺癌或前列腺上皮内瘤的可能性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺癌、前列腺腺癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">T1-2N0M0，Ⅰ期或Ⅱ期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 2-4 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 55岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">55 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="Life_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">65 - 74岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="Life_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥75岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="Life_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 5 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 55岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">55 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="Life_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,11,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">65 - 74岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="Life_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,11,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥75岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="Life_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 6 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,16,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 55岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,16,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">55 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+150</div>
+              </td>
+            </tr>
+            <tr id="Life_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,16,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">65 - 74岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="Life_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥75岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="Life_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,5,4</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 7 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_22" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">22,5,4</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 8-10 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">通常拒保</div>
+              </td>
+            </tr>
+            <tr id="Life_23" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">23,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高于上述分期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">通常拒保</div>
+              </td>
+            </tr>
+            <tr id="Life_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">PSA测定值持续增高(分期可为T1-2N0M0， Ⅰ期或Ⅱ期)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_25">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺上皮内瘤变(PIN)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,25</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">低分级前列腺上皮内瘤变(LGPIN)，定期随诊或经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_27">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高分级前列腺上皮内瘤变（HGPIN）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_28" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">28,27,25</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_29" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">29,27,25</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="Life_30">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺特异性抗原 (PSA)增高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_31">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">未行活检；仅行PSA监测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,31,30</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊，PSA水平在可接受范围内</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_33">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_34">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">40 - 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_35" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">35,34,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤2.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,34,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 2.6-5.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="Life_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,34,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 5.1-10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="Life_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,34,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="Life_39">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_40" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">40,39,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤3.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_41" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">41,39,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 3.6-10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25 至 +50</div>
+              </td>
+            </tr>
+            <tr id="Life_42" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">42,39,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 10.1-20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50 至 +75</div>
+              </td>
+            </tr>
+            <tr id="Life_43" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">43,39,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="Life_44">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">60 - 69岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_45" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">45,44,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤4.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_46" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">46,44,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 4.6-20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="Life_47" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">47,44,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 20.1-30.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="Life_48" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">48,44,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;30.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="Life_49">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥70岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_50" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">50,49,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤6.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_51" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">51,49,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 6.6-20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0 至 +25</div>
+              </td>
+            </tr>
+            <tr id="Life_52" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">52,49,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 20.1-30.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25 至 +50</div>
+              </td>
+            </tr>
+            <tr id="Life_53" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">53,49,33,31,30</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;30.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="Life_54" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">54,33,31,30</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">PSA水平不断升高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">通常延期</div>
+              </td>
+            </tr>
+            <tr id="Life_55" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">55,31,30</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_56" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">56,30</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">行fPSA检测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_57">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">活检结果阴性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_58" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">58,57,30</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按上述“未行活检；仅行PSA监测”进行评点，但评点值减少为前述评点值的一半</div>
+              </td>
+            </tr>
+            <tr id="Life_59" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">59,57,30</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_ADB" aria-labelledby="ui-id-16" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期： TNM分期 - 前列腺肿瘤。</div>
+            </li>
+            <li>
+              <div class="p">前列腺肿瘤的临床分期： 临床分期 - 前列腺肿瘤 。</div>
+            </li>
+            <li>
+              <div class="p">评分：分类 - Gleason评分</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="ADB">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="ADB">
+      意外死亡
+    </th>
+              <th class="prod" data-product="ADD">
+      意外残疾
+    </th>
+            </tr>
+            <tr id="ADB_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">良性前列腺增生症(BPH)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">已确诊，已排除前列腺癌或前列腺上皮内瘤的可能性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺癌、前列腺腺癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">T1-2N0M0，Ⅰ期或Ⅱ期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 2-4 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 55岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥ 55岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_9">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 5 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,9,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 55岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,9,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">55 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="ADB_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,9,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥ 65岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 6 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,13,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 55岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,13,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">55 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="ADB_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,13,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">65 - 74岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="ADB_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,13,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥ 75岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,5,4</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 7 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="ADB_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,5,4</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 8-10 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="ADB_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高于上述分期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="ADB_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">PSA测定值持续增高(分期可为T1-2N0M0， Ⅰ期或Ⅱ期)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺上皮内瘤变(PIN)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_23" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">23,22</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">低分级前列腺上皮内瘤变(LGPIN)，定期随诊或经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_24">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高分级前列腺上皮内瘤变（HGPIN）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,24,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_26" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">26,24,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_27">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺特异性抗原 (PSA)增高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_28">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">未行活检；仅行PSA监测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_29" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">29,28,27</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊，PSA水平在可接受范围内</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_30">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_31">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">40 - 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,31,30,28,27</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤5.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,31,30,28,27</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 5.1-10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="ADB_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,31,30,28,27</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="ADB_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35,30,28,27</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35,30,28,27</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 10.1-20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="ADB_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35,30,28,27</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="ADB_39">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_40" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">40,39,30,28,27</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤30.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_41" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">41,39,30,28,27</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;30.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="ADB_42" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">42,30,28,27</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">PSA水平不断升高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">通常延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">通常延期</div>
+              </td>
+            </tr>
+            <tr id="ADB_43" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">43,28,27</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_44" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">44,27</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">行fPSA检测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_45">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">活检结果阴性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_46" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">46,45,27</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按上述“未行活检；仅行PSA监测”进行评点，但评点值减少为前述评点值的一半</div>
+              </td>
+              <td class="prod">
+                <div class="p">按上述“未行活检；仅行PSA监测”进行评点，但评点值减少为前述评点值的一半</div>
+              </td>
+            </tr>
+            <tr id="ADB_47" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">47,45,27</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_CI" aria-labelledby="ui-id-17" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期： TNM分期 - 前列腺肿瘤。</div>
+            </li>
+            <li>
+              <div class="p">前列腺肿瘤的临床分期： 临床分期 - 前列腺肿瘤 。</div>
+            </li>
+            <li>
+              <div class="p">评分：分类 - Gleason评分</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="CI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="CI">
+      重疾
+    </th>
+              <th class="prod" data-product="CAN">
+      癌症
+    </th>
+            </tr>
+            <tr id="CI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">良性前列腺增生症(BPH)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">已确诊，已排除前列腺癌或前列腺上皮内瘤的可能性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="CI_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到明确诊断，且排除恶性肿瘤后</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到明确诊断，且排除恶性肿瘤后</div>
+              </td>
+            </tr>
+            <tr id="CI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺癌、前列腺腺癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺上皮内瘤变(PIN)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,5</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">低分级前列腺上皮内瘤变(LGPIN)，定期随诊或经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">除外癌症责任</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则咨询首席核保师，通常至少需要除外前列腺癌及其转移责任</div>
+              </td>
+            </tr>
+            <tr id="CI_7">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高分级前列腺上皮内瘤变（HGPIN）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,7,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">除外癌症责任</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则咨询首席核保师，通常至少需要除外前列腺癌及其转移责任</div>
+              </td>
+            </tr>
+            <tr id="CI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,7,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺特异性抗原 (PSA)增高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">未行活检；仅行PSA监测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,10</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊，PSA水平在可接受范围内</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常+0</div>
+              </td>
+            </tr>
+            <tr id="CI_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_14">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">40 - 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,14,13,11,10</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">除外癌症责任</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则咨询首席核保师，通常至少需要除外前列腺癌及其转移责任</div>
+              </td>
+            </tr>
+            <tr id="CI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,14,13,11,10</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17,13,11,10</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">除外癌症责任</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则咨询首席核保师，通常至少需要除外前列腺癌及其转移责任</div>
+              </td>
+            </tr>
+            <tr id="CI_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,17,13,11,10</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,13,11,10</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">PSA水平不断升高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,11,10</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="CI_22" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">22,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">行fPSA检测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="CI_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">活检结果阴性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,10</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">除外癌症责任</div>
+              </td>
+              <td class="prod">
+                <div class="p">对于单纯癌症险种，则咨询首席核保师，通常至少需要除外前列腺癌及其转移责任</div>
+              </td>
+            </tr>
+            <tr id="CI_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,23,10</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_DI" aria-labelledby="ui-id-18" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期： TNM分期 - 前列腺肿瘤。</div>
+            </li>
+            <li>
+              <div class="p">前列腺肿瘤的临床分期： 临床分期 - 前列腺肿瘤 。</div>
+            </li>
+            <li>
+              <div class="p">评分：分类 - Gleason评分</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="DI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="D4">
+      失能收入保障-4周等待期
+    </th>
+              <th class="prod" data-product="D13">
+      失能收入保障-13周等待期
+    </th>
+            </tr>
+            <tr id="DI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">良性前列腺增生症(BPH)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">已确诊，已排除前列腺癌或前列腺上皮内瘤的可能性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="DI_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺癌、前列腺腺癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">T1-2N0M0，Ⅰ期或Ⅱ期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 2-4 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 50岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="DI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+75</div>
+              </td>
+            </tr>
+            <tr id="DI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥65岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+0</div>
+              </td>
+            </tr>
+            <tr id="DI_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 5 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 50岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期2年，2年后病情无恶化趋势，则+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期2年，2年后病情无恶化趋势，则+100</div>
+              </td>
+            </tr>
+            <tr id="DI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,10,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥65岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+50</div>
+              </td>
+            </tr>
+            <tr id="DI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,5,4</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason ≥6 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高于上述分期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">PSA测定值持续增高(分期可为T1-2N0M0， Ⅰ期或Ⅱ期)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺上皮内瘤变(PIN)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">低分级前列腺上皮内瘤变(LGPIN)，定期随诊或经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_19">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高分级前列腺上皮内瘤变（HGPIN）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,19,17</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="DI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,19,17</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺特异性抗原 (PSA)增高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">未行活检；仅行PSA监测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊，PSA水平在可接受范围内</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询寿险核保师，通常+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询寿险核保师，通常+0</div>
+              </td>
+            </tr>
+            <tr id="DI_25">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_26">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">40 - 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤2.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="DI_28" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">28,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 2.6-5.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="DI_29" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">29,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 5.1-10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="DI_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_31">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,31,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤3.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,31,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 3.6-10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="DI_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,31,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt; 10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="DI_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤4.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 4.6-20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="DI_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="DI_39" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">39,25,23,22</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">PSA水平不断升高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_40" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">40,23,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_41" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">41,22</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">行fPSA检测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="DI_42">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">活检结果阴性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_43" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">43,42,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按上述“未行活检；仅行PSA监测”进行评点，但评点值减少为前述评点值的一半</div>
+              </td>
+              <td class="prod">
+                <div class="p">按上述“未行活检；仅行PSA监测”进行评点，但评点值减少为前述评点值的一半</div>
+              </td>
+            </tr>
+            <tr id="DI_44" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">44,42,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期： TNM分期 - 前列腺肿瘤。</div>
+            </li>
+            <li>
+              <div class="p">前列腺肿瘤的临床分期： 临床分期 - 前列腺肿瘤 。</div>
+            </li>
+            <li>
+              <div class="p">评分：分类 - Gleason评分</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="WPTPD">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="WP">
+      豁免保费
+    </th>
+              <th class="prod" data-product="TPDOwn">
+      永久完全性失能-职业
+    </th>
+              <th class="prod" data-product="TPDActivity">
+      永久完全性失能-基本日常生活活动
+    </th>
+            </tr>
+            <tr id="WPTPD_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">良性前列腺增生症(BPH)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">已确诊，已排除前列腺癌或前列腺上皮内瘤的可能性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺癌、前列腺腺癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">T1-2N0M0，Ⅰ期或Ⅱ期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 2-4 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 50岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥65岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 5 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 50岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期2年，2年后病情无恶化趋势，则+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期2年，2年后病情无恶化趋势，则+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期2年，2年后病情无恶化趋势，则+50</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,10,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥65岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,5,4</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason ≥6 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高于上述分期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">PSA测定值持续增高(分期可为T1-2N0M0， Ⅰ期或Ⅱ期)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺上皮内瘤变(PIN)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">低分级前列腺上皮内瘤变(LGPIN)，定期随诊或经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_19">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高分级前列腺上皮内瘤变（HGPIN）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,19,17</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,19,17</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺特异性抗原 (PSA)增高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">未行活检；仅行PSA监测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊，PSA水平在可接受范围内</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师，通常+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师，通常+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_25">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_26">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">40 - 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤2.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_28" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">28,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 2.6-5.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_29" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">29,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 5.1-10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_31">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,31,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤3.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,31,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 3.6-10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,31,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt; 10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤4.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 4.6-20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_39" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">39,25,23,22</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">PSA水平不断升高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常延期</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_40" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">40,23,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_41" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">41,22</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">行fPSA检测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_42">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">活检结果阴性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_43" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">43,42,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按上述“未行活检；仅行PSA监测”进行评点，但评点值减少为前述评点值的一半</div>
+              </td>
+              <td class="prod">
+                <div class="p">按上述“未行活检；仅行PSA监测”进行评点，但评点值减少为前述评点值的一半</div>
+              </td>
+              <td class="prod">
+                <div class="p">按上述“未行活检；仅行PSA监测”进行评点，但评点值减少为前述评点值的一半</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_44" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">44,42,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_HI" aria-labelledby="ui-id-20" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期： TNM分期 - 前列腺肿瘤。</div>
+            </li>
+            <li>
+              <div class="p">前列腺肿瘤的临床分期： 临床分期 - 前列腺肿瘤 。</div>
+            </li>
+            <li>
+              <div class="p">评分：分类 - Gleason评分</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="HI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="HI">
+      住院收入保障
+    </th>
+            </tr>
+            <tr id="HI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">良性前列腺增生症(BPH)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">已确诊，已排除前列腺癌或前列腺上皮内瘤的可能性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="HI_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期到明确诊断，且排除恶性肿瘤后</div>
+              </td>
+            </tr>
+            <tr id="HI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺癌、前列腺腺癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺上皮内瘤变(PIN)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,5</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">低分级前列腺上皮内瘤变(LGPIN)，定期随诊或经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="HI_7">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高分级前列腺上皮内瘤变（HGPIN）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,7,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="HI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,7,5</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺特异性抗原 (PSA)增高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">未行活检；仅行PSA监测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,10</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊，PSA水平在可接受范围内</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常+0</div>
+              </td>
+            </tr>
+            <tr id="HI_13">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_14">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">40 - 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,14,13,11,10</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="HI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,14,13,11,10</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17,13,11,10</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="HI_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,17,13,11,10</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,13,11,10</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">PSA水平不断升高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,11,10</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_22" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">22,10</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">行fPSA检测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="HI_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">活检结果阴性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,10</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="HI_25" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">25,23,10</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_LTC" aria-labelledby="ui-id-21" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <div class="p">分期：</div>
+          <ul>
+            <li>
+              <div class="p">TNM分期： TNM分期 - 前列腺肿瘤。</div>
+            </li>
+            <li>
+              <div class="p">前列腺肿瘤的临床分期： 临床分期 - 前列腺肿瘤 。</div>
+            </li>
+            <li>
+              <div class="p">评分：分类 - Gleason评分</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="LTC">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="LTC">
+      长期护理险
+    </th>
+            </tr>
+            <tr id="LTC_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">良性前列腺增生症(BPH)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">已确诊，已排除前列腺癌或前列腺上皮内瘤的可能性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_3" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">3,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="LTC_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺癌、前列腺腺癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_5">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">T1-2N0M0，Ⅰ期或Ⅱ期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 2-4 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 50岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="LTC_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+25</div>
+              </td>
+            </tr>
+            <tr id="LTC_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,6,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥65岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason 5 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,10,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">&lt; 50岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,10,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 64岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期2年，2年后病情无恶化趋势，则+50</div>
+              </td>
+            </tr>
+            <tr id="LTC_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,10,5,4</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥65岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期1年，1年后病情无恶化趋势，则+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,5,4</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">Gleason ≥6 分</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高于上述分期</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,4</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">PSA测定值持续增高(分期可为T1-2N0M0， Ⅰ期或Ⅱ期)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺上皮内瘤变(PIN)</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">低分级前列腺上皮内瘤变(LGPIN)，定期随诊或经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_19">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">高分级前列腺上皮内瘤变（HGPIN）</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,19,17</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="LTC_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,19,17</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="LTC_22">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">前列腺特异性抗原 (PSA)增高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_23">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">未行活检；仅行PSA监测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_24" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">24,23,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊，PSA水平在可接受范围内</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_25">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_26">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">40 - 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_27" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">27,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤2.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_28" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">28,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 2.6-5.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="LTC_29" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">29,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 5.1-10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="LTC_30" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">30,26,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_31">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">50 - 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_32" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">32,31,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤3.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_33" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">33,31,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 3.6-10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_34" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">34,31,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt; 10.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="LTC_35">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">≥60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_36" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">36,35,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA≤4.5</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_37" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">37,35,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA 4.6-20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_38" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">38,35,25,23,22</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">PSA &gt;20.0</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="LTC_39" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">39,25,23,22</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">PSA水平不断升高</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；通常延期</div>
+              </td>
+            </tr>
+            <tr id="LTC_40" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">40,23,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_41" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">41,22</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">行fPSA检测</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="LTC_42">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">活检结果阴性</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_43" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">43,42,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">密切随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按上述“未行活检；仅行PSA监测”进行评点，但评点值减少为前述评点值的一半</div>
+              </td>
+            </tr>
+            <tr id="LTC_44" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">44,42,22</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">经过医生允许停止定期随诊</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function() {
+        // $("body").scrollTop(10); //控制滚动条下移10px
+        // if ($("body").scrollTop() > 0) {
+        //     alert("有滚动条");
+        // } else {
+        //     alert("没有滚动条");
+        // }
+        //寿险
+        $('#tab_ratingtables_Life').attr('id', 'tab_ratingtables_Life1');
+        //意外险种
+        $('#tab_ratingtables_ADB').attr('id', 'tab_ratingtables_ADB1');
+        //重疾
+        $('#tab_ratingtables_CI').attr('id', 'tab_ratingtables_CI1');
+        //失能收入
+        $('#tab_ratingtables_DI').attr('id', 'tab_ratingtables_DI1');
+        //豁免
+        $('#tab_ratingtables_WPTPD').attr('id', 'tab_ratingtables_WPTPD1');
+        //住院
+        $('#tab_ratingtables_HI').attr('id', 'tab_ratingtables_HI1');
+        //长期护理险
+        $('#tab_ratingtables_LTC').attr('id', 'tab_ratingtables_LTC1');
+        console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+        console.log($("body").scrollTop(), 'idaofijofwio');
+        // $("body").scrollTop(0); //滚动条返回顶部
+        $('.ui-tabs-nav li').click(function() {
+            $(this).addClass('active');
+            $(this).children('a').css({
+                'color': '#fff'
+            })
+            console.log($("body").scrollTop(), 'idaofijofwio1');
+            $('.ui-tabs-panel').scrollTop('-20px');
+            console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+            // console.log('tab栏切换');
+            var tabTitle = $(this).children('a').attr('href');
+            console.log(tabTitle, 'a标签的href属性');
+            $(this).addClass('ui-state-active').removeClass('ui-state-default');
+            $(this).siblings().removeClass('ui-state-active').addClass('ui-state-default');
+            //意外险种
+            if (tabTitle == '#tab_ratingtables_ADB') {
+                console.log('1111');
+                $('#tab_ratingtables_ADB1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_ADB1').css('display', 'block');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').css('display', 'none');
+                //重疾
+            } else if (tabTitle == '#tab_ratingtables_CI') {
+                $('#tab_ratingtables_CI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_CI1').css('display', 'block');
+                $('#tab_ratingtables_CI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_CI1').siblings().not('ul').css('display', 'none');
+                //寿险
+            } else if (tabTitle == '#tab_ratingtables_Life') {
+                $('#tab_ratingtables_Life1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_Life1').css('display', 'block');
+                $('#tab_ratingtables_Life1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_Life1').siblings().not('ul').css('display', 'none');
+                //失能收入
+            } else if (tabTitle == '#tab_ratingtables_DI') {
+                $('#tab_ratingtables_DI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_DI1').css('display', 'block');
+                $('#tab_ratingtables_DI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_DI1').siblings().not('ul').css('display', 'none');
+                //豁免
+            } else if (tabTitle == '#tab_ratingtables_WPTPD') {
+                $('#tab_ratingtables_WPTPD1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_WPTPD1').css('display', 'block');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').css('display', 'none');
+                //住院
+            } else if (tabTitle == '#tab_ratingtables_HI') {
+                $('#tab_ratingtables_HI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_HI1').css('display', 'block');
+                $('#tab_ratingtables_HI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_HI1').siblings().not('ul').css('display', 'none');
+                //长期护理险
+            } else if (tabTitle == '#tab_ratingtables_LTC') {
+                $('#tab_ratingtables_LTC1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_LTC1').css('display', 'block');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').css('display', 'none');
+            }
+        })
+    })
+</script>

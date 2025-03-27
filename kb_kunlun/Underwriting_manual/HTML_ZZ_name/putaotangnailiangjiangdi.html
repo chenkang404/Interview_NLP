@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>葡萄糖耐量降低</title>
+    <style>
+        body {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+            *font-size: small;
+            *font: x-small;
+        }
+        
+        .ui-widget .ui-widget {
+            font-size: 1em;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .ui-widget-content {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+            color: #222;
+        }
+        
+        .uwm-topic-tabs,
+        .uwm-topic-subtabs {
+            border: 0;
+            padding: 0;
+            background: none;
+        }
+        
+        .ui-widget {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-right,
+        .ui-corner-br {
+            border-bottom-right-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-left,
+        .ui-corner-bl {
+            border-bottom-left-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-top,
+        .ui-corner-left,
+        .ui-corner-tl {
+            border-top-left-radius: 4px;
+        }
+        
+        .ui-widget {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1.1em;
+        }
+        
+        .ui-tabs {
+            position: relative;
+            padding: 0.2em;
+        }
+        
+        .ui-tabs .ui-tabs-nav {
+            margin: 0;
+            padding: 0.2em 0.2em 0;
+        }
+        
+        div.tabs ul {
+            list-style-type: none;
+        }
+        
+        ul.ui-tabs-nav {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .uwm-topic-tabs>ul,
+        .uwm-topic-subtabs>ul {
+            background: none;
+            border: 0;
+            padding: 0!important;
+        }
+        
+        .uwm-topic-subtabs ul {
+            list-style-type: circle!important;
+        }
+        
+        .ui-widget-header {
+            border: 1px solid #aaa;
+            background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+            color: #222;
+            font-weight: 700;
+        }
+        
+        .ui-helper-clearfix {
+            min-height: 0;
+        }
+        
+        .ui-helper-reset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            line-height: 1.3;
+            text-decoration: none;
+            font-size: 100%;
+            list-style: none;
+        }
+        
+        .ui-helper-clearfix:before,
+        .ui-helper-clearfix:after {
+            content: "";
+            display: table;
+            border-collapse: collapse;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .uwm-topic-subtabs li.ui-tabs-active {
+            background-color: #00315a !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-color: #d3d3d3 !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-image: none!important;
+            border: 0;
+            /* background-color: #555858; */
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .ui-tabs .ui-tabs-nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            /* border-bottom-width: 0; */
+            padding: 0;
+            white-space: nowrap;
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-active {
+            background-image: none;
+            background-color: #333133 !important;
+        }
+        
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #212121;
+        }
+        
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default {
+            border: 1px solid #d3d3d3;
+            background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #555;
+        }
+        
+        .ui-state-active {
+            background: #dadada url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+        }
+        
+        .tabs a.ui-tabs-anchor {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #fff;
+            text-decoration: none !important;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+        .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+        .ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+            cursor: text;
+        }
+        
+        .tabs li.ui-tabs-active a,
+        .tabs li.ui-state-default a:hover {
+            color: #fff !important;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #000 !important;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #fff;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a,
+        .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+            cursor: pointer;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #00315a !important;
+            text-decoration: none !important;
+        }
+        
+        .ui-state-active a,
+        .ui-state-active a:link,
+        .ui-state-active a:visited {
+            color: #212121;
+            text-decoration: none;
+        }
+        
+        .ui-state-default a,
+        .ui-state-default a:link,
+        .ui-state-default a:visited {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .ui-widget-header a {
+            color: #222;
+        }
+        
+        .ui-widget-content a {
+            color: #222;
+        }
+        
+        a {
+            color: #00315a;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        .ui-helper-clearfix:after {
+            clear: both;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            background-color: transparent!important;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            /* height: 565px; */
+            overflow-y: auto;
+            /* background-color: #333133 !important; */
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-panel {
+            border-width: 1px;
+            background-color: transparent!important;
+        }
+        
+        .ui-tabs .ui-tabs-panel {
+            display: block;
+            /* border-width: 0; */
+            padding: 1em 1.4em;
+            background: 0;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .table {
+            border: solid 1px #e6e6e6;
+            border-collapse: collapse;
+            margin-bottom: 0.8em;
+            margin-top: 10pt;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table {
+            font-size: inherit;
+            font: 100%;
+        }
+        
+        .table .clas {
+            min-width: 350px;
+            max-width: 350px;
+            width: 350px;
+        }
+        
+        .table th {
+            background-color: #00315a;
+        }
+        
+        .table th {
+            background-color: #5e5e5e;
+            color: #fff !important;
+            text-align: left;
+        }
+        
+        .table td,
+        .table th {
+            border: solid 1px #000;
+            font-weight: normal;
+            min-width: 100px;
+            max-width: 150px;
+            padding: 3px;
+        }
+        
+        .table .prod {
+            min-width: 100px;
+            max-width: 150px;
+            width: 100px;
+        }
+        
+        .active {
+            background-color: #00315a !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs uwm-topic-subtabs ui-tabs ui-widget ui-widget-content ui-corner-all" style="">
+      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab_ratingtables_Life" aria-labelledby="ui-id-15" aria-selected="true"><a data-key="Life" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_Life" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-15">
+          寿险
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_ADB" aria-labelledby="ui-id-16" aria-selected="false"><a data-key="ADB" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_ADB" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-16">
+          意外险种
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_CI" aria-labelledby="ui-id-17" aria-selected="false"><a data-key="CI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_CI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-17">
+          重疾和癌症
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_DI" aria-labelledby="ui-id-18" aria-selected="false"><a data-key="DI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_DI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-18">
+          失能收入
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" aria-selected="false"><a data-key="WPTPD" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_WPTPD" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-19">
+          豁免保费和永久完全性失能
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_HI" aria-labelledby="ui-id-20" aria-selected="false"><a data-key="HI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_HI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-20">
+          住院收入保障
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_LTC" aria-labelledby="ui-id-21" aria-selected="false"><a data-key="LTC" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_LTC" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-21">
+          长期护理险
+        </a></li>
+      </ul>
+      <div id="tab_ratingtables_Life" aria-labelledby="ui-id-15" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="Life">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="Life">
+      寿险
+    </th>
+            </tr>
+            <tr id="Life_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">葡萄糖耐量降低</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白异常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="f8f5a83b-84b0-ae09-ac1e-c68832ecdb0f">2型糖尿病</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 19岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">20 - 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="Life_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="Life_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="Life_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 50岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_9">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白值不详</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,9,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 19岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="Life_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,9,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">20 - 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="Life_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,9,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="Life_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,9,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="Life_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,9,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="Life_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">存在其他心血管风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_ADB" aria-labelledby="ui-id-16" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="ADB">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="ADB">
+      意外死亡
+    </th>
+              <th class="prod" data-product="ADD">
+      意外残疾
+    </th>
+            </tr>
+            <tr id="ADB_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">葡萄糖耐量降低</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白异常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="45085bc7-a10b-1b51-02ea-a3fc0d77d58b">2型糖尿病</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="70cad019-3560-02ce-0f40-1105f138f81a">2型糖尿病</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白值正常或者不详</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 19岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">20 - 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25至+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25至+50</div>
+              </td>
+            </tr>
+            <tr id="ADB_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 50岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">存在其他心血管风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_CI" aria-labelledby="ui-id-17" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="CI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="CI">
+      重疾
+    </th>
+              <th class="prod" data-product="CAN">
+      癌症
+    </th>
+            </tr>
+            <tr id="CI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">葡萄糖耐量降低</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白异常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="4ea84354-3f23-4b0b-0502-371c34f7235e">2型糖尿病</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="2a7f7cbb-d3ff-9dad-2b18-fce43302750d">2型糖尿病</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">单纯癌症险种，则+25至+0</div>
+              </td>
+            </tr>
+            <tr id="CI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100至+125</div>
+              </td>
+              <td class="prod">
+                <div class="p">单纯癌症险种，则+25至+0</div>
+              </td>
+            </tr>
+            <tr id="CI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50至+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">单纯癌症险种，则+25至+0</div>
+              </td>
+            </tr>
+            <tr id="CI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25至+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">单纯癌症险种，则+25至+0</div>
+              </td>
+            </tr>
+            <tr id="CI_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白值不详</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">单纯癌症险种，则咨询首席核保师，或+50至+25</div>
+              </td>
+            </tr>
+            <tr id="CI_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+125至+150</div>
+              </td>
+              <td class="prod">
+                <div class="p">单纯癌症险种，则咨询首席核保师，或+50至+25</div>
+              </td>
+            </tr>
+            <tr id="CI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75至+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">单纯癌症险种，则咨询首席核保师，或+25至+0</div>
+              </td>
+            </tr>
+            <tr id="CI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25至+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">单纯癌症险种，则咨询首席核保师，或+25至+0</div>
+              </td>
+            </tr>
+            <tr id="CI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">存在其他心血管风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_DI" aria-labelledby="ui-id-18" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="DI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="D4">
+      失能收入保障-4周等待期
+    </th>
+              <th class="prod" data-product="D13">
+      失能收入保障-13周等待期
+    </th>
+            </tr>
+            <tr id="DI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">葡萄糖耐量降低</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白异常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="35a06bac-de8e-b16a-75d7-22480c65a55d">2型糖尿病</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="62538df7-aaa7-28fc-e06c-71759bafe7f0">2型糖尿病</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+125</div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="DI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="DI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="DI_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白值不详</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">+125</div>
+              </td>
+            </tr>
+            <tr id="DI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="DI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="DI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">存在其他心血管风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="WPTPD">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="WP">
+      豁免保费
+    </th>
+              <th class="prod" data-product="TPDOwn">
+      永久完全性失能-职业
+    </th>
+              <th class="prod" data-product="TPDActivity">
+      永久完全性失能-基本日常生活活动
+    </th>
+            </tr>
+            <tr id="WPTPD_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">葡萄糖耐量降低</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白异常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="b7038c95-5f60-68ca-8765-e7e0d60d0dec">2型糖尿病</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="26d07dad-f0d2-862e-cffd-6fc9aa7373e5">2型糖尿病</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="9d17c052-cd2d-a394-3276-3fcd82432c60">2型糖尿病</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白值不详</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+125</div>
+              </td>
+              <td class="prod">
+                <div class="p">+125</div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">存在其他心血管风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_HI" aria-labelledby="ui-id-20" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="HI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="HI">
+      住院收入保障
+    </th>
+            </tr>
+            <tr id="HI_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">葡萄糖耐量降低</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白异常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="36ee99c5-e8b7-770a-8c74-0bfb42f1b909">2型糖尿病</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+125</div>
+              </td>
+            </tr>
+            <tr id="HI_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+75</div>
+              </td>
+            </tr>
+            <tr id="HI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="HI_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白值不详</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="HI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+25</div>
+              </td>
+            </tr>
+            <tr id="HI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">存在其他心血管风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_LTC" aria-labelledby="ui-id-21" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="LTC">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="LTC">
+      长期护理险
+    </th>
+            </tr>
+            <tr id="LTC_1">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">葡萄糖耐量降低</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2,1</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白异常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="E11" id="e10cec0f-e6aa-9e82-9d84-ca37eda84dc0">2型糖尿病</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白正常</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+150</div>
+              </td>
+            </tr>
+            <tr id="LTC_6" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">6,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+100</div>
+              </td>
+            </tr>
+            <tr id="LTC_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,3,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="LTC_8">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">糖化血红蛋白值不详</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≤ 39岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">40 – 49岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">50 – 59岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+125</div>
+              </td>
+            </tr>
+            <tr id="LTC_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,8,1</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">≥ 60岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+50</div>
+              </td>
+            </tr>
+            <tr id="LTC_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">存在其他心血管风险因素</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">累加按各个风险因素进行的评点值</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function() {
+        // $("body").scrollTop(10); //控制滚动条下移10px
+        // if ($("body").scrollTop() > 0) {
+        //     alert("有滚动条");
+        // } else {
+        //     alert("没有滚动条");
+        // }
+        //寿险
+        $('#tab_ratingtables_Life').attr('id', 'tab_ratingtables_Life1');
+        //意外险种
+        $('#tab_ratingtables_ADB').attr('id', 'tab_ratingtables_ADB1');
+        //重疾
+        $('#tab_ratingtables_CI').attr('id', 'tab_ratingtables_CI1');
+        //失能收入
+        $('#tab_ratingtables_DI').attr('id', 'tab_ratingtables_DI1');
+        //豁免
+        $('#tab_ratingtables_WPTPD').attr('id', 'tab_ratingtables_WPTPD1');
+        //住院
+        $('#tab_ratingtables_HI').attr('id', 'tab_ratingtables_HI1');
+        //长期护理险
+        $('#tab_ratingtables_LTC').attr('id', 'tab_ratingtables_LTC1');
+        console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+        console.log($("body").scrollTop(), 'idaofijofwio');
+        // $("body").scrollTop(0); //滚动条返回顶部
+        $('.ui-tabs-nav li').click(function() {
+            $(this).addClass('active');
+            $(this).children('a').css({
+                'color': '#fff'
+            })
+            console.log($("body").scrollTop(), 'idaofijofwio1');
+            $('.ui-tabs-panel').scrollTop('-20px');
+            console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+            // console.log('tab栏切换');
+            var tabTitle = $(this).children('a').attr('href');
+            console.log(tabTitle, 'a标签的href属性');
+            $(this).addClass('ui-state-active').removeClass('ui-state-default');
+            $(this).siblings().removeClass('ui-state-active').addClass('ui-state-default');
+            //意外险种
+            if (tabTitle == '#tab_ratingtables_ADB') {
+                console.log('1111');
+                $('#tab_ratingtables_ADB1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_ADB1').css('display', 'block');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').css('display', 'none');
+                //重疾
+            } else if (tabTitle == '#tab_ratingtables_CI') {
+                $('#tab_ratingtables_CI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_CI1').css('display', 'block');
+                $('#tab_ratingtables_CI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_CI1').siblings().not('ul').css('display', 'none');
+                //寿险
+            } else if (tabTitle == '#tab_ratingtables_Life') {
+                $('#tab_ratingtables_Life1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_Life1').css('display', 'block');
+                $('#tab_ratingtables_Life1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_Life1').siblings().not('ul').css('display', 'none');
+                //失能收入
+            } else if (tabTitle == '#tab_ratingtables_DI') {
+                $('#tab_ratingtables_DI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_DI1').css('display', 'block');
+                $('#tab_ratingtables_DI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_DI1').siblings().not('ul').css('display', 'none');
+                //豁免
+            } else if (tabTitle == '#tab_ratingtables_WPTPD') {
+                $('#tab_ratingtables_WPTPD1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_WPTPD1').css('display', 'block');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').css('display', 'none');
+                //住院
+            } else if (tabTitle == '#tab_ratingtables_HI') {
+                $('#tab_ratingtables_HI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_HI1').css('display', 'block');
+                $('#tab_ratingtables_HI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_HI1').siblings().not('ul').css('display', 'none');
+                //长期护理险
+            } else if (tabTitle == '#tab_ratingtables_LTC') {
+                $('#tab_ratingtables_LTC1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_LTC1').css('display', 'block');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').css('display', 'none');
+            }
+        })
+    })
+</script>

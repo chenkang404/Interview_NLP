@@ -1,0 +1,580 @@
+{
+  "Life": [
+    {
+      "label": "病程小于6个月",
+      "value": "延期",
+      "children": []
+    },
+    {
+      "label": "病程为6个月－1年",
+      "value": "",
+      "children": [
+        {
+          "label": "<15岁",
+          "value": "延期",
+          "children": []
+        },
+        {
+        "label": "15-19岁",
+        "value": "",
+        "children": [
+          {
+            "label": "HbA1c < 7%",
+            "value": "+200",
+            "children": []
+          },
+          {
+            "label": "HbA1c ≥ 7%",
+            "value": "拒保",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "20-39岁",
+        "value": "",
+        "children": [
+          {
+            "label": "HbA1c < 7%",
+            "value": "+150",
+            "children": []
+          },
+          {
+            "label": "HbA1c 7.1-8%",
+            "value": "+200",
+            "children": []
+          },
+          {
+            "label": "HbA1c 8.1-10%",
+            "value": "+250",
+            "children": []
+          },
+          {
+            "label": "HbA1c > 10%",
+            "value": "拒保",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "40-49岁",
+        "value": "",
+        "children": [
+          {
+            "label": "HbA1c < 7%",
+            "value": "+100",
+            "children": []
+          },
+          {
+            "label": "HbA1c 7.1-8%",
+            "value": "+125",
+            "children": []
+          },
+          {
+            "label": "HbA1c 8.1-10%",
+            "value": "+150",
+            "children": []
+          },
+          {
+            "label": "HbA1c > 10%",
+            "value": "拒保",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "≥50岁",
+        "value": "",
+        "children": [
+          {
+            "label": "HbA1c < 7%",
+            "value": "+75",
+            "children": []
+          },
+          {
+            "label": "HbA1c 7.1-8%",
+            "value": "+100",
+            "children": []
+          },
+          {
+            "label": "HbA1c 8.1-10%",
+            "value": "+125",
+            "children": []
+          },
+          {
+            "label": "HbA1c > 10%",
+            "value": "拒保",
+            "children": []
+          }
+        ]
+      }
+      ]
+    },
+    {
+      "label": "病程为1年－15年",
+      "value": "",
+      "children": [
+        {
+          "label": "<15岁",
+          "value": "延期",
+          "children": []
+        },
+        {
+          "label": "15-19岁",
+          "value": "",
+          "children": [
+            {
+              "label": "HbA1c < 7%",
+              "value": "+200",
+              "children": []
+            },
+            {
+              "label": "HbA1c 7.1-8%",
+              "value": "+250",
+              "children": []
+            },
+            {
+              "label": "HbA1c 8.1-10%",
+              "value": "延期",
+              "children": []
+            },
+            {
+              "label": "HbA1c >10%",
+              "value": "拒保",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "20-39岁",
+          "value": "",
+          "children": [
+            {
+              "label": "HbA1c < 7%",
+              "value": "+150",
+              "children": []
+            },
+            {
+              "label": "HbA1c 7.1-8%",
+              "value": "+175",
+              "children": []
+            },
+            {
+              "label": "HbA1c 8.1-10%",
+              "value": "+200",
+              "children": []
+            },
+            {
+              "label": "HbA1c > 10%",
+              "value": "拒保",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "40-49岁",
+          "value": "",
+          "children": [
+            {
+              "label": "HbA1c < 7%",
+              "value": "+125",
+              "children": []
+            },
+            {
+              "label": "HbA1c 7.1-8%",
+              "value": "+150",
+              "children": []
+            },
+            {
+              "label": "HbA1c 8.1-10%",
+              "value": "+200",
+              "children": []
+            },
+            {
+              "label": "HbA1c > 10%",
+              "value": "拒保",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "≥50岁",
+          "value": "",
+          "children": [
+            {
+              "label": "HbA1c < 7%",
+              "value": "+100",
+              "children": []
+            },
+            {
+              "label": "HbA1c 7.1-8%",
+              "value": "+125",
+              "children": []
+            },
+            {
+              "label": "HbA1c 8.1-10%",
+              "value": "+150",
+              "children": []
+            },
+            {
+              "label": "HbA1c > 10%",
+              "value": "拒保",
+              "children": []
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "label": "病程>15年",
+      "value": "",
+      "children": [    
+        {
+        "label": "15-19岁",
+        "value": "",
+        "children": [
+          {
+            "label": "HbA1c < 7%",
+            "value": "+300",
+            "children": []
+          },
+          {
+            "label": "HbA1c 7.1-8%",
+            "value": "+350",
+            "children": []
+          },
+          {
+            "label": "HbA1c 8.1-10%",
+            "value": "拒保",
+            "children": []
+          },
+          {
+            "label": "HbA1c > 10%",
+            "value": "拒保",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "20-39岁",
+        "value": "",
+        "children": [
+          {
+            "label": "HbA1c < 7%",
+            "value": "+200",
+            "children": []
+          },
+          {
+            "label": "HbA1c 7.1-8%",
+            "value": "+250",
+            "children": []
+          },
+          {
+            "label": "HbA1c 8.1-10%",
+            "value": "延期",
+            "children": []
+          },
+          {
+            "label": "HbA1c > 10%",
+            "value": "拒保",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "40-49岁",
+        "value": "",
+        "children": [
+          {
+            "label": "HbA1c < 7%",
+            "value": "+150",
+            "children": []
+          },
+          {
+            "label": "HbA1c 7.1-8%",
+            "value": "+175",
+            "children": []
+          },
+          {
+            "label": "HbA1c 8.1-10%",
+            "value": "+250",
+            "children": []
+          },
+          {
+            "label": "HbA1c > 10%",
+            "value": "拒保",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "≥50岁",
+        "value": "",
+        "children": [
+          {
+            "label": "HbA1c < 7%",
+            "value": "+125",
+            "children": []
+          },
+          {
+            "label": "HbA1c 7.1-8%",
+            "value": "+150",
+            "children": []
+          },
+          {
+            "label": "HbA1c 8.1-10%",
+            "value": "+175",
+            "children": []
+          },
+          {
+            "label": "HbA1c > 10%",
+            "value": "拒保",
+            "children": []
+          }
+        ]
+      }]
+    },
+    {
+      "label": "存在并发症和/或其他风险因素",
+      "value": "",
+      "children": [
+        {
+          "label": "高血压",
+          "value": "",
+          "children": [
+            {
+              "label": "血压评点值",
+              "value": "",
+              "children": [
+                {
+                  "label": "如果血压评点小于+100，则同<<高血压>>评点",
+                  "value": "累加按<<高血压>>进行评点",
+                  "children": []
+                },
+                {
+                  "label": "如果血压评点≥+100，则同<<高血压>>评点",
+                  "value": "咨询首席核保师；通常拒保",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "存在心脑血管疾病（如冠心病，脑血管病，周围血管疾病）",
+          "value": "拒保",
+          "children": []
+        },
+        {
+          "label": "昏迷病史",
+          "value": "",
+          "children": [
+            {
+              "label": "在诊断糖尿病前，发生的糖尿病昏迷病史",
+              "value": "+0",
+              "children": []
+            },
+            {
+              "label": "否则",
+              "value": "",
+              "children": [
+                {
+                  "label": "昏迷发生时间距今小于1年",
+                  "value": "延期",
+                  "children": []
+                },
+                {
+                  "label": "1 至 2 年",
+                  "value": "再累加+25",
+                  "children": []
+                },
+                {
+                  "label": "> 2年",
+                  "value": "+0",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "家族史",
+          "value": "",
+          "children": [
+            {
+              "label": "罹患糖尿病的亲属中，同时存在心血管疾病或者肾脏疾病病史",
+              "value": "+0",
+              "children": []
+            },
+            {
+              "label": "其他不利的家族史",
+              "value": "累加评点：具体见家族史的评点",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "高血脂",
+          "value": "累加按高胆固醇血症、高甘油三酯血症进行的相应评点",
+          "children": []
+        },
+        {
+          "label": "存在糖尿病肾病，或者存在肾功能受损的证据",
+          "value": "咨询首席核保师；通常拒保",
+          "children": []
+        },
+        {
+          "label": "存在糖尿病神经病变",
+          "value": "咨询首席核保师；累加至少+50",
+          "children": []
+        },
+        {
+          "label": "存在糖尿病视网膜病变",
+          "value": "",
+          "children": [
+            {
+              "label": "背景性视网膜病变：仅存在少量的微血管瘤",
+              "value": "",
+              "children": [
+                {
+                  "label": "诊断距今时间未超过10年",
+                  "value": "+50",
+                  "children": []
+                },
+                {
+                  "label": "否则",
+                  "value": "+0",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "背景性视网膜病变：存在更广泛的微血管瘤，并出现硬性渗出",
+              "value": "",
+              "children": [
+                {
+                  "label": "诊断距今时间未超过10年",
+                  "value": "+100",
+                  "children": []
+                },
+                {
+                  "label": "否则",
+                  "value": "+50",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "背景性视网膜病变：存在血管异常、出血斑、小梗死、 静脉呈串珠状改变，出现棉絮状软性渗出",
+              "value": "咨询首席核保师",
+              "children": []
+            },
+            {
+              "label": "增殖性视网膜病变：新生血管形成",
+              "value": "咨询首席核保师；通常拒保",
+              "children": []
+            }
+          ]
+        },
+        
+        {
+          "label": "吸烟",
+          "value": "",
+          "children": [
+            {
+              "label": "吸烟< 20支/日（或同等量的雪茄或烟草）",
+              "value": "累加 +25至+50",
+              "children": []
+            },
+            {
+              "label": "吸烟 20-30支/日（或同等量的雪茄或烟草）",
+              "value": "累加 +75至+100",
+              "children": []
+            },
+            {
+              "label": "吸烟>30支/日（或同等量的雪茄或烟草）",
+              "value": "拒保",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "出现尿糖：参见分类－葡萄糖尿",
+          "value": "",
+          "children": [
+            {
+              "label": "重度葡萄糖尿 (++++ ) 出现时间未超过6个月",
+              "value": "延期",
+              "children": []
+            },
+            {
+              "label": "有时出现葡萄糖尿+++/++++",
+              "value": "按血糖控制差进行评点；控制程度参见糖尿病控制程度－HbA1c",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "出现尿酮体（丙酮尿）",
+          "value": "",
+          "children": [
+            {
+              "label": "未超过6个月",
+              "value": "延期",
+              "children": []
+            },
+            {
+              "label": "超过6个月",
+              "value": "按血糖控制水平进行评点（控制水平参考其他因素）",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "出现尿蛋白：参见分类－蛋白尿",
+          "value": "",
+          "children": [
+            {
+              "label": "微量 (<30 mg/dl)",
+              "value": "",
+              "children": [
+                {
+                  "label": "<35岁",
+                  "value": "+100",
+                  "children": []
+                },
+                {
+                  "label": "≥35岁",
+                  "value": "+50",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "轻度 (+) /30-100 mg/dl",
+              "value": "",
+              "children": [
+                {
+                  "label": "<35岁",
+                  "value": "咨询首席核保师",
+                  "children": []
+                },
+                {
+                  "label": "≥35岁",
+                  "value": "+100",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "大于轻度(++/+++/++++  或 >100 mg/dl）",
+              "value": "拒保",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }  
+  ]
+}

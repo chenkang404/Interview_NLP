@@ -1,0 +1,3140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼻咽部肿瘤</title>
+    <style>
+        body {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+            *font-size: small;
+            *font: x-small;
+        }
+        
+        .ui-widget .ui-widget {
+            font-size: 1em;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .ui-widget-content {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+            color: #222;
+        }
+        
+        .uwm-topic-tabs,
+        .uwm-topic-subtabs {
+            border: 0;
+            padding: 0;
+            background: none;
+        }
+        
+        .ui-widget {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-right,
+        .ui-corner-br {
+            border-bottom-right-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-left,
+        .ui-corner-bl {
+            border-bottom-left-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-top,
+        .ui-corner-left,
+        .ui-corner-tl {
+            border-top-left-radius: 4px;
+        }
+        
+        .ui-widget {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1.1em;
+        }
+        
+        .ui-tabs {
+            position: relative;
+            padding: 0.2em;
+        }
+        
+        .ui-tabs .ui-tabs-nav {
+            margin: 0;
+            padding: 0.2em 0.2em 0;
+        }
+        
+        div.tabs ul {
+            list-style-type: none;
+        }
+        
+        ul.ui-tabs-nav {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .uwm-topic-tabs>ul,
+        .uwm-topic-subtabs>ul {
+            background: none;
+            border: 0;
+            padding: 0!important;
+        }
+        
+        .uwm-topic-subtabs ul {
+            list-style-type: circle!important;
+        }
+        
+        .ui-widget-header {
+            border: 1px solid #aaa;
+            background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+            color: #222;
+            font-weight: 700;
+        }
+        
+        .ui-helper-clearfix {
+            min-height: 0;
+        }
+        
+        .ui-helper-reset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            line-height: 1.3;
+            text-decoration: none;
+            font-size: 100%;
+            list-style: none;
+        }
+        
+        .ui-helper-clearfix:before,
+        .ui-helper-clearfix:after {
+            content: "";
+            display: table;
+            border-collapse: collapse;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .uwm-topic-subtabs li.ui-tabs-active {
+            background-color: #00315a !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-color: #d3d3d3 !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-image: none!important;
+            border: 0;
+            /* background-color: #555858; */
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .ui-tabs .ui-tabs-nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            /* border-bottom-width: 0; */
+            padding: 0;
+            white-space: nowrap;
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-active {
+            background-image: none;
+            background-color: #333133 !important;
+        }
+        
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #212121;
+        }
+        
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default {
+            border: 1px solid #d3d3d3;
+            background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #555;
+        }
+        
+        .ui-state-active {
+            background: #dadada url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+        }
+        
+        .tabs a.ui-tabs-anchor {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #fff;
+            text-decoration: none !important;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+        .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+        .ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+            cursor: text;
+        }
+        
+        .tabs li.ui-tabs-active a,
+        .tabs li.ui-state-default a:hover {
+            color: #fff !important;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #000 !important;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #fff;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a,
+        .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+            cursor: pointer;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #00315a !important;
+            text-decoration: none !important;
+        }
+        
+        .ui-state-active a,
+        .ui-state-active a:link,
+        .ui-state-active a:visited {
+            color: #212121;
+            text-decoration: none;
+        }
+        
+        .ui-state-default a,
+        .ui-state-default a:link,
+        .ui-state-default a:visited {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .ui-widget-header a {
+            color: #222;
+        }
+        
+        .ui-widget-content a {
+            color: #222;
+        }
+        
+        a {
+            color: #00315a;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        .ui-helper-clearfix:after {
+            clear: both;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            background-color: transparent!important;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            /* height: 565px; */
+            overflow-y: auto;
+            /* background-color: #333133 !important; */
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-panel {
+            border-width: 1px;
+            background-color: transparent!important;
+        }
+        
+        .ui-tabs .ui-tabs-panel {
+            display: block;
+            /* border-width: 0; */
+            padding: 1em 1.4em;
+            background: 0;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .table {
+            border: solid 1px #e6e6e6;
+            border-collapse: collapse;
+            margin-bottom: 0.8em;
+            margin-top: 10pt;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table {
+            font-size: inherit;
+            font: 100%;
+        }
+        
+        .table .clas {
+            min-width: 350px;
+            max-width: 350px;
+            width: 350px;
+        }
+        
+        .table th {
+            background-color: #00315a;
+        }
+        
+        .table th {
+            background-color: #5e5e5e;
+            color: #fff !important;
+            text-align: left;
+        }
+        
+        .table td,
+        .table th {
+            border: solid 1px #000;
+            font-weight: normal;
+            min-width: 100px;
+            max-width: 150px;
+            padding: 3px;
+        }
+        
+        .table .prod {
+            min-width: 100px;
+            max-width: 150px;
+            width: 100px;
+        }
+        
+        .active {
+            background-color: #00315a !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs uwm-topic-subtabs ui-tabs ui-widget ui-widget-content ui-corner-all" style="">
+      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab_ratingtables_Life" aria-labelledby="ui-id-15" aria-selected="true"><a data-key="Life" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_Life" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-15">
+          寿险
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_ADB" aria-labelledby="ui-id-16" aria-selected="false"><a data-key="ADB" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_ADB" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-16">
+          意外险种
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_CI" aria-labelledby="ui-id-17" aria-selected="false"><a data-key="CI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_CI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-17">
+          重疾和癌症
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_DI" aria-labelledby="ui-id-18" aria-selected="false"><a data-key="DI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_DI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-18">
+          失能收入
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" aria-selected="false"><a data-key="WPTPD" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_WPTPD" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-19">
+          豁免保费和永久完全性失能
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_HI" aria-labelledby="ui-id-20" aria-selected="false"><a data-key="HI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_HI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-20">
+          住院收入保障
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_LTC" aria-labelledby="ui-id-21" aria-selected="false"><a data-key="LTC" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_LTC" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-21">
+          长期护理险
+        </a></li>
+      </ul>
+      <div id="tab_ratingtables_Life" aria-labelledby="ui-id-15" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="Life">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="Life">
+      寿险
+    </th>
+            </tr>
+            <tr id="Life_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽部血管纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0E5GAC" id="8d6c69c5-50ca-cac7-dff1-783668527a50">1类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="52950148-fc6c-92ea-2d71-06e4d2cde1f4">I期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,3,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="Life_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">≤45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0E5GAC" id="2244cfea-8fac-21b9-7f26-b360e460f952">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">&gt;45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0E5GAC" id="09e909a0-0e48-19ce-16eb-d5e9eac522cf">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,3,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="8cc4558f-e45f-4c39-b586-e044c06b9e9b">Ⅱ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="a6c79216-cd0e-6872-de62-d766d13e6ded">T1</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="Life_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0E5GAC" id="6f67a746-0b59-b7e1-b666-1fbcfe99da0b">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="85645778-c0de-d651-69ed-4e8463657cac">T2</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按Ⅲ期进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="1683d99d-0625-d7e2-2284-86932c6e41ff"> Ⅲ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="Life_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="Life_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="Life_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="0f7ff110-7af1-ed0f-e652-7bee1aef3283"> Ⅳ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="Life_22" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">22</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他鼻咽部恶性肿瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0E5GAC" id="3861a05a-aa66-6fa5-ca90-32e36c686d08">3类</a>进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_ADB" aria-labelledby="ui-id-16" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="ADB">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="ADB">
+      意外死亡
+    </th>
+              <th class="prod" data-product="ADD">
+      意外残疾
+    </th>
+            </tr>
+            <tr id="ADB_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽部血管纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EVKAC" id="56f60a53-c6d5-5e0e-1f66-ea1a34ae5842">1类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EVKAC" id="2eb15061-51ef-04c5-d140-f95c4b69e8d4">1类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="7ad7c959-a862-c555-a4ca-1189f3b80975">I期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,3,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="ADB_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">≤45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EVKAC" id="3c888e5b-9def-c992-a41d-f3c0b21be3a0">2类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EVKAC" id="6d34991d-80eb-1830-bfbd-ce5f22982565">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">&gt;45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EVKAC" id="bc6222ae-be5e-95f0-29ff-162a61423f05">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EVKAC" id="54f1c192-f4cd-0136-8a80-a713c83e456c">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,3,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="169bbd5f-2186-910b-4c2a-6b1bb4243af1">Ⅱ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="9e466e4e-9790-3823-7870-33382916ac77">T1</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="ADB_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EVKAC" id="a6c082fd-08f3-821b-532b-5dc8df76265d">2类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EVKAC" id="2d185eea-74a0-e28b-fef2-b0e4591fc621">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="d0de3b7f-0195-025e-acd9-918dd93a5146">T2</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按Ⅲ期进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按Ⅲ期进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="6e89836c-f7aa-bbb0-7e99-291fc69421b8"> Ⅲ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="ADB_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="ADB_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="ADB_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="987c4855-5a76-0783-9e1f-4623f241b8d2"> Ⅳ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="ADB_22" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">22</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他鼻咽部恶性肿瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EVKAC" id="dde9fb28-63f3-ed40-f67b-d1993bfeed62">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EVKAC" id="152fd16f-6744-3cf1-31a3-26b8ff9e1533">3类</a>进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_CI" aria-labelledby="ui-id-17" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="CI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="CI">
+      重疾
+    </th>
+              <th class="prod" data-product="CAN">
+      癌症
+    </th>
+            </tr>
+            <tr id="CI_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽部血管纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师，至少按<a href="#" data-type="classification" data-id="ID0EMOAC" id="a9c2b7ac-1391-cfbe-661d-23c5a7c303f8">1类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师，至少按<a href="#" data-type="classification" data-id="ID0EMOAC" id="985552e7-4a0f-b69d-566e-519b28018abb">1类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="493e48c2-2474-b1b1-2d9a-ebfa5acb9cf0">I期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,3,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="CI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">≤45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EMOAC" id="476d0a48-a680-ad2a-c1db-89a3f01571c4">2类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EMOAC" id="48b74542-5dc0-e673-3292-228252b4ba23">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">&gt;45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EMOAC" id="53645ffa-54eb-a393-878a-856196f3c393">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EMOAC" id="a96ddc89-f3b2-e8e0-0243-4dece799bdc8">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,3,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">通常拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">通常拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="5ce076a0-8850-5bd5-7d44-fa99421d0eb1">Ⅱ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="62d2d84b-6de5-112b-f3da-418d582926bb">T1</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="CI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EMOAC" id="f60d6a51-5e4d-cd9f-970f-b7381566c20c">2类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EMOAC" id="7354e2ed-03bd-e552-95f0-07346f80faca">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="5da99ff8-8992-bbf1-9a31-f6df3cde58cb">T2</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="1ddd4639-40c0-af3e-177b-85c8cfb867df"> Ⅲ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="8460ccf7-f2d2-97f2-ef9f-19f926b9a5a8"> Ⅳ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="CI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他鼻咽部恶性肿瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EMOAC" id="613ac644-e881-9a57-f6dc-5ccb78c05b9d">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EMOAC" id="68ca731a-b382-53e2-b7fb-9c378c89ff2e">3类</a>进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_DI" aria-labelledby="ui-id-18" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="DI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="D4">
+      失能收入保障-4周等待期
+    </th>
+              <th class="prod" data-product="D13">
+      失能收入保障-13周等待期
+    </th>
+            </tr>
+            <tr id="DI_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽部血管纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0E2BAE" id="2d720581-afc2-50d5-7677-6627aa90ed8c">1类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="13349bdd-60f1-c8f9-1461-d78e0b2b43af">I期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,3,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="DI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">≤45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0E2BAE" id="793ee3ea-5ab7-d3ed-0e5e-a28661efc112">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">&gt;45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0E2BAE" id="cd78e522-4674-a461-d245-7bd6afe4e828">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,3,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="DI_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="406df3a4-6a7f-ea1d-6a37-d5e32f30fb12">Ⅱ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="1bb4faf4-8723-5afe-fbd9-afc7473c913b">T1</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="DI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0E2BAE" id="67ef6fd2-daa3-d410-4180-b89cf0d08aeb">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="a392eeaf-835d-9155-1fb3-062f1b46975e">T2</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">按Ⅲ期进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="DI_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="ebf878c9-888c-20bd-6d0e-210dd977a35b"> Ⅲ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">- 无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="DI_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="DI_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="b4b95fa4-b839-1369-1b63-06f0c5391db1"> Ⅳ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="DI_22" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">22</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他鼻咽部恶性肿瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0E2BAE" id="9de6b538-3c71-6273-a132-dbd3a6a787d1">3类</a>进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="WPTPD">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="WP">
+      豁免保费
+    </th>
+              <th class="prod" data-product="TPDOwn">
+      永久完全性失能-职业
+    </th>
+              <th class="prod" data-product="TPDActivity">
+      永久完全性失能-基本日常生活活动
+    </th>
+            </tr>
+            <tr id="WPTPD_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽部血管纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="02d3df93-468a-7b88-5286-9ddbdb5f1585">1类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="dfadefc5-6f05-830f-273a-267e242c46e1">1类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EJJAE" id="965a3748-1f56-e1db-0063-dd676f889ca2">1类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="297665ab-f36e-6a7a-c9bd-b8d3f62b1025">I期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,3,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">≤45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="d22200ba-1dea-8d7b-da83-5def50d516de">2类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="8445a2b3-33bb-2b9d-97ea-4229f6767768">2类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EJJAE" id="910bf590-cc18-69e9-bc7c-c4cb876e256c">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">&gt;45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="700ba9e8-5211-ecda-aa6c-70e44bc726da">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="f9995ee0-b0ed-2680-0894-96b16c5e386a">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EJJAE" id="e6730878-5d95-5daf-a9ab-43ea04b7e74d">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,3,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="6f357c06-d96e-d42d-ecbb-8c4253a80d56">Ⅱ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="794cf87d-1d6f-309a-0bde-63fa6c711361">T1</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="56ec0ce1-3204-390a-913c-cff66ed3fa5a">2类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="893293ad-8376-b404-6735-29be7bc02c20">2类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EJJAE" id="a5306ac4-7da5-2e66-9776-779a3a1e6d57">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="0b37a396-ad33-1016-7941-3bc32c8c8279">T2</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按Ⅲ期进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按Ⅲ期进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按Ⅲ期进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="9c064a34-06c3-9cca-11e5-cbad56109f3e"> Ⅲ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">- 无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="0d32df14-4afa-590e-08cb-9fa4a6204f8e"> Ⅳ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_22" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">22</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他鼻咽部恶性肿瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="7cbdf14f-8b69-a11a-e654-3e0b7bebdf51">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0ESFAE" id="d2c2c4ad-2dd2-eda5-22c3-5ebd81184d6e">3类</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EJJAE" id="672000fd-17fe-1d01-22fb-def51a3ad983">3类</a>进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_HI" aria-labelledby="ui-id-20" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="HI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="HI">
+      住院收入保障
+    </th>
+            </tr>
+            <tr id="HI_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽部血管纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EANAE" id="14b3de66-2134-b861-2c9f-e110648b6b93">1类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="fd765da5-9359-87f2-b05a-8b729c245dfb">I期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,3,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="HI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">≤45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EANAE" id="ce492771-ca08-4d38-9ddb-686b7c7bae75">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">&gt;45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EANAE" id="5dfbfd8c-f1ed-07ce-87a5-891f2c929dc7">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,3,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="HI_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="d714b1e6-8c66-07ee-1cd7-c389b2b1f1b1">Ⅱ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="6022c23e-f02e-c51e-cb63-f9269d14dbae">T1</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="HI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EANAE" id="64d9ba03-4eb7-fb89-14ed-cd023ba8ac48">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="61eb72bf-5a66-2f13-ef23-5cbce3ed7457">T2</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按Ⅲ期进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="HI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="3112f592-b0dd-fe74-ff0b-943541230ac0"> Ⅲ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="74c0d856-ed16-db9c-783c-b75de31164d5"> Ⅳ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="HI_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他鼻咽部恶性肿瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EANAE" id="6078163e-a2f5-cda2-3a67-310988d90a12">3类</a>进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_LTC" aria-labelledby="ui-id-21" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <div class="p">所有评点基于以下假设：</div>
+          <ul>
+            <li>
+              <div class="p">治疗预示着潜在的治愈，如已彻底切除病灶，未遗留已累及的淋巴结或转移灶；</div>
+            </li>
+            <li>
+              <div class="p">确认无复发；</div>
+            </li>
+            <li>
+              <div class="p">肿瘤标记物水平已恢复正常，并保持稳定；</div>
+            </li>
+            <li>
+              <div class="p">可以获得病理结果、肿瘤分期、治疗和定期随诊的详细情况；</div>
+            </li>
+            <li>
+              <div class="p">否则，咨询首席核保师或直接拒保。</div>
+            </li>
+          </ul>
+          <table border="0" cellpadding="0" class="table" id="LTC">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="LTC">
+      长期护理险
+    </th>
+            </tr>
+            <tr id="LTC_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽部血管纤维瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EXQAE" id="763de01e-a602-aa17-6923-839e028e0365">1类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_2">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">鼻咽癌</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="de507bd7-940b-d5d0-4849-9ea0dca2d0a3">I期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_4">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,4,3,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="LTC_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过1年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">≤45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXQAE" id="78df43f6-86c9-3c97-dfec-600b340baa8d">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,4,3,2</div>
+                <div style="
+
+                padding-left:80pt
+
+              ">
+                  <div class="p">&gt;45岁</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXQAE" id="8fadf590-ce9b-d8e4-b9c7-164a39f00009">3类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_9" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">9,3,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="LTC_10">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="6cb9a6ca-8836-1eed-ee33-970ca19df121">Ⅱ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_11">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="d5c8e9b0-fd4c-fc65-2351-0d401c8cc1d8">T1</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_12" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">12,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="LTC_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,11,10,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过3年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="classification" data-id="ID0EXQAE" id="399cd251-54c3-f670-aa3f-4c422a261632">2类</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ECH" id="ac12fb74-1a6a-7392-b503-29a9499dc805">T2</a>；仅采用放射治疗；目前无贫血；血清白蛋白和LDH正常；无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按Ⅲ期进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_15" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">15,10,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="LTC_16">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="41e69402-6917-a17e-1669-bdb5e270e1d3"> Ⅲ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_17">
+              <td class="clas">
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">- 无复发</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_18" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">18,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今未超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">延期</div>
+              </td>
+            </tr>
+            <tr id="LTC_19" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">19,17,16,2</div>
+                <div style="
+
+                padding-left:60pt
+
+              ">
+                  <div class="p">治疗结束时间距今已超过5年</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师</div>
+              </td>
+            </tr>
+            <tr id="LTC_20" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">20,16,2</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">其他情况</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_21" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">21,2</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p"><a href="#" data-type="classification" data-id="ID0ESAAC" id="a25995a7-66ce-f63b-62be-37a5873c826d"> Ⅳ期</a></div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">拒保</div>
+              </td>
+            </tr>
+            <tr id="LTC_22" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">22</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">其他鼻咽部恶性肿瘤</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">咨询首席核保师；至少按<a href="#" data-type="classification" data-id="ID0EXQAE" id="d9040cc2-9f47-e775-c187-437f55c92077">3类</a>进行评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function() {
+        // $("body").scrollTop(10); //控制滚动条下移10px
+        // if ($("body").scrollTop() > 0) {
+        //     alert("有滚动条");
+        // } else {
+        //     alert("没有滚动条");
+        // }
+        //寿险
+        $('#tab_ratingtables_Life').attr('id', 'tab_ratingtables_Life1');
+        //意外险种
+        $('#tab_ratingtables_ADB').attr('id', 'tab_ratingtables_ADB1');
+        //重疾
+        $('#tab_ratingtables_CI').attr('id', 'tab_ratingtables_CI1');
+        //失能收入
+        $('#tab_ratingtables_DI').attr('id', 'tab_ratingtables_DI1');
+        //豁免
+        $('#tab_ratingtables_WPTPD').attr('id', 'tab_ratingtables_WPTPD1');
+        //住院
+        $('#tab_ratingtables_HI').attr('id', 'tab_ratingtables_HI1');
+        //长期护理险
+        $('#tab_ratingtables_LTC').attr('id', 'tab_ratingtables_LTC1');
+        console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+        console.log($("body").scrollTop(), 'idaofijofwio');
+        // $("body").scrollTop(0); //滚动条返回顶部
+        $('.ui-tabs-nav li').click(function() {
+            $(this).addClass('active');
+            $(this).children('a').css({
+                'color': '#fff'
+            })
+            console.log($("body").scrollTop(), 'idaofijofwio1');
+            $('.ui-tabs-panel').scrollTop('-20px');
+            console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+            // console.log('tab栏切换');
+            var tabTitle = $(this).children('a').attr('href');
+            console.log(tabTitle, 'a标签的href属性');
+            $(this).addClass('ui-state-active').removeClass('ui-state-default');
+            $(this).siblings().removeClass('ui-state-active').addClass('ui-state-default');
+            //意外险种
+            if (tabTitle == '#tab_ratingtables_ADB') {
+                console.log('1111');
+                $('#tab_ratingtables_ADB1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_ADB1').css('display', 'block');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').css('display', 'none');
+                //重疾
+            } else if (tabTitle == '#tab_ratingtables_CI') {
+                $('#tab_ratingtables_CI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_CI1').css('display', 'block');
+                $('#tab_ratingtables_CI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_CI1').siblings().not('ul').css('display', 'none');
+                //寿险
+            } else if (tabTitle == '#tab_ratingtables_Life') {
+                $('#tab_ratingtables_Life1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_Life1').css('display', 'block');
+                $('#tab_ratingtables_Life1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_Life1').siblings().not('ul').css('display', 'none');
+                //失能收入
+            } else if (tabTitle == '#tab_ratingtables_DI') {
+                $('#tab_ratingtables_DI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_DI1').css('display', 'block');
+                $('#tab_ratingtables_DI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_DI1').siblings().not('ul').css('display', 'none');
+                //豁免
+            } else if (tabTitle == '#tab_ratingtables_WPTPD') {
+                $('#tab_ratingtables_WPTPD1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_WPTPD1').css('display', 'block');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').css('display', 'none');
+                //住院
+            } else if (tabTitle == '#tab_ratingtables_HI') {
+                $('#tab_ratingtables_HI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_HI1').css('display', 'block');
+                $('#tab_ratingtables_HI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_HI1').siblings().not('ul').css('display', 'none');
+                //长期护理险
+            } else if (tabTitle == '#tab_ratingtables_LTC') {
+                $('#tab_ratingtables_LTC1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_LTC1').css('display', 'block');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').css('display', 'none');
+            }
+        })
+    })
+</script>

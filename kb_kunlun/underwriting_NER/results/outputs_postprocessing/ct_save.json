@@ -1,0 +1,340 @@
+{
+    "0": {
+        "description": "胸廓对称，气管纵隔居中，两肺纹理粗乱，模糊，透光度增强，双肺内散在微小斑点结节影，ima17层右肺中叶小于0.7c结节、边界不清、模糊、双肺内散在数个大小不等、肺大泡、双肺下叶不规则索条、斑片模糊影、肺门影略增大，结构紊乱，纵隔内结构显示不清晰，胸膜无增厚。+胸廓对称，气管纵隔居中，两肺纹理粗乱，模糊，透光度增强，双肺内散在微小斑点结节影，ima17层右肺中叶小于0.7c结节、边界不清、模糊、双肺内散在数个大小不等、肺大泡、双肺下叶不规则索条、斑片模糊影、肺门影略增大，结构紊乱，纵隔内结构显示不清晰，胸膜无增厚。+考虑双肺炎症改变、右肺结节影、多发肺大泡、支气管炎，请结合临床以往病史，请与前片对比、建议定期复查、必要时进一步检査。",
+        "baichuan": {
+            "报告信息": {
+                "report_id": "1",
+                "patient_id": "1001",
+                "exam_date": "2024-12-17",
+                "exam_location": "肺部",
+                "肺部结构是否正常": "不正常"
+            },
+            "肺部结构信息": {
+                "layer_structure": "纵隔内结构显示不清晰",
+                "airway_description": "气管纵隔居中",
+                "mediastinal_findings": "纵隔内结构显示不清晰",
+                "cardiac_large_vessels": "NULL",
+                "pleural_and_cavity_findings": "胸膜无增厚"
+            },
+            "左侧肺部信息": {
+                "side": "左",
+                "nodules_present": "TRUE",
+                "nodules_count": "1"
+            },
+            "左侧肺部结节 1": {
+                "nodule_id": "1",
+                "location": "左肺上叶",
+                "size_long_axis_cm": "0.3-0.6",
+                "size_short_axis_cm": "NULL",
+                "density": "实性",
+                "shape": "线状",
+                "suspected_diagnosis": "肺大泡"
+            },
+            "左侧肺部结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "左侧肺部低密度区 1": {
+                "low_density_id": "1",
+                "location": "左肺上叶胸膜下",
+                "size_long_axis_cm": "4.4",
+                "size_width_axis_cm": "1.1",
+                "size_height_axis_cm": "3.5",
+                "shape": "囊状透光影",
+                "suspected_diagnosis": "肺大泡"
+            },
+            "右侧肺部信息": {
+                "side": "右",
+                "nodules_present": "TRUE",
+                "nodules_count": "3"
+            },
+            "右侧肺部结节 1": {
+                "nodule_id": "2",
+                "location": "右肺上叶前段",
+                "size_long_axis_cm": "0.3-0.6",
+                "size_short_axis_cm": "NULL",
+                "density": "实性",
+                "shape": "微小/小",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部结节 2": {
+                "nodule_id": "3",
+                "location": "左肺上叶舌段",
+                "size_long_axis_cm": "0.3-0.6",
+                "size_short_axis_cm": "NULL",
+                "density": "实性",
+                "shape": "微小/小",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部结节 3": {
+                "nodule_id": "4",
+                "location": "右肺下叶外基底段(im116/147)",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "实性",
+                "shape": "微小/小",
+                "suspected_diagnosis": "NULL"
+            },
+            "结论": {
+                "conclusion": "考虑双肺炎症改变、右肺结节影、多发肺大泡、支气管炎，请结合临床以往病史，请与前片对比、建议定期复查、必要时进一步检査。"
+            }
+        },
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "1",
+                "patient_id": "1001",
+                "exam_date": "2024-12-17",
+                "exam_location": "肺部",
+                "肺部结构是否正常": "不正常"
+            },
+            "肺部结构信息": {
+                "layer_structure": "两肺纹理粗乱，模糊，透光度增强",
+                "airway_description": "气管纵隔居中",
+                "mediastinal_findings": "纵隔内结构显示不清晰",
+                "cardiac_large_vessels": "肺门影略增大，结构紊乱",
+                "pleural_and_cavity_findings": "胸膜无增厚"
+            },
+            "左侧肺部信息": {
+                "side": "NULL",
+                "nodules_present": "TRUE",
+                "nodules_count": "数个"
+            },
+            "左侧肺部结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "左侧肺部结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "左侧肺部低密度区 1": {
+                "low_density_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_width_axis_cm": "NULL",
+                "size_height_axis_cm": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部信息": {
+                "side": "NULL",
+                "nodules_present": "TRUE",
+                "nodules_count": "1"
+            },
+            "右侧肺部结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    },
+    "1": {
+        "description": "两侧胸廓对称。肺窗示左肺上叶见小结节灶(sr4,img22)，直径约0.2cm，边界尚清:左肺上叶可见直径约0.9cm钙化结节影;余两肺野纹理清晰，未见明显异常密度影。两侧肺门不大。纵隔窗示心影及大血管形态正常纵隔内未见肿块及明显肿大淋巴结。无胸腔积液及胸膜增厚。+1、左肺上叶小结节，建议随访复查:2、左肺上叶钙化结节。",
+        "baichuan": {
+            "报告信息": {
+                "report_id": "NULL",
+                "patient_id": "NULL",
+                "exam_date": "NULL",
+                "exam_location": "肺部",
+                "肺部结构是否正常": "正常"
+            },
+            "肺部结构信息": {
+                "layer_structure": "纵隔结构清晰",
+                "airway_description": "气管正常",
+                "mediastinal_findings": "未见增大淋巴结",
+                "cardiac_large_vessels": "心脏及大血管未见异常",
+                "pleural_and_cavity_findings": "无胸腔积液及胸膜增厚"
+            },
+            "左侧肺部信息": {
+                "side": "左",
+                "nodules_present": "TRUE",
+                "nodules_count": "2"
+            },
+            "左侧肺部结节 1": {
+                "nodule_id": "1",
+                "location": "左肺上叶",
+                "size_long_axis_cm": "0.2",
+                "size_short_axis_cm": "NULL",
+                "density": "实性",
+                "shape": "微小/小",
+                "suspected_diagnosis": "NULL"
+            },
+            "左侧肺部结节 2": {
+                "nodule_id": "2",
+                "location": "左肺上叶",
+                "size_long_axis_cm": "0.9",
+                "size_short_axis_cm": "NULL",
+                "density": "钙化",
+                "shape": "结节影",
+                "suspected_diagnosis": "NULL"
+            },
+            "左侧肺部低密度区 1": {
+                "low_density_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_width_axis_cm": "NULL",
+                "size_height_axis_cm": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部信息": {
+                "side": "右",
+                "nodules_present": "FALSE",
+                "nodules_count": "0"
+            },
+            "右侧肺部结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "结论": {
+                "conclusion": "1、左肺上叶小结节，建议随访复查:2、左肺上叶钙化结节。"
+            }
+        },
+        "hunyuan": {
+            "报告信息": {
+                "report_id": "1",
+                "patient_id": "1001",
+                "exam_date": "2024-12-17",
+                "exam_location": "肺部",
+                "肺部结构是否正常": "正常"
+            },
+            "肺部结构信息": {
+                "layer_structure": "纵隔结构清晰",
+                "airway_description": "两侧肺门不大",
+                "mediastinal_findings": "纵隔内未见肿块及明显肿大淋巴结",
+                "cardiac_large_vessels": "心影及大血管形态正常",
+                "pleural_and_cavity_findings": "无胸腔积液及胸膜增厚"
+            },
+            "左侧肺部信息": {
+                "side": "左",
+                "nodules_present": "TRUE",
+                "nodules_count": "2"
+            },
+            "左侧肺部结节 1": {
+                "nodule_id": "NULL",
+                "location": "左肺上叶",
+                "size_long_axis_cm": "0.2",
+                "size_short_axis_cm": "NULL",
+                "density": "实性",
+                "shape": "小结节灶",
+                "suspected_diagnosis": "NULL"
+            },
+            "左侧肺部结节 2": {
+                "nodule_id": "NULL",
+                "location": "左肺上叶",
+                "size_long_axis_cm": "0.9",
+                "size_short_axis_cm": "NULL",
+                "density": "钙化",
+                "shape": "结节影",
+                "suspected_diagnosis": "NULL"
+            },
+            "左侧肺部低密度区 1": {
+                "low_density_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_width_axis_cm": "NULL",
+                "size_height_axis_cm": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部信息": {
+                "side": "右",
+                "nodules_present": "FALSE",
+                "nodules_count": "0"
+            },
+            "右侧肺部结节 1": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部结节 2": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "右侧肺部结节 3": {
+                "nodule_id": "NULL",
+                "location": "NULL",
+                "size_long_axis_cm": "NULL",
+                "size_short_axis_cm": "NULL",
+                "density": "NULL",
+                "shape": "NULL",
+                "suspected_diagnosis": "NULL"
+            },
+            "结论": {
+                "conclusion": "NULL"
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+# Gynecological_Attachments_Abdominal_BUS_Report_Extraction_Config.yaml
+
+attachments_information:
+  conclusion: "string"            # 结论
+  CDFI: "string"                  # CDFI相关信息（如适用）
+
+  space_occupying_lesions:        # 占位病变
+    - type: "string"               # 类型，例如：“肿瘤”、“结节”、“炎性病变”等
+      location: "string"           # 位置，例如：“子宫体部”、“卵巢左侧”等
+      synonym: "string"            # 别名，例如：“子宫肌瘤”、“良性结节”等
+      echo: "string"               # 回声强弱，例如：“低回声”、“等回声”、“高回声”
+      SOLSize: "float"             # 大小，单位：厘米
+      SOLSizeUnit: "string"        # 单位，通常为“cm”
+      feature: "string"            # 性状特征，例如：“边缘不规则”、“内部钙化”、“空洞形成”等
+      number: "integer"            # 数目
+      boundary: "string"           # 边界描述，例如：“清晰”、“模糊”、“不规则”等
+
+  organs:                          # 脏器
+    - organ: "string"              # 脏器名称，例如：“子宫”、“卵巢”等
+      OGSize: "float"              # 脏器大小，单位：厘米
+      OGSizeUnit: "string"         # 脏器大小单位，通常为“cm”
+      boundary: "string"           # 脏器边界描述，例如：“清晰”、“模糊”等
+
+  report_notes:                    # 报告附注（如适用）
+    - "string"                      # 例如："建议进行进一步的超声检查"
+    - "string"                      # 例如："推荐进行MRI扫描"
+
+  external_reports:                # 外部相关报告链接列表（如适用）
+    - "string"                      # 例如："http://example.com/external_report1"
+    - "string"                      # 例如："http://example.com/external_report2"
+
+  additional_documents:            # 其他补充文件链接列表（如适用）
+    - "string"                      # 例如："http://example.com/doc1"
+    - "string"                      # 例如："http://example.com/doc2"
+
+  image_links:                     # 影像图像链接列表
+    - "string"                      # 例如："http://example.com/image1"
+    - "string"                      # 例如："http://example.com/image2"
+
+  contrast_enhanced_images:        # 对比增强图像链接列表（如适用）
+    - "string"                      # 例如："http://example.com/ce_image1"
+    - "string"                      # 例如："http://example.com/ce_image2"
+
+  MPR_images:                      # 多平面重建图像链接列表（如适用）
+    - "string"                      # 例如："http://example.com/mpr_image1"
+    - "string"                      # 例如："http://example.com/mpr_image2"
+
+  reconstructed_3D_images:         # 三维重建图像链接列表（如适用）
+    - "string"                      # 例如："http://example.com/3d_image1"
+    - "string"                      # 例如："http://example.com/3d_image2"

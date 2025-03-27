@@ -1,0 +1,2221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>白血病</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 10px;
+            -webkit-tap-highlight-color: transparent;
+            -ms-overflow-style: scrollbar;
+        }
+        
+        body {
+            font-family: "Arial", Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333333;
+            background-color: #fff;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-y: scroll;
+        }
+        
+        table,
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+        
+        table {
+            background-color: transparent;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        .content-sub-tab-accordion-table {
+            border-bottom: solid 6px #000;
+            margin-bottom: 24px;
+        }
+        
+        table tr:last-child {
+            border-bottom: transparent;
+        }
+        
+        table>thead>tr>th,
+        table>thead>tr>td,
+        table>tbody>tr>th,
+        table>tbody>tr>td,
+        table>tfoot>tr>th,
+        table>tfoot>tr>td,
+        .table>thead>tr>th,
+        .table>thead>tr>td,
+        .table>tbody>tr>th,
+        .table>tbody>tr>td,
+        .table>tfoot>tr>th,
+        .table>tfoot>tr>td {
+            padding: 8px;
+            line-height: 1.5;
+            vertical-align: top;
+            border: 0;
+        }
+        
+        .accordion-content table td {
+            vertical-align: top;
+        }
+        
+        .no-bottom-border {
+            border-bottom: transparent;
+        }
+        
+        .no-padding {
+            padding: 0px !important;
+        }
+        
+        table>thead>tr>th,
+        table>thead>tr>td,
+        table>tbody>tr>th,
+        table>tbody>tr>td,
+        table>tfoot>tr>th,
+        table>tfoot>tr>td,
+        .table-condensed>thead>tr>th,
+        .table-condensed>thead>tr>td,
+        .table-condensed>tbody>tr>th,
+        .table-condensed>tbody>tr>td,
+        .table-condensed>tfoot>tr>th,
+        .table-condensed>tfoot>tr>td {
+            padding: 5px;
+        }
+        
+        table tr td,
+        table.rating-table tr td {
+            border-bottom: solid 1px #e1e3e3 !important;
+        }
+        
+        td,
+        th {
+            padding: 0;
+        }
+        
+        table.rating-table tr:first-child {
+            display: table-row;
+        }
+        
+        .table tr.table-stiky-header {
+            position: relative;
+            top: 0;
+            width: 100%;
+            z-index: 20;
+            text-align: center;
+        }
+        
+        .table tr.table-stiky-header {
+            position: relative;
+            top: 0;
+            width: 100%;
+            z-index: 20;
+            text-align: center;
+        }
+        
+        .table-heading.table-stiky-header {
+            display: none;
+        }
+        
+        table>caption+thead>tr:first-child>th,
+        table>caption+thead>tr:first-child>td,
+        table>colgroup+thead>tr:first-child>th,
+        table>colgroup+thead>tr:first-child>td,
+        table>thead:first-child>tr:first-child>th,
+        table>thead:first-child>tr:first-child>td,
+        .table>caption+thead>tr:first-child>th,
+        .table>caption+thead>tr:first-child>td,
+        .table>colgroup+thead>tr:first-child>th,
+        .table>colgroup+thead>tr:first-child>td,
+        .table>thead:first-child>tr:first-child>th,
+        .table>thead:first-child>tr:first-child>td {
+            border-top: 0;
+        }
+        
+        .table tr.table-stiky-header td {
+            height: 52px;
+            vertical-align: middle;
+        }
+        
+        table tr td,
+        table.rating-table tr td {
+            border-bottom: solid 1px #e1e3e3 !important;
+        }
+        
+        table td.twisty {
+            padding-left: 5px;
+            border-right: transparent;
+        }
+        
+        .HeaderLink {
+            background: #000;
+            color: #fff;
+        }
+        
+        .lgs_accordion_closed_w {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: solid 5px;
+            border-color: #fff transparent transparent transparent;
+            position: relative;
+            left: 2px;
+            top: 2px;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        img {
+            border: 0;
+        }
+        
+        .table tr.table-stiky-header .colorMark {
+            text-align: left;
+        }
+        
+        .content-styled a,
+        .featured-content a {
+            color: inherit;
+            text-decoration: underline;
+        }
+        
+        a {
+            transition: color 0.2s ease-in-out;
+            background-color: transparent;
+        }
+        
+        a,
+        button {
+            color: #555555;
+            text-decoration: none;
+            outline: 0 none !important;
+        }
+        
+        table tr[level="1"] .colorMark,
+        table .accordion-content[level="1"] .colorMark,
+        table .accordion-title[level="1"] {
+            color: #97a602;
+            font-weight: bold;
+        }
+        
+        .accordion-title[level="1"] {
+            color: #97a602;
+            font-weight: bold;
+        }
+        
+        .accordion-title:first-child {
+            border-top: none;
+        }
+        
+        .accordion-title {
+            cursor: pointer;
+            padding: 4px 24px;
+            position: relative;
+            color: #97a602;
+            font-weight: 600;
+        }
+        
+        table .accordion-title.open span.arrow,
+        table.accordion-title.open[level="2"] span.arrow {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: solid 5px;
+            border-color: #97a602 transparent transparent transparent;
+            position: relative;
+            left: 2px;
+            top: 3px;
+        }
+        
+        .accordion-title.open span.arrow {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: solid 6px;
+            border-color: transparent transparent #97a602 transparent;
+            position: absolute;
+            left: 0;
+        }
+        
+        .accordion-title.open span {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: solid 6px;
+            border-color: #97a602 transparent transparent transparent;
+            position: absolute;
+            left: 2px;
+            top: 50%;
+            margin-top: -3px;
+        }
+        
+        table .accordion-title.closed span.arrow,
+        table.accordion-title.closed[level="2"] span.arrow {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: solid 5px;
+            border-color: transparent transparent transparent #555555;
+            position: relative;
+            left: 5px;
+            top: 1px;
+        }
+        
+        .accordion-title.closed span.arrow {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: solid 6px;
+            border-color: #97a602 transparent transparent transparent;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        
+        .accordion-title.closed span {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: solid 6px;
+            border-color: transparent transparent transparent #555555;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -6px;
+        }
+        
+        .accordion-content {
+            padding-left: 24px;
+            margin-bottom: 10px;
+        }
+        
+        table .table,
+        .table .table {
+            background-color: #fff;
+        }
+        
+        table.rating-table {
+            position: relative;
+        }
+        
+        table,
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+        
+        table .addToCart {
+            cursor: pointer;
+            text-align: center;
+            border-left: solid 1px #e1e3e3 !important;
+            font-weight: normal;
+            color: #333333;
+        }
+        
+        @charset "UTF-8";
+        /** ---- space incruments ---- **/
+        /* base incrument */
+        /* 24px prime incrument used for spasing all around  */
+        /* 32px prime incrument used for spasing all around  */
+        /* 64px section incrument used for spacing between sections */
+        /* 96px full grid side spacing */
+        /* base paddings */
+        /* sticky footer hight */
+        /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+    </style>
+</head>
+
+<body>
+    <table class="table content-sub-tab-accordion-table globalUW" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody><tr valign="top" class="table-heading">
+<td width="100%" class="no-bottom-border no-padding">
+<table class="table table-hover rating-table table-stiky" border="0" width="100%" style="padding: 0px;">
+<thead class="tableFloatingHeaderOriginal">
+<tr valign="top" class="table-heading table-stiky-header">
+<td width="10" class="twisty HeaderLink" style="cursor: pointer;">
+<img src="https://media.guides.swissre.com/designimages/blank.gif" class="lgs_accordion_closed_w">
+</td>
+<td width="40%" class="colorMark" bgcolor="#000" colspan="1">
+
+<font color="#FFFFFF">
+<a name="Risk_classification"></a>风险分类
+</font>
+
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="寿险信息" href="/guide/rating_methods/life/131271779.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">寿险</span></a> </span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="意外身故保障责任信息" href="/guide/rating_methods/accidental_death_benefit/131253469.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">意外身故保障责任</span></a> </span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="重大疾病保障责任信息" href="/guide/rating_methods/critical_illness/131255234.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">重大疾病保障责任</span></a> </span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="完全及永久失能保障责任信息" href="/guide/rating_methods/total_and_permanent_disability//131272599.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">完全及永久失能保障责任</span></a> </span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="失能收入保障责任信息" href="/guide/rating_methods/disability_income/131255494.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">失能收入保障责任</span></a></span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="豁免保费保障责任信息" href="/guide/rating_methods/waiver_of_premium/131256229.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">豁免保费保障责任</span></a> </span>
+</font>
+</td>
+</tr>
+</thead><thead class="tableFloatingHeader" style="display: none; opacity: 0;">
+<tr valign="top" class="table-heading table-stiky-header">
+<td width="10" class="twisty HeaderLink" style="cursor: pointer;">
+<img src="https://media.guides.swissre.com/designimages/blank.gif" class="lgs_accordion_closed_w">
+</td>
+<td width="40%" class="colorMark" bgcolor="#000" colspan="1">
+
+<font color="#FFFFFF">
+<a name="Risk_classification"></a>风险分类
+</font>
+
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="寿险信息" href="/guide/rating_methods/life/131271779.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">寿险</span></a> </span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="意外身故保障责任信息" href="/guide/rating_methods/accidental_death_benefit/131253469.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">意外身故保障责任</span></a> </span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="重大疾病保障责任信息" href="/guide/rating_methods/critical_illness/131255234.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">重大疾病保障责任</span></a> </span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="完全及永久失能保障责任信息" href="/guide/rating_methods/total_and_permanent_disability//131272599.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">完全及永久失能保障责任</span></a> </span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="失能收入保障责任信息" href="/guide/rating_methods/disability_income/131255494.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">失能收入保障责任</span></a></span>
+</font>
+</td>
+<td width="10.0%" class="" bgcolor="#000" colspan="1">
+<font color="#FFFFFF">
+<span style="color: #ffffff;"><a title="豁免保费保障责任信息" href="/guide/rating_methods/waiver_of_premium/131256229.html?fromPage=401483535_&amp;language=Chinese&amp;userSelectedDate="><span style="color: #ffffff;">豁免保费保障责任</span></a> </span>
+</font>
+</td>
+</tr>
+</thead>
+<!--Row : 2 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 2 ||  srctaRowIsParent : -1 -->
+<tbody><tr level="1" parentlevel="0">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+<font>
+复发性癌症或多次原发性癌症病史
+</font>
+</td>
+<td width="10.0%" class="addToCart table3_row2_col_2" colspan="1">
+咨询医疗官
+</td>
+<td width="10.0%" class="addToCart table3_row2_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row2_col_4" colspan="1">
+咨询医疗官
+</td>
+<td width="10.0%" class="addToCart table3_row2_col_5" colspan="1">
+咨询医疗官
+</td>
+<td width="10.0%" class="addToCart table3_row2_col_6" colspan="1">
+咨询医疗官
+</td>
+<td width="10.0%" class="addToCart table3_row2_col_7" colspan="1">
+咨询医疗官
+</td>
+</tr>
+<!--Row : 3 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 3 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="1" parentlevel="0">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font>
+急性淋巴细胞白血病 (ALL)：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 4 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 4 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="2" parentlevel="1">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font color="#000000">
+未进行干细胞或骨髓移植或预防性颅脑照射：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 5 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 5 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="3" parentlevel="2">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+确诊时的年龄：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 6 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 6 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="4" parentlevel="3">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+＜ 15 岁：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 7 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 7 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="5" parentlevel="4">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 8 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 8 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&lt; 10
+</td>
+<td width="10.0%" class="addToCart table3_row8_col_2" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row8_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row8_col_4" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row8_col_5" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row8_col_6" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row8_col_7" colspan="1">
+延期
+</td>
+</tr>
+<!--Row : 9 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 9 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+10 - 15
+</td>
+<td width="10.0%" class="addToCart table3_row9_col_2" colspan="1">
++150
+</td>
+<td width="10.0%" class="addToCart table3_row9_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row9_col_4" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row9_col_5" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row9_col_6" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row9_col_7" colspan="1">
+延期
+</td>
+</tr>
+<!--Row : 10 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 10 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+16 - 20
+</td>
+<td width="10.0%" class="addToCart table3_row10_col_2" colspan="1">
++75
+</td>
+<td width="10.0%" class="addToCart table3_row10_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row10_col_4" colspan="1">
+除外¹ 并 +100
+</td>
+<td width="10.0%" class="addToCart table3_row10_col_5" colspan="1">
++75
+</td>
+<td width="10.0%" class="addToCart table3_row10_col_6" colspan="1">
++75
+</td>
+<td width="10.0%" class="addToCart table3_row10_col_7" colspan="1">
++75
+</td>
+</tr>
+<!--Row : 11 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 11 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+＞ 20
+</td>
+<td width="10.0%" class="addToCart table3_row11_col_2" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row11_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row11_col_4" colspan="1">
++100
+</td>
+<td width="10.0%" class="addToCart table3_row11_col_5" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row11_col_6" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row11_col_7" colspan="1">
++50
+</td>
+</tr>
+<!--Row : 12 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 12 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="4" parentlevel="3">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+≥ 15 岁：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 13 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 13 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="5" parentlevel="4">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 14 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 14 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+≤ 9
+</td>
+<td width="10.0%" class="addToCart table3_row14_col_2" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row14_col_2&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a>
+</td>
+<td width="10.0%" class="addToCart table3_row14_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row14_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row14_col_5" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row14_col_5&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a>
+</td>
+<td width="10.0%" class="addToCart table3_row14_col_6" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row14_col_6&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a>
+</td>
+<td width="10.0%" class="addToCart table3_row14_col_7" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row14_col_7&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a>
+</td>
+</tr>
+<!--Row : 15 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 15 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 9
+</td>
+<td width="10.0%" class="addToCart table3_row15_col_2" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row15_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row15_col_4" colspan="1">
+除外¹ 并 +50
+</td>
+<td width="10.0%" class="addToCart table3_row15_col_5" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row15_col_6" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row15_col_7" colspan="1">
++0
+</td>
+</tr>
+<!--Row : 16 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 16 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="2" parentlevel="1">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font color="#000000">
+进行干细胞或骨髓移植或预防性颅脑照射：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 17 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 17 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="3" parentlevel="2">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+确诊时的年龄：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 18 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 18 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="4" parentlevel="3">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+＜ 15 岁：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 19 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 19 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="5" parentlevel="4">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 20 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 20 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&lt; 10
+</td>
+<td width="10.0%" class="addToCart table3_row20_col_2" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row20_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row20_col_4" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row20_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row20_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row20_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 21 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 21 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+10 - 15
+</td>
+<td width="10.0%" class="addToCart table3_row21_col_2" colspan="1">
++200
+</td>
+<td width="10.0%" class="addToCart table3_row21_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row21_col_4" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row21_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row21_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row21_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 22 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 22 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+16 - 20
+</td>
+<td width="10.0%" class="addToCart table3_row22_col_2" colspan="1">
++125
+</td>
+<td width="10.0%" class="addToCart table3_row22_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row22_col_4" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row22_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row22_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row22_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 23 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 23 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="6" parentlevel="5">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 20：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 24 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 24 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+进行干细胞/骨髓移植
+</td>
+<td width="10.0%" class="addToCart table3_row24_col_2" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row24_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row24_col_4" colspan="1">
++150
+</td>
+<td width="10.0%" class="addToCart table3_row24_col_5" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row24_col_6" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row24_col_7" colspan="1">
++50
+</td>
+</tr>
+<!--Row : 25 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 25 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+进行预防性颅脑照射
+</td>
+<td width="10.0%" class="addToCart table3_row25_col_2" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row25_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row25_col_4" colspan="1">
+除外² 并 +100
+</td>
+<td width="10.0%" class="addToCart table3_row25_col_5" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row25_col_6" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row25_col_7" colspan="1">
++50
+</td>
+</tr>
+<!--Row : 26 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 26 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+进行干细胞或骨髓移植和预防性颅脑照射
+</td>
+<td width="10.0%" class="addToCart table3_row26_col_2" colspan="1">
++100
+</td>
+<td width="10.0%" class="addToCart table3_row26_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row26_col_4" colspan="1">
+咨询医疗官，通常拒保
+</td>
+<td width="10.0%" class="addToCart table3_row26_col_5" colspan="1">
++100
+</td>
+<td width="10.0%" class="addToCart table3_row26_col_6" colspan="1">
++100
+</td>
+<td width="10.0%" class="addToCart table3_row26_col_7" colspan="1">
++100
+</td>
+</tr>
+<!--Row : 27 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 27 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="4" parentlevel="3">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+≥ 15 岁
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 28 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 28 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="5" parentlevel="4">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 29 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 29 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+≤ 9
+</td>
+<td width="10.0%" class="addToCart table3_row29_col_2" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row29_col_2&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a> 和 +50
+</td>
+<td width="10.0%" class="addToCart table3_row29_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row29_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row29_col_5" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row29_col_5&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a> 和 +50
+</td>
+<td width="10.0%" class="addToCart table3_row29_col_6" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row29_col_6&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a> 和 +50
+</td>
+<td width="10.0%" class="addToCart table3_row29_col_7" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row29_col_7&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a> 和 +50
+</td>
+</tr>
+<!--Row : 30 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 30 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 9
+</td>
+<td width="10.0%" class="addToCart table3_row30_col_2" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row30_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row30_col_4" colspan="1">
+咨询医疗官，通常拒保
+</td>
+<td width="10.0%" class="addToCart table3_row30_col_5" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row30_col_6" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row30_col_7" colspan="1">
++50
+</td>
+</tr>
+<!--Row : 31 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 31 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="1" parentlevel="0">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font>
+急性髓性白血病 (AML)：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 32 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 32 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="2" parentlevel="1">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font color="#000000">
+未进行干细胞或骨髓移植：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 33 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 33 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="3" parentlevel="2">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+确诊时的年龄：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 34 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 34 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="4" parentlevel="3">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+＜ 20 岁：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 35 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 35 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="5" parentlevel="4">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 36 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 36 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&lt; 5
+</td>
+<td width="10.0%" class="addToCart table3_row36_col_2" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row36_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row36_col_4" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row36_col_5" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row36_col_6" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row36_col_7" colspan="1">
+延期
+</td>
+</tr>
+<!--Row : 37 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 37 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+5 - 10
+</td>
+<td width="10.0%" class="addToCart table3_row37_col_2" colspan="1">
++100
+</td>
+<td width="10.0%" class="addToCart table3_row37_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row37_col_4" colspan="1">
+除外¹ 并 +150
+</td>
+<td width="10.0%" class="addToCart table3_row37_col_5" colspan="1">
++100
+</td>
+<td width="10.0%" class="addToCart table3_row37_col_6" colspan="1">
++100
+</td>
+<td width="10.0%" class="addToCart table3_row37_col_7" colspan="1">
++100
+</td>
+</tr>
+<!--Row : 38 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 38 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 10
+</td>
+<td width="10.0%" class="addToCart table3_row38_col_2" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row38_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row38_col_4" colspan="1">
+除外¹ 并 +50
+</td>
+<td width="10.0%" class="addToCart table3_row38_col_5" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row38_col_6" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row38_col_7" colspan="1">
++0
+</td>
+</tr>
+<!--Row : 39 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 39 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="4" parentlevel="3">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+≥ 20 岁：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 40 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 40 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="5" parentlevel="4">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+急性早幼粒细胞白血病：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 41 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 41 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 42 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 42 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&lt; 8
+</td>
+<td width="10.0%" class="addToCart table3_row42_col_2" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_2_life/397081121.html?fromPage=401483535_table3_row42_col_2&amp;language=Chinese&amp;userSelectedDate=">评点分类2</a>
+</td>
+<td width="10.0%" class="addToCart table3_row42_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row42_col_4" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row42_col_5" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_2_life/397081121.html?fromPage=401483535_table3_row42_col_5&amp;language=Chinese&amp;userSelectedDate=">评点分类2</a>
+</td>
+<td width="10.0%" class="addToCart table3_row42_col_6" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_2_life/397081121.html?fromPage=401483535_table3_row42_col_6&amp;language=Chinese&amp;userSelectedDate=">评点分类2</a>
+</td>
+<td width="10.0%" class="addToCart table3_row42_col_7" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_2_life/397081121.html?fromPage=401483535_table3_row42_col_7&amp;language=Chinese&amp;userSelectedDate=">评点分类2</a>
+</td>
+</tr>
+<!--Row : 43 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 43 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 8
+</td>
+<td width="10.0%" class="addToCart table3_row43_col_2" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row43_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row43_col_4" colspan="1">
+除外¹ 并 +50
+</td>
+<td width="10.0%" class="addToCart table3_row43_col_5" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row43_col_6" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row43_col_7" colspan="1">
++0
+</td>
+</tr>
+<!--Row : 44 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 44 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="5" parentlevel="4">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+AML 的所有其他亚型：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 45 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 45 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 46 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 46 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&lt; 9
+</td>
+<td width="10.0%" class="addToCart table3_row46_col_2" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row46_col_2&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a>
+</td>
+<td width="10.0%" class="addToCart table3_row46_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row46_col_4" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row46_col_5" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row46_col_5&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a>
+</td>
+<td width="10.0%" class="addToCart table3_row46_col_6" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row46_col_6&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a>
+</td>
+<td width="10.0%" class="addToCart table3_row46_col_7" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row46_col_7&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a>
+</td>
+</tr>
+<!--Row : 47 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 47 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 9
+</td>
+<td width="10.0%" class="addToCart table3_row47_col_2" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row47_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row47_col_4" colspan="1">
+除外¹ 并 +50
+</td>
+<td width="10.0%" class="addToCart table3_row47_col_5" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row47_col_6" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row47_col_7" colspan="1">
++0
+</td>
+</tr>
+<!--Row : 48 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 48 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="2" parentlevel="1">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font color="#000000">
+进行干细胞或骨髓移植：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 49 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 49 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="3" parentlevel="2">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+确诊时的年龄：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 50 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 50 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="4" parentlevel="3">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+＜ 20 岁：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 51 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 51 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="5" parentlevel="4">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 52 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 52 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&lt; 5
+</td>
+<td width="10.0%" class="addToCart table3_row52_col_2" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row52_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row52_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row52_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row52_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row52_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 53 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 53 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+5 - 10
+</td>
+<td width="10.0%" class="addToCart table3_row53_col_2" colspan="1">
++150
+</td>
+<td width="10.0%" class="addToCart table3_row53_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row53_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row53_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row53_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row53_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 54 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 54 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 10
+</td>
+<td width="10.0%" class="addToCart table3_row54_col_2" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row54_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row54_col_4" colspan="1">
+除外¹ 并 +100
+</td>
+<td width="10.0%" class="addToCart table3_row54_col_5" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row54_col_6" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row54_col_7" colspan="1">
++50
+</td>
+</tr>
+<!--Row : 55 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 55 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="4" parentlevel="3">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+≥ 20 岁：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 56 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 56 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="5" parentlevel="4">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+急性早幼粒细胞白血病：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 57 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 57 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 58 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 58 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+≤ 8
+</td>
+<td width="10.0%" class="addToCart table3_row58_col_2" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_2_life/397081121.html?fromPage=401483535_table3_row58_col_2&amp;language=Chinese&amp;userSelectedDate=">评点分类2</a> 和 +50
+</td>
+<td width="10.0%" class="addToCart table3_row58_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row58_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row58_col_5" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_2_life/397081121.html?fromPage=401483535_table3_row58_col_5&amp;language=Chinese&amp;userSelectedDate=">评点分类2</a> 和 +50
+</td>
+<td width="10.0%" class="addToCart table3_row58_col_6" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_2_life/397081121.html?fromPage=401483535_table3_row58_col_6&amp;language=Chinese&amp;userSelectedDate=">评点分类2</a> 和 +50
+</td>
+<td width="10.0%" class="addToCart table3_row58_col_7" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_2_life/397081121.html?fromPage=401483535_table3_row58_col_7&amp;language=Chinese&amp;userSelectedDate=">评点分类2</a> 和 +50
+</td>
+</tr>
+<!--Row : 59 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 59 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 8
+</td>
+<td width="10.0%" class="addToCart table3_row59_col_2" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row59_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row59_col_4" colspan="1">
+除外¹ 并 +100
+</td>
+<td width="10.0%" class="addToCart table3_row59_col_5" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row59_col_6" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row59_col_7" colspan="1">
++50
+</td>
+</tr>
+<!--Row : 60 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 60 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="5" parentlevel="4">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+AML 的所有其他亚型：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 61 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 61 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 62 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 62 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+≤ 9
+</td>
+<td width="10.0%" class="addToCart table3_row62_col_2" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row62_col_2&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a> 和 +50
+</td>
+<td width="10.0%" class="addToCart table3_row62_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row62_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row62_col_5" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row62_col_5&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a> 和 +50
+</td>
+<td width="10.0%" class="addToCart table3_row62_col_6" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row62_col_6&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a> 和 +50
+</td>
+<td width="10.0%" class="addToCart table3_row62_col_7" colspan="1">
+<a class="BodyLink BoldLink" href="/medical/tumours/tumours_rating_philosophy/tumours_rating_category_1_life/397086331.html?fromPage=401483535_table3_row62_col_7&amp;language=Chinese&amp;userSelectedDate=">评点分类1</a> 和 +50
+</td>
+</tr>
+<!--Row : 63 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 63 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 9
+</td>
+<td width="10.0%" class="addToCart table3_row63_col_2" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row63_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row63_col_4" colspan="1">
+除外¹ 并 +100
+</td>
+<td width="10.0%" class="addToCart table3_row63_col_5" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row63_col_6" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row63_col_7" colspan="1">
++50
+</td>
+</tr>
+<!--Row : 64 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 64 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="1" parentlevel="0">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font>
+慢性淋巴细胞白血病，毛细胞白血病 (CLL)：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 65 || !{row.isParentRow} : False ||  srctaRowIsParent : false -->
+<!--Row : 65 ||  srctaRowIsParent : 0 -->
+<tr class="accordion-content" level="2" parentlevel="1">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+<font color="#000000">
+现在年龄：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 66 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 66 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="3" parentlevel="2">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+≤ 55
+</td>
+<td width="10.0%" class="addToCart table3_row66_col_2" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row66_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row66_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row66_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row66_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row66_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 67 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 67 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="3" parentlevel="2">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+＞ 55：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 68 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 68 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="4" parentlevel="3">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+Rai 0 期或 Binet A 期（仅淋巴细胞增多，无贫血，无血小板减少，无脾大）：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 69 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 69 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="5" parentlevel="4">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+确诊至今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 70 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 70 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="6" parentlevel="5">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+≤ 2
+</td>
+<td width="10.0%" class="addToCart table3_row70_col_2" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row70_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row70_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row70_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row70_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row70_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 71 || !{row.isParentRow} : Yes ||  srctaRowIsParent : yes -->
+<!--Row : 71 ||  srctaRowIsParent : 1 -->
+<tr class="accordion-title open globalUW" level="6" parentlevel="5">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 2：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 72 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 72 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="7" parentlevel="6">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+被保人的年龄：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 73 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 73 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="8" parentlevel="7">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+56 - 60
+</td>
+<td width="10.0%" class="addToCart table3_row73_col_2" colspan="1">
++250
+</td>
+<td width="10.0%" class="addToCart table3_row73_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row73_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row73_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row73_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row73_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 74 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 74 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="8" parentlevel="7">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+61 - 65
+</td>
+<td width="10.0%" class="addToCart table3_row74_col_2" colspan="1">
++150
+</td>
+<td width="10.0%" class="addToCart table3_row74_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row74_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row74_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row74_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row74_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 75 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 75 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="8" parentlevel="7">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+66 - 70
+</td>
+<td width="10.0%" class="addToCart table3_row75_col_2" colspan="1">
++75
+</td>
+<td width="10.0%" class="addToCart table3_row75_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row75_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row75_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row75_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row75_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 76 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 76 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="8" parentlevel="7">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 70
+</td>
+<td width="10.0%" class="addToCart table3_row76_col_2" colspan="1">
++50
+</td>
+<td width="10.0%" class="addToCart table3_row76_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row76_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row76_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row76_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row76_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 77 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 77 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="4" parentlevel="3">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+所有其他分期
+</td>
+<td width="60.0%" class="addToCart table3_row77_col_2 table3_row77_col_3 table3_row77_col_4 table3_row77_col_5 table3_row77_col_6 table3_row77_col_7" colspan="6" align="center">
+通常拒保，但是在某些特定情况下可以考虑申请短期产品
+</td>
+</tr>
+<!--Row : 78 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 78 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="1" parentlevel="0">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font>
+慢性髓性白血病 (CML)：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 79 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 79 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="2" parentlevel="1">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font color="#000000">
+采用同种异体骨髓/干细胞移植治疗：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 80 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 80 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="3" parentlevel="2">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+任何手术、放疗和化疗完成后距今的年数：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 81 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 81 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="4" parentlevel="3">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&lt; 5
+</td>
+<td width="10.0%" class="addToCart table3_row81_col_2" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row81_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row81_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row81_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row81_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row81_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 82 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 82 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="4" parentlevel="3">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+≥ 5
+</td>
+<td width="10.0%" class="addToCart table3_row82_col_2" colspan="1">
+咨询医疗官，考虑 +250
+</td>
+<td width="10.0%" class="addToCart table3_row82_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row82_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row82_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row82_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row82_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 83 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 83 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-title open globalUW" level="2" parentlevel="1">
+<td width="10" class="twisty">
+<span class="arrow"></span>
+</td>
+<td width="40%" class="colorMark" colspan="1">
+<font color="#000000">
+使用酪氨酸激酶抑制剂治疗：
+</font>
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 84 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 84 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="3" parentlevel="2">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+完全缓解至今的年份：
+</td>
+<td width="60.0%" class="" colspan="6" align="center">
+
+</td>
+</tr>
+<!--Row : 85 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 85 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="4" parentlevel="3">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+≤ 5
+</td>
+<td width="10.0%" class="addToCart table3_row85_col_2" colspan="1">
+延期
+</td>
+<td width="10.0%" class="addToCart table3_row85_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row85_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row85_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row85_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row85_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 86 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 86 ||  srctaRowIsParent : -1 -->
+<tr class="accordion-content" level="4" parentlevel="3">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+&gt; 5
+</td>
+<td width="10.0%" class="addToCart table3_row86_col_2" colspan="1">
+对于保险期限不超过 10 年的产品 +300，其他拒保
+</td>
+<td width="10.0%" class="addToCart table3_row86_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row86_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row86_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row86_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row86_col_7" colspan="1">
+拒保
+</td>
+</tr>
+<!--Row : 87 || !{row.isParentRow} :  ||  srctaRowIsParent :  -->
+<!--Row : 87 ||  srctaRowIsParent : -1 -->
+<tr level="1" parentlevel="0">
+<td width="10" class="twisty">&nbsp;</td>
+<td width="40%" class="colorMark" colspan="1">
+<font>
+其他情况
+</font>
+</td>
+<td width="10.0%" class="addToCart table3_row87_col_2" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row87_col_3" colspan="1">
++0
+</td>
+<td width="10.0%" class="addToCart table3_row87_col_4" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row87_col_5" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row87_col_6" colspan="1">
+拒保
+</td>
+<td width="10.0%" class="addToCart table3_row87_col_7" colspan="1">
+拒保
+</td>
+</tr>
+</tbody></table>
+</td></tr></tbody></table>
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {   
+        $('a').attr('href', '#').css({
+            'cursor': 'default'
+        });     
+        $(document).scroll(function() {
+            $('.tableFloatingHeaderOriginal').css({
+                'position': 'fixed',
+                'margin-top': '0px',
+                'left': '0',
+                'z-index': '3',
+                'width': '100%',
+                'top': '0'
+            })
+            $('.tableFloatingHeader').css("display", '');
+        });
+        $('.rating-table .twisty.HeaderLink img').parent().css('cursor', 'pointer');
+
+        $('.content-sub-tab-accordion-table').on('click', '.rating-table .twisty.HeaderLink', function(ev) {
+            if (!$(this).find('img').length) {
+                return;
+            }
+
+            var ratingTable = $(this).parents('table.rating-table:eq(0)');
+            var img = $(this).find('img');
+
+            if (img.hasClass('lgs_accordion_open_w')) {
+                ratingTable.find(".accordion-content").show();
+                ratingTable.find(".accordion-title").show().removeClass("closed").addClass("open");
+                img.removeClass('lgs_accordion_open_w').addClass('lgs_accordion_closed_w');
+            } else {
+                ratingTable.find('.accordion-content').hide();
+                ratingTable.find('.accordion-title').removeClass('open').addClass('closed').filter(function(index, item) {
+                    var level = $(this).attr('level');
+                    if (level === null || typeof(level) === "undefined" || level === "") {
+                        level = 0;
+                    } else {
+                        level = parseInt(level, 10);
+                    }
+                    return level > 1;
+                }).hide();
+                img.removeClass('lgs_accordion_closed_w').addClass('lgs_accordion_open_w');
+            }
+        });
+
+        $('.content-sub-tab-accordion-table').on('click', '.accordion-title .twisty', function(ev) {
+            var el = $(this).parent();
+            var target = ev.target || ev.srcElement;
+            if (target.nodeName == 'A') return true;
+            var level = el.attr("level");
+            if (typeof console != 'undefined') {
+                console.log("level: " + level);
+            }
+            var visible = el.next().is(":visible");
+            if (level == null) {
+                el.next().toggle();
+            } else {
+                var children = el.nextUntil('tr[level="' + level + '"],tr:not([level])');
+                children.each(function(idx) {
+                    var itemlevel = parseInt($(this).attr('level'));
+                    if (parseInt(level) > itemlevel) {
+                        children = children.slice(0, idx);
+                    }
+                });
+                if (typeof console != 'undefined') {
+                    console.log("children: " + children.length);
+                }
+                if (visible) {
+                    children.hide();
+                    el.addClass('closed').removeClass('open');
+                } else {
+                    children.show();
+                    toggleRatingTable(children);
+                    el.addClass('open').removeClass('closed');
+                }
+            }
+            return false;
+        });
+
+        $('.content-sub-tab-accordion-table').on('click', 'div.accordion-title', function(ev) {
+            var el = $(this);
+            var children = el.nextUntil('.accordion-title');
+            var visible = el.next().is(":visible");
+            var ratingTable = el.next().find('table.rating-table');
+            if (visible) {
+                children.hide();
+                el.addClass('closed').removeClass('open');
+                el.parent().find('.twisty.HeaderLink img').removeClass('lgs_accordion_closed_w').addClass('lgs_accordion_open_w');
+            } else {
+                children.show();
+                toggleRatingTable(ratingTable);
+                el.addClass('open').removeClass('closed');
+            }
+        });
+
+        $('.accordion-content').show().parent().find('.accordion-title').addClass("open"); /* re-adding */
+
+        function toggleRatingTable(table, expand) {
+            setTimeout(function() {
+                var accordion_titles = table && !$(table).is('table') ?
+                    $(table).find('.twisty').parent('.accordion-title') :
+                    $(table || '.grid-100').find('.accordion-title');
+
+                accordion_titles.find('.twisty').sort(function(a, b) {
+                    var a_level = $(a).parent().attr("level"),
+                        b_level = $(b).parent().attr("level");
+
+                    if (typeof(a_level) === 'undefined' || a_level === null || a_level === "") {
+                        a_level = 0
+                    }
+
+                    if (typeof(b_level) === 'undefined' || b_level === null || b_level === "") {
+                        b_level = 0
+                    }
+
+                    return (expand ? -1 : 1) * (b_level - a_level);
+                }).each(function(index, item) {
+                    if (!!expand === !$(item).parent().next().is(':visible')) {
+                        $(item).click();
+                    }
+                });
+            }, 10);
+        }
+        toggleRatingTable();
+
+        // Expand All function for accordion
+        $('.expand-all').click(function(event) {
+            $(".accordion-content").show();
+            $(".accordion-title").show();
+            $(".accordion-title").removeClass("closed");
+            $(".accordion-title").addClass("open");
+            $(".lgs_accordion_open_w").removeClass("lgs_accordion_open_w").addClass("lgs_accordion_closed_w");
+            event.preventDefault();
+        });
+
+        // Close All function for accordion
+        // $('.collapse-all').click(function(event) {
+        //     //$('.grid-100 > .accordion-content').hide();
+        //     //$('.grid-100 > .accordion-title').removeClass('open').addClass('closed');
+        //     $('#content-life-ratings .accordion-content').hide();
+        //     $('#content-info .accordion-content').hide(); /*details collapse page*/
+        //     $('#content-life-ratings .accordion-title').removeClass('open').addClass('closed');
+        //     $('#content-info .accordion-title').removeClass('open').addClass('closed'); /*details collapse page*/
+        //     $(".lgs_accordion_closed_w").removeClass("lgs_accordion_closed_w").addClass("lgs_accordion_open_w");
+        //     event.preventDefault();
+        // });
+    })
+</script>

@@ -1,0 +1,2577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骨折</title>
+    <style>
+        body {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+            *font-size: small;
+            *font: x-small;
+        }
+        
+        .ui-widget .ui-widget {
+            font-size: 1em;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .ui-widget-content {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+            color: #222;
+        }
+        
+        .uwm-topic-tabs,
+        .uwm-topic-subtabs {
+            border: 0;
+            padding: 0;
+            background: none;
+        }
+        
+        .ui-widget {
+            font: 13px arial, helvetica, clean, sans-serif !important;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-right,
+        .ui-corner-br {
+            border-bottom-right-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-bottom,
+        .ui-corner-left,
+        .ui-corner-bl {
+            border-bottom-left-radius: 4px;
+        }
+        
+        .ui-corner-all,
+        .ui-corner-top,
+        .ui-corner-left,
+        .ui-corner-tl {
+            border-top-left-radius: 4px;
+        }
+        
+        .ui-widget {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1.1em;
+        }
+        
+        .ui-tabs {
+            position: relative;
+            padding: 0.2em;
+        }
+        
+        .ui-tabs .ui-tabs-nav {
+            margin: 0;
+            padding: 0.2em 0.2em 0;
+        }
+        
+        div.tabs ul {
+            list-style-type: none;
+        }
+        
+        ul.ui-tabs-nav {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .uwm-topic-tabs>ul,
+        .uwm-topic-subtabs>ul {
+            background: none;
+            border: 0;
+            padding: 0!important;
+        }
+        
+        .uwm-topic-subtabs ul {
+            list-style-type: circle!important;
+        }
+        
+        .ui-widget-header {
+            border: 1px solid #aaa;
+            background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+            color: #222;
+            font-weight: 700;
+        }
+        
+        .ui-helper-clearfix {
+            min-height: 0;
+        }
+        
+        .ui-helper-reset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            line-height: 1.3;
+            text-decoration: none;
+            font-size: 100%;
+            list-style: none;
+        }
+        
+        .ui-helper-clearfix:before,
+        .ui-helper-clearfix:after {
+            content: "";
+            display: table;
+            border-collapse: collapse;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .uwm-topic-subtabs li.ui-tabs-active {
+            background-color: #00315a !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-color: #d3d3d3 !important;
+        }
+        
+        .uwm-topic-subtabs li.ui-state-default {
+            background-image: none!important;
+            border: 0;
+            /* background-color: #555858; */
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+        
+        .ui-tabs .ui-tabs-nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            /* border-bottom-width: 0; */
+            padding: 0;
+            white-space: nowrap;
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-active {
+            background-image: none;
+            background-color: #333133 !important;
+        }
+        
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active {
+            border: 1px solid #aaa;
+            background: #fff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #212121;
+        }
+        
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default {
+            border: 1px solid #d3d3d3;
+            background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+            font-weight: 400;
+            color: #555;
+        }
+        
+        .ui-state-active {
+            background: #dadada url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+        }
+        
+        .tabs a.ui-tabs-anchor {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #fff;
+            text-decoration: none !important;
+        }
+        
+        .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+        .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+        .ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+            cursor: text;
+        }
+        
+        .tabs li.ui-tabs-active a,
+        .tabs li.ui-state-default a:hover {
+            color: #fff !important;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #000 !important;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .tabs li.ui-state-default a {
+            color: #fff;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a,
+        .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+            cursor: pointer;
+        }
+        
+        .ui-tabs .ui-tabs-nav li a {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+        
+        .tabs .ui-tabs-panel a {
+            color: #00315a !important;
+            text-decoration: none !important;
+        }
+        
+        .ui-state-active a,
+        .ui-state-active a:link,
+        .ui-state-active a:visited {
+            color: #212121;
+            text-decoration: none;
+        }
+        
+        .ui-state-default a,
+        .ui-state-default a:link,
+        .ui-state-default a:visited {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        .ui-widget-header a {
+            color: #222;
+        }
+        
+        .ui-widget-content a {
+            color: #222;
+        }
+        
+        a {
+            color: #00315a;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        .ui-helper-clearfix:after {
+            clear: both;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            background-color: transparent!important;
+        }
+        
+        .uwm-topic-subtabs>div.ui-tabs-panel {
+            /* height: 565px; */
+            overflow-y: auto;
+            /* background-color: #333133 !important; */
+        }
+        
+        .uwm-topic-subtabs .ui-tabs-panel {
+            border-width: 1px;
+            background-color: transparent!important;
+        }
+        
+        .ui-tabs .ui-tabs-panel {
+            display: block;
+            /* border-width: 0; */
+            padding: 1em 1.4em;
+            background: 0;
+        }
+        
+        .ui-widget-content {
+            color: #00315a !important;
+        }
+        
+        .table {
+            border: solid 1px #e6e6e6;
+            border-collapse: collapse;
+            margin-bottom: 0.8em;
+            margin-top: 10pt;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        table {
+            font-size: inherit;
+            font: 100%;
+        }
+        
+        .table .clas {
+            min-width: 350px;
+            max-width: 350px;
+            width: 350px;
+        }
+        
+        .table th {
+            background-color: #00315a;
+        }
+        
+        .table th {
+            background-color: #5e5e5e;
+            color: #fff !important;
+            text-align: left;
+        }
+        
+        .table td,
+        .table th {
+            border: solid 1px #000;
+            font-weight: normal;
+            min-width: 100px;
+            max-width: 150px;
+            padding: 3px;
+        }
+        
+        .table .prod {
+            min-width: 100px;
+            max-width: 150px;
+            width: 100px;
+        }
+        
+        .active {
+            background-color: #00315a !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs uwm-topic-subtabs ui-tabs ui-widget ui-widget-content ui-corner-all" style="">
+      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab_ratingtables_Life" aria-labelledby="ui-id-15" aria-selected="true"><a data-key="Life" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_Life" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-15">
+          寿险
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_ADB" aria-labelledby="ui-id-16" aria-selected="false"><a data-key="ADB" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_ADB" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-16">
+          意外险种
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_CI" aria-labelledby="ui-id-17" aria-selected="false"><a data-key="CI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_CI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-17">
+          重疾和癌症
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_DI" aria-labelledby="ui-id-18" aria-selected="false"><a data-key="DI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_DI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-18">
+          失能收入
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" aria-selected="false"><a data-key="WPTPD" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_WPTPD" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-19">
+          豁免保费和永久完全性失能
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_HI" aria-labelledby="ui-id-20" aria-selected="false"><a data-key="HI" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_HI" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-20">
+          住院收入保障
+        </a></li>
+        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab_ratingtables_LTC" aria-labelledby="ui-id-21" aria-selected="false"><a data-key="LTC" data-parentkey="RA_Topic_Ratings" href="#tab_ratingtables_LTC" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-21">
+          长期护理险
+        </a></li>
+      </ul>
+      <div id="tab_ratingtables_Life" aria-labelledby="ui-id-15" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="Life">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="Life">
+      寿险
+    </th>
+            </tr>
+            <tr id="Life_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">因骨质疏松症导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="244fd977-54f0-373b-6aac-7332169a7c98">骨质疏松症</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">由于潜在疾病导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="Life_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">颅骨骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="6f269b1a-02ae-d8ac-c01b-03b93a759483">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">脊柱骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="351325af-cd22-263f-61ec-b23dac84c279">瘫痪</a>程度进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">髋部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="fc2b3d98-fcfa-1d6c-3a1d-a9e0ad9e0b35">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="Life_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_9">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肩部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="9d420e15-c738-ddde-bc05-f305bd4b2b3e">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="Life_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_12">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">膝部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="c2183233-ebfe-b057-4b08-3f2599f1c83f">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="Life_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="Life_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">所有其他骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="Life_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已痊愈，无并发症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="Life_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按并发症进行相应的评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_ADB" aria-labelledby="ui-id-16" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="ADB">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="ADB">
+      意外死亡
+    </th>
+              <th class="prod" data-product="ADD">
+      意外残疾
+    </th>
+            </tr>
+            <tr id="ADB_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">因骨质疏松症导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="3c866868-e9b1-d72a-bb29-b5fd60e77211">骨质疏松症</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="2cf39276-3b0f-2d14-7637-f92d427ac545">骨质疏松症</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">由于潜在疾病导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">颅骨骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="ed7cf779-3b69-b206-3c81-5c96d87d420d">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="6863a1e3-6427-2fb9-c63f-fc2d7771bd06">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">脊柱骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="a3a634bb-e0e5-d1b5-c02f-d673500be744">瘫痪</a>程度进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="ad2e5527-b0eb-298f-b7f5-9037b507c8ea">瘫痪</a>程度进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">髋部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="efb826b8-c2db-538f-03bc-e7eb8bbedfef">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="8feba7a3-6ec7-1946-51d6-312dabd230c6">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_9">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肩部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="1b057e09-896d-417c-1848-70c505161708">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="a76d5424-04d8-e759-abab-aeed8a18d82b">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_12">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">膝部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="ecdc9b3d-4001-9f87-3951-23e2b94abbbb">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="a8fc00f6-41c9-188b-67ac-36c5956e7c00">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="ADB_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">所有其他骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="ADB_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已痊愈，无并发症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="ADB_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按并发症进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按并发症进行相应的评点</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_CI" aria-labelledby="ui-id-17" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="CI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="CI">
+      重疾
+    </th>
+              <th class="prod" data-product="CAN">
+      癌症
+    </th>
+            </tr>
+            <tr id="CI_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">因骨质疏松症导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="a9548025-0e8a-39ec-06c9-738ab0a27ef3">骨质疏松症</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="21a1abd2-ac21-af97-e313-a4643444e0fd">骨质疏松症</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">由于潜在疾病导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="CI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">颅骨骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="1d8b969b-2c6a-b698-f12c-0c4bf774f722">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="c4bfcdb2-9880-1751-2efb-ec8baf5c70a8">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">脊柱骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="beb688d7-3e04-2b85-a062-502bd1627951">瘫痪</a>程度进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="ea9bc10d-7de5-8d7e-77c0-09b2d8a80497">瘫痪</a>程度进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">髋部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="ccb260cb-fb00-d110-0a5a-ded58ad39d09">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="88b11767-752d-3917-db0a-99504ff83516">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="CI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_9">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肩部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="fc763b79-f0e0-5a3b-665f-08be409bcd5f">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="c539b318-cbfd-301f-8e65-69f57f62bb0c">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="CI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_12">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">膝部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="f50a93e8-4a9f-ce2f-f18a-de4b664ddfe0">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="fe04a0fb-a2d4-88fb-dafe-984b9e47514a">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="CI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="CI_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">所有其他骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="CI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已痊愈，无并发症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="CI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按并发症进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">单纯癌症险种，已排除恶性疾病，则通常+0</div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_DI" aria-labelledby="ui-id-18" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="DI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="D4">
+      失能收入保障-4周等待期
+    </th>
+              <th class="prod" data-product="D13">
+      失能收入保障-13周等待期
+    </th>
+            </tr>
+            <tr id="DI_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">因骨质疏松症导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="711548cf-9108-3c46-18d2-7e6c9e38c3f4">骨质疏松症</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="20302da1-0bd7-5742-12d8-5ab40ea41ebb">骨质疏松症</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">由于潜在疾病导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="DI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">颅骨骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="9804ba20-440c-4721-4eb1-81c8438c1e2a">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="d52c1100-5c36-c564-65e9-b79ff2602ced">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">脊柱骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="14d07ab2-bf09-4595-d8ed-431ca23a769d">瘫痪</a>程度进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="f5af86ab-adfe-c3e8-d274-0f0acd08a350">瘫痪</a>程度进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">髋部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="92568419-f0f6-20dd-543e-57250299ef4d">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="054372dd-6719-07d1-2236-d8d35e0a6890">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="DI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_9">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肩部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="3b40dee9-4271-9825-9baa-c90e45ce54e8">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="17e6cd6f-5171-c805-d3ca-7fa34bb6c621">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="DI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_12">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">膝部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="43f8b8e5-330e-e1d0-c6a9-d182d8afbdaa">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="7819cfbc-4052-660f-dc02-9a6854671cdc">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="DI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="DI_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">所有其他骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="DI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已痊愈，无并发症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="DI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：因“骨折（包括植骨或关节置换）及其并发症”而导致的保险责任。">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：因“骨折（包括植骨或关节置换）及其并发症”而导致的保险责任。">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_WPTPD" aria-labelledby="ui-id-19" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="WPTPD">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="WP">
+      豁免保费
+    </th>
+              <th class="prod" data-product="TPDOwn">
+      永久完全性失能-职业
+    </th>
+              <th class="prod" data-product="TPDActivity">
+      永久完全性失能-基本日常生活活动
+    </th>
+            </tr>
+            <tr id="WPTPD_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">因骨质疏松症导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="28a0456d-88a8-f38a-cc99-34e207a6c947">骨质疏松症</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="3e4b9c0d-08f7-86cf-05b4-3a931b82859f">骨质疏松症</a>进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="2726a0f8-c3d9-6950-a5c5-7c3aa1e769bd">骨质疏松症</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">由于潜在疾病导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">颅骨骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="063a84c6-200c-cbee-88bc-dfbe78e67d7d">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="79073495-9f65-8e5c-f6fb-582bf9880f15">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="b13f69c6-a385-2a9c-c88b-51e0b7f63d85">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">脊柱骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="b439bab2-3ee9-3b0a-d68f-eb177716ac66">瘫痪</a>程度进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="a3861eea-ed50-47d2-14d6-3bb7408a5e8d">瘫痪</a>程度进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="23278b79-0dc7-d11e-9b2e-8d258ea4cefb">瘫痪</a>程度进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">髋部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="a76fb4c3-b810-3bfe-d8b5-774aa132b459">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="cccfe287-17b4-ce0a-a0d5-3ddca6ee8df0">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="bd7ef2ff-ead6-d811-6adb-b1b5fa3f7587">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_9">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肩部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="293b44f8-0775-3d11-4419-e6d8a2562713">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="2c0d6fee-939a-21cb-3307-3b18d3b02c3b">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="7db738f7-7b02-324f-2403-7280bdb8e54a">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_12">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">膝部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="e48b7fd6-139f-a82f-a24f-b693641ff5ba">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="ba844288-12c3-93bd-6fd5-64207040e5f7">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="4030f0a0-a1fc-30e6-aa42-85225ae98266">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">所有其他骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="WPTPD_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已痊愈，无并发症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="WPTPD_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：因“骨折（包括植骨或关节置换）及其并发症”而导致的保险责任。">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：因“骨折（包括植骨或关节置换）及其并发症”而导致的保险责任。">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：因“骨折（包括植骨或关节置换）及其并发症”而导致的保险责任。">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_HI" aria-labelledby="ui-id-20" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="HI">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="HI">
+      住院收入保障
+    </th>
+            </tr>
+            <tr id="HI_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">因骨质疏松症导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="1f4ebe9b-5a59-31e4-36b2-c7f05184b6ba">骨质疏松症</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">由于潜在疾病导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="HI_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">颅骨骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="8740222a-5885-c442-d338-fa2784c4757a">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">脊柱骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="0bce9ddf-6747-f07e-2855-3ff3bc651997">瘫痪</a>程度进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">髋部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="c8b7950b-f21e-3362-d084-8cd13b085f69">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="HI_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_9">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肩部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="24ed9138-88e0-e3b4-5c3a-323bbf07f294">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="HI_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_12">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">膝部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="f1035c08-0c7d-4daa-0b9b-abfd12be4608">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="HI_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="HI_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">所有其他骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="HI_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已痊愈，无并发症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="HI_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：因“骨折（包括植骨或关节置换）及其并发症”而导致的保险责任。">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <div id="tab_ratingtables_LTC" aria-labelledby="ui-id-21" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+        <div>
+          <table border="0" cellpadding="0" class="table" id="LTC">
+            <tbody><tr>
+              <th class="clas"></th>
+              <th class="prod" data-product="LTC">
+      长期护理险
+    </th>
+            </tr>
+            <tr id="LTC_1" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">1</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">因骨质疏松症导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="M80 M82" id="6bdc2c81-2518-0c62-1dda-6a6a5a11df5b">骨质疏松症</a>进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_2" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">2</div>
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">由于潜在疾病导致的骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按病因评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_3">
+              <td class="clas">
+                <div style="
+
+                padding-left:0pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_4" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">4,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">颅骨骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="S00 S01 S07 S09" id="023540c2-692d-a1a7-d5d1-1e21e636fa6e">头部损伤</a>-颅骨骨折进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_5" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">5,3</div>
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">脊柱骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按<a href="#" data-type="topic" data-id="G82" id="e722f91b-9f55-41ff-7147-a1101940d992">瘫痪</a>程度进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_6">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">髋部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_7" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">7,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M16 Q65 S73" id="ded874b2-ff7a-cc4c-3376-6eba0dfb1cb9">髋部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_8" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">8,6,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_9">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">肩部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_10" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">10,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M75" id="824cac16-c786-a402-67b8-2ea6418eba82">肩部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_11" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">11,9,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_12">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">膝部骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_13" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">13,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按“<a href="#" data-type="topic" data-id="M22 M70.5 S83" id="3727a985-e17e-1b78-c90e-1d601cc3d2e1">膝部疾病</a>–关节手术”进行相应的评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_14" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">14,12,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">未行手术</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">按下述“所有其他骨折”进行评点</div>
+              </td>
+            </tr>
+            <tr id="LTC_15">
+              <td class="clas">
+                <div style="
+
+                padding-left:20pt
+
+              ">
+                  <div class="p">所有其他骨折</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p"></div>
+              </td>
+            </tr>
+            <tr id="LTC_16" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">16,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">已痊愈，无并发症</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="p">+0</div>
+              </td>
+            </tr>
+            <tr id="LTC_17" class="selectable">
+              <td class="clas">
+                <div style="visibility:hidden;display:none;" class="precedingrows">17,15,3</div>
+                <div style="
+
+                padding-left:40pt
+
+              ">
+                  <div class="p">否则</div>
+                </div>
+              </td>
+              <td class="prod">
+                <div class="uwm-topic-exclusion ex" data-title="除外：因“骨折（包括植骨或关节置换）及其并发症”而导致的保险责任。">
+                  <div class="p">除外责任</div>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function() {
+        // $("body").scrollTop(10); //控制滚动条下移10px
+        // if ($("body").scrollTop() > 0) {
+        //     alert("有滚动条");
+        // } else {
+        //     alert("没有滚动条");
+        // }
+        //寿险
+        $('#tab_ratingtables_Life').attr('id', 'tab_ratingtables_Life1');
+        //意外险种
+        $('#tab_ratingtables_ADB').attr('id', 'tab_ratingtables_ADB1');
+        //重疾
+        $('#tab_ratingtables_CI').attr('id', 'tab_ratingtables_CI1');
+        //失能收入
+        $('#tab_ratingtables_DI').attr('id', 'tab_ratingtables_DI1');
+        //豁免
+        $('#tab_ratingtables_WPTPD').attr('id', 'tab_ratingtables_WPTPD1');
+        //住院
+        $('#tab_ratingtables_HI').attr('id', 'tab_ratingtables_HI1');
+        //长期护理险
+        $('#tab_ratingtables_LTC').attr('id', 'tab_ratingtables_LTC1');
+        console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+        console.log($("body").scrollTop(), 'idaofijofwio');
+        // $("body").scrollTop(0); //滚动条返回顶部
+        $('.ui-tabs-nav li').click(function() {
+            $(this).addClass('active');
+            $(this).children('a').css({
+                'color': '#fff'
+            })
+            console.log($("body").scrollTop(), 'idaofijofwio1');
+            $('.ui-tabs-panel').scrollTop('-20px');
+            console.log($('.ui-tabs-panel').scrollTop(), '距离顶部的距离');
+            // console.log('tab栏切换');
+            var tabTitle = $(this).children('a').attr('href');
+            console.log(tabTitle, 'a标签的href属性');
+            $(this).addClass('ui-state-active').removeClass('ui-state-default');
+            $(this).siblings().removeClass('ui-state-active').addClass('ui-state-default');
+            //意外险种
+            if (tabTitle == '#tab_ratingtables_ADB') {
+                console.log('1111');
+                $('#tab_ratingtables_ADB1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_ADB1').css('display', 'block');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_ADB1').siblings().not('ul').css('display', 'none');
+                //重疾
+            } else if (tabTitle == '#tab_ratingtables_CI') {
+                $('#tab_ratingtables_CI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_CI1').css('display', 'block');
+                $('#tab_ratingtables_CI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_CI1').siblings().not('ul').css('display', 'none');
+                //寿险
+            } else if (tabTitle == '#tab_ratingtables_Life') {
+                $('#tab_ratingtables_Life1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_Life1').css('display', 'block');
+                $('#tab_ratingtables_Life1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_Life1').siblings().not('ul').css('display', 'none');
+                //失能收入
+            } else if (tabTitle == '#tab_ratingtables_DI') {
+                $('#tab_ratingtables_DI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_DI1').css('display', 'block');
+                $('#tab_ratingtables_DI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_DI1').siblings().not('ul').css('display', 'none');
+                //豁免
+            } else if (tabTitle == '#tab_ratingtables_WPTPD') {
+                $('#tab_ratingtables_WPTPD1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_WPTPD1').css('display', 'block');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_WPTPD1').siblings().not('ul').css('display', 'none');
+                //住院
+            } else if (tabTitle == '#tab_ratingtables_HI') {
+                $('#tab_ratingtables_HI1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_HI1').css('display', 'block');
+                $('#tab_ratingtables_HI1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_HI1').siblings().not('ul').css('display', 'none');
+                //长期护理险
+            } else if (tabTitle == '#tab_ratingtables_LTC') {
+                $('#tab_ratingtables_LTC1').attr('aria-hidden', 'false');
+                $('#tab_ratingtables_LTC1').css('display', 'block');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').attr('aria-hidden', 'true');
+                $('#tab_ratingtables_LTC1').siblings().not('ul').css('display', 'none');
+            }
+        })
+    })
+</script>

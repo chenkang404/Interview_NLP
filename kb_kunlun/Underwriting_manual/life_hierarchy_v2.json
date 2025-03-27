@@ -1,0 +1,1088 @@
+{
+  "Life": {
+    "0": {
+      "label": "病程小于6个月",
+      "value": "延期",
+      "padding_left": 0,
+      "precedingrows": [
+        "1"
+      ],
+      "children": []
+    },
+    "1": {
+      "label": "病程为6个月－1年",
+      "value": "",
+      "padding_left": 0,
+      "precedingrows": [],
+      "children": []
+    },
+    "2": {
+      "label": "<15岁",
+      "value": "延期",
+      "padding_left": 20,
+      "precedingrows": [
+        "3",
+        "2"
+      ],
+      "children": []
+    },
+    "3": {
+      "label": "15-19岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "4": {
+      "label": "HbA1c < 7%",
+      "value": "+200",
+      "padding_left": 40,
+      "precedingrows": [
+        "5",
+        "4",
+        "2"
+      ],
+      "children": []
+    },
+    "5": {
+      "label": "HbA1c ≥ 7%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "6",
+        "4",
+        "2"
+      ],
+      "children": []
+    },
+    "6": {
+      "label": "20-39岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "7": {
+      "label": "HbA1c < 7%",
+      "value": "+150",
+      "padding_left": 40,
+      "precedingrows": [
+        "8",
+        "7",
+        "2"
+      ],
+      "children": []
+    },
+    "8": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+200",
+      "padding_left": 40,
+      "precedingrows": [
+        "9",
+        "7",
+        "2"
+      ],
+      "children": []
+    },
+    "9": {
+      "label": "HbA1c 8.1-10%",
+      "value": "+250",
+      "padding_left": 40,
+      "precedingrows": [
+        "10",
+        "7",
+        "2"
+      ],
+      "children": []
+    },
+    "10": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "11",
+        "7",
+        "2"
+      ],
+      "children": []
+    },
+    "11": {
+      "label": "40-49岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "12": {
+      "label": "HbA1c < 7%",
+      "value": "+100",
+      "padding_left": 40,
+      "precedingrows": [
+        "13",
+        "12",
+        "2"
+      ],
+      "children": []
+    },
+    "13": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+125",
+      "padding_left": 40,
+      "precedingrows": [
+        "14",
+        "12",
+        "2"
+      ],
+      "children": []
+    },
+    "14": {
+      "label": "HbA1c 8.1-10%",
+      "value": "+150",
+      "padding_left": 40,
+      "precedingrows": [
+        "15",
+        "12",
+        "2"
+      ],
+      "children": []
+    },
+    "15": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "16",
+        "12",
+        "2"
+      ],
+      "children": []
+    },
+    "16": {
+      "label": "≥50岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "17": {
+      "label": "HbA1c < 7%",
+      "value": "+75",
+      "padding_left": 40,
+      "precedingrows": [
+        "18",
+        "17",
+        "2"
+      ],
+      "children": []
+    },
+    "18": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+100",
+      "padding_left": 40,
+      "precedingrows": [
+        "19",
+        "17",
+        "2"
+      ],
+      "children": []
+    },
+    "19": {
+      "label": "HbA1c 8.1-10%",
+      "value": "+125",
+      "padding_left": 40,
+      "precedingrows": [
+        "20",
+        "17",
+        "2"
+      ],
+      "children": []
+    },
+    "20": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "21",
+        "17",
+        "2"
+      ],
+      "children": []
+    },
+    "21": {
+      "label": "病程为1年－15年",
+      "value": "",
+      "padding_left": 0,
+      "precedingrows": [],
+      "children": []
+    },
+    "22": {
+      "label": "<15岁",
+      "value": "延期",
+      "padding_left": 20,
+      "precedingrows": [
+        "23",
+        "22"
+      ],
+      "children": []
+    },
+    "23": {
+      "label": "15-19岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "24": {
+      "label": "HbA1c < 7%",
+      "value": "+200",
+      "padding_left": 40,
+      "precedingrows": [
+        "25",
+        "24",
+        "22"
+      ],
+      "children": []
+    },
+    "25": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+250",
+      "padding_left": 40,
+      "precedingrows": [
+        "26",
+        "24",
+        "22"
+      ],
+      "children": []
+    },
+    "26": {
+      "label": "HbA1c 8.1-10%",
+      "value": "延期",
+      "padding_left": 40,
+      "precedingrows": [
+        "27",
+        "24",
+        "22"
+      ],
+      "children": []
+    },
+    "27": {
+      "label": "HbA1c >10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "28",
+        "24",
+        "22"
+      ],
+      "children": []
+    },
+    "28": {
+      "label": "20-39岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "29": {
+      "label": "HbA1c < 7%",
+      "value": "+150",
+      "padding_left": 40,
+      "precedingrows": [
+        "30",
+        "29",
+        "22"
+      ],
+      "children": []
+    },
+    "30": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+175",
+      "padding_left": 40,
+      "precedingrows": [
+        "31",
+        "29",
+        "22"
+      ],
+      "children": []
+    },
+    "31": {
+      "label": "HbA1c 8.1-10%",
+      "value": "+200",
+      "padding_left": 40,
+      "precedingrows": [
+        "32",
+        "29",
+        "22"
+      ],
+      "children": []
+    },
+    "32": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "33",
+        "29",
+        "22"
+      ],
+      "children": []
+    },
+    "33": {
+      "label": "40-49岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "34": {
+      "label": "HbA1c < 7%",
+      "value": "+125",
+      "padding_left": 40,
+      "precedingrows": [
+        "35",
+        "34",
+        "22"
+      ],
+      "children": []
+    },
+    "35": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+150",
+      "padding_left": 40,
+      "precedingrows": [
+        "36",
+        "34",
+        "22"
+      ],
+      "children": []
+    },
+    "36": {
+      "label": "HbA1c 8.1-10%",
+      "value": "+200",
+      "padding_left": 40,
+      "precedingrows": [
+        "37",
+        "34",
+        "22"
+      ],
+      "children": []
+    },
+    "37": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "38",
+        "34",
+        "22"
+      ],
+      "children": []
+    },
+    "38": {
+      "label": "≥50岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "39": {
+      "label": "HbA1c < 7%",
+      "value": "+100",
+      "padding_left": 40,
+      "precedingrows": [
+        "40",
+        "39",
+        "22"
+      ],
+      "children": []
+    },
+    "40": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+125",
+      "padding_left": 40,
+      "precedingrows": [
+        "41",
+        "39",
+        "22"
+      ],
+      "children": []
+    },
+    "41": {
+      "label": "HbA1c 8.1-10%",
+      "value": "+150",
+      "padding_left": 40,
+      "precedingrows": [
+        "42",
+        "39",
+        "22"
+      ],
+      "children": []
+    },
+    "42": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "43",
+        "39",
+        "22"
+      ],
+      "children": []
+    },
+    "43": {
+      "label": "病程>15年",
+      "value": "",
+      "padding_left": 0,
+      "precedingrows": [],
+      "children": []
+    },
+    "44": {
+      "label": "15-19岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "45": {
+      "label": "HbA1c < 7%",
+      "value": "+300",
+      "padding_left": 40,
+      "precedingrows": [
+        "46",
+        "45",
+        "44"
+      ],
+      "children": []
+    },
+    "46": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+350",
+      "padding_left": 40,
+      "precedingrows": [
+        "47",
+        "45",
+        "44"
+      ],
+      "children": []
+    },
+    "47": {
+      "label": "HbA1c 8.1-10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "48",
+        "45",
+        "44"
+      ],
+      "children": []
+    },
+    "48": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "49",
+        "45",
+        "44"
+      ],
+      "children": []
+    },
+    "49": {
+      "label": "20-39岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "50": {
+      "label": "HbA1c < 7%",
+      "value": "+200",
+      "padding_left": 40,
+      "precedingrows": [
+        "51",
+        "50",
+        "44"
+      ],
+      "children": []
+    },
+    "51": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+250",
+      "padding_left": 40,
+      "precedingrows": [
+        "52",
+        "50",
+        "44"
+      ],
+      "children": []
+    },
+    "52": {
+      "label": "HbA1c 8.1-10%",
+      "value": "延期",
+      "padding_left": 40,
+      "precedingrows": [
+        "53",
+        "50",
+        "44"
+      ],
+      "children": []
+    },
+    "53": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "54",
+        "50",
+        "44"
+      ],
+      "children": []
+    },
+    "54": {
+      "label": "40-49岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "55": {
+      "label": "HbA1c < 7%",
+      "value": "+150",
+      "padding_left": 40,
+      "precedingrows": [
+        "56",
+        "55",
+        "44"
+      ],
+      "children": []
+    },
+    "56": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+175",
+      "padding_left": 40,
+      "precedingrows": [
+        "57",
+        "55",
+        "44"
+      ],
+      "children": []
+    },
+    "57": {
+      "label": "HbA1c 8.1-10%",
+      "value": "+250",
+      "padding_left": 40,
+      "precedingrows": [
+        "58",
+        "55",
+        "44"
+      ],
+      "children": []
+    },
+    "58": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "59",
+        "55",
+        "44"
+      ],
+      "children": []
+    },
+    "59": {
+      "label": "≥50岁",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "60": {
+      "label": "HbA1c < 7%",
+      "value": "+125",
+      "padding_left": 40,
+      "precedingrows": [
+        "61",
+        "60",
+        "44"
+      ],
+      "children": []
+    },
+    "61": {
+      "label": "HbA1c 7.1-8%",
+      "value": "+150",
+      "padding_left": 40,
+      "precedingrows": [
+        "62",
+        "60",
+        "44"
+      ],
+      "children": []
+    },
+    "62": {
+      "label": "HbA1c 8.1-10%",
+      "value": "+175",
+      "padding_left": 40,
+      "precedingrows": [
+        "63",
+        "60",
+        "44"
+      ],
+      "children": []
+    },
+    "63": {
+      "label": "HbA1c > 10%",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "64",
+        "60",
+        "44"
+      ],
+      "children": []
+    },
+    "64": {
+      "label": "存在并发症和/或其他风险因素",
+      "value": "",
+      "padding_left": 0,
+      "precedingrows": [],
+      "children": []
+    },
+    "65": {
+      "label": "高血压",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "66": {
+      "label": "血压评点值",
+      "value": "",
+      "padding_left": 40,
+      "precedingrows": [],
+      "children": []
+    },
+    "67": {
+      "label": "如果血压评点小于+100，则同<<高血压>>评点",
+      "value": "累加按<<高血压>>进行评点",
+      "padding_left": 60,
+      "precedingrows": [
+        "68",
+        "67",
+        "66",
+        "65"
+      ],
+      "children": []
+    },
+    "68": {
+      "label": "如果血压评点≥+100，则同<<高血压>>评点",
+      "value": "咨询首席核保师；通常拒保",
+      "padding_left": 60,
+      "precedingrows": [
+        "69",
+        "67",
+        "66",
+        "65"
+      ],
+      "children": []
+    },
+    "69": {
+      "label": "存在心脑血管疾病（如冠心病，脑血管病，周围血管疾病）",
+      "value": "拒保",
+      "padding_left": 20,
+      "precedingrows": [
+        "70",
+        "65"
+      ],
+      "children": []
+    },
+    "70": {
+      "label": "昏迷病史",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "71": {
+      "label": "在诊断糖尿病前，发生的糖尿病昏迷病史",
+      "value": "+0",
+      "padding_left": 40,
+      "precedingrows": [
+        "72",
+        "71",
+        "65"
+      ],
+      "children": []
+    },
+    "72": {
+      "label": "否则",
+      "value": "",
+      "padding_left": 40,
+      "precedingrows": [],
+      "children": []
+    },
+    "73": {
+      "label": "昏迷发生时间距今小于1年",
+      "value": "延期",
+      "padding_left": 60,
+      "precedingrows": [
+        "74",
+        "73",
+        "71",
+        "65"
+      ],
+      "children": []
+    },
+    "74": {
+      "label": "1 至 2 年",
+      "value": "再累加+25",
+      "padding_left": 60,
+      "precedingrows": [
+        "75",
+        "73",
+        "71",
+        "65"
+      ],
+      "children": []
+    },
+    "75": {
+      "label": "> 2年",
+      "value": "+0",
+      "padding_left": 60,
+      "precedingrows": [
+        "76",
+        "73",
+        "71",
+        "65"
+      ],
+      "children": []
+    },
+    "76": {
+      "label": "家族史",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "77": {
+      "label": "罹患糖尿病的亲属中，同时存在心血管疾病或者肾脏疾病病史",
+      "value": "+0",
+      "padding_left": 40,
+      "precedingrows": [
+        "78",
+        "77",
+        "65"
+      ],
+      "children": []
+    },
+    "78": {
+      "label": "其他不利的家族史",
+      "value": "累加评点：具体见家族史的评点",
+      "padding_left": 40,
+      "precedingrows": [
+        "79",
+        "77",
+        "65"
+      ],
+      "children": []
+    },
+    "79": {
+      "label": "高血脂",
+      "value": "累加按高胆固醇血症、高甘油三酯血症进行的相应评点",
+      "padding_left": 20,
+      "precedingrows": [
+        "80",
+        "65"
+      ],
+      "children": []
+    },
+    "80": {
+      "label": "存在糖尿病肾病，或者存在肾功能受损的证据",
+      "value": "咨询首席核保师；通常拒保",
+      "padding_left": 20,
+      "precedingrows": [
+        "81",
+        "65"
+      ],
+      "children": []
+    },
+    "81": {
+      "label": "存在糖尿病神经病变",
+      "value": "咨询首席核保师；累加至少+50",
+      "padding_left": 20,
+      "precedingrows": [
+        "82",
+        "65"
+      ],
+      "children": []
+    },
+    "82": {
+      "label": "存在糖尿病视网膜病变",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "83": {
+      "label": "背景性视网膜病变：仅存在少量的微血管瘤",
+      "value": "",
+      "padding_left": 40,
+      "precedingrows": [],
+      "children": []
+    },
+    "84": {
+      "label": "诊断距今时间未超过10年",
+      "value": "+50",
+      "padding_left": 60,
+      "precedingrows": [
+        "85",
+        "84",
+        "83",
+        "65"
+      ],
+      "children": []
+    },
+    "85": {
+      "label": "否则",
+      "value": "+0",
+      "padding_left": 60,
+      "precedingrows": [
+        "86",
+        "84",
+        "83",
+        "65"
+      ],
+      "children": []
+    },
+    "86": {
+      "label": "背景性视网膜病变：存在更广泛的微血管瘤，并出现硬性渗出",
+      "value": "",
+      "padding_left": 40,
+      "precedingrows": [],
+      "children": []
+    },
+    "87": {
+      "label": "诊断距今时间未超过10年",
+      "value": "+100",
+      "padding_left": 60,
+      "precedingrows": [
+        "88",
+        "87",
+        "83",
+        "65"
+      ],
+      "children": []
+    },
+    "88": {
+      "label": "否则",
+      "value": "+50",
+      "padding_left": 60,
+      "precedingrows": [
+        "89",
+        "87",
+        "83",
+        "65"
+      ],
+      "children": []
+    },
+    "89": {
+      "label": "背景性视网膜病变：存在血管异常、出血斑、小梗死、 静脉呈串珠状改变，出现棉絮状软性渗出",
+      "value": "咨询首席核保师",
+      "padding_left": 40,
+      "precedingrows": [
+        "90",
+        "83",
+        "65"
+      ],
+      "children": []
+    },
+    "90": {
+      "label": "增殖性视网膜病变：新生血管形成",
+      "value": "咨询首席核保师；通常拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "91",
+        "83",
+        "65"
+      ],
+      "children": []
+    },
+    "91": {
+      "label": "吸烟",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "92": {
+      "label": "吸烟< 20支/日（或同等量的雪茄或烟草）",
+      "value": "累加 +25至+50",
+      "padding_left": 40,
+      "precedingrows": [
+        "93",
+        "92",
+        "65"
+      ],
+      "children": []
+    },
+    "93": {
+      "label": "吸烟 20-30支/日（或同等量的雪茄或烟草）",
+      "value": "累加 +75至+100",
+      "padding_left": 40,
+      "precedingrows": [
+        "94",
+        "92",
+        "65"
+      ],
+      "children": []
+    },
+    "94": {
+      "label": "吸烟>30支/日（或同等量的雪茄或烟草）",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "95",
+        "92",
+        "65"
+      ],
+      "children": []
+    },
+    "95": {
+      "label": "出现尿糖：参见分类－葡萄糖尿",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "96": {
+      "label": "重度葡萄糖尿 (++++ ) 出现时间未超过6个月",
+      "value": "延期",
+      "padding_left": 40,
+      "precedingrows": [
+        "97",
+        "96",
+        "65"
+      ],
+      "children": []
+    },
+    "97": {
+      "label": "有时出现葡萄糖尿+++/++++",
+      "value": "按血糖控制差进行评点；控制程度参见糖尿病控制程度－HbA1c",
+      "padding_left": 40,
+      "precedingrows": [
+        "98",
+        "96",
+        "65"
+      ],
+      "children": []
+    },
+    "98": {
+      "label": "出现尿酮体（丙酮尿）",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "99": {
+      "label": "未超过6个月",
+      "value": "延期",
+      "padding_left": 40,
+      "precedingrows": [
+        "100",
+        "99",
+        "65"
+      ],
+      "children": []
+    },
+    "100": {
+      "label": "超过6个月",
+      "value": "按血糖控制水平进行评点（控制水平参考其他因素）",
+      "padding_left": 40,
+      "precedingrows": [
+        "101",
+        "99",
+        "65"
+      ],
+      "children": []
+    },
+    "101": {
+      "label": "出现尿蛋白：参见分类－蛋白尿",
+      "value": "",
+      "padding_left": 20,
+      "precedingrows": [],
+      "children": []
+    },
+    "102": {
+      "label": "微量 (<30 mg/dl)",
+      "value": "",
+      "padding_left": 40,
+      "precedingrows": [],
+      "children": []
+    },
+    "103": {
+      "label": "<35岁",
+      "value": "+100",
+      "padding_left": 60,
+      "precedingrows": [
+        "104",
+        "103",
+        "102",
+        "65"
+      ],
+      "children": []
+    },
+    "104": {
+      "label": "≥35岁",
+      "value": "+50",
+      "padding_left": 60,
+      "precedingrows": [
+        "105",
+        "103",
+        "102",
+        "65"
+      ],
+      "children": []
+    },
+    "105": {
+      "label": "轻度 (+) /30-100 mg/dl",
+      "value": "",
+      "padding_left": 40,
+      "precedingrows": [],
+      "children": []
+    },
+    "106": {
+      "label": "<35岁",
+      "value": "咨询首席核保师",
+      "padding_left": 60,
+      "precedingrows": [
+        "107",
+        "106",
+        "102",
+        "65"
+      ],
+      "children": []
+    },
+    "107": {
+      "label": "≥35岁",
+      "value": "+100",
+      "padding_left": 60,
+      "precedingrows": [
+        "108",
+        "106",
+        "102",
+        "65"
+      ],
+      "children": []
+    },
+    "108": {
+      "label": "大于轻度(++/+++/++++  或 >100 mg/dl）",
+      "value": "拒保",
+      "padding_left": 40,
+      "precedingrows": [
+        "109",
+        "102",
+        "65"
+      ],
+      "children": []
+    }
+  }
+}

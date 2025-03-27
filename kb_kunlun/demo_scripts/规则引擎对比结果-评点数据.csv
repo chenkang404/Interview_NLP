@@ -1,0 +1,130 @@
+﻿姓名,编号（身份证号）,"性别
+（1:男，2:女，0:未知）",医院,日期,临床诊断（化验项、疾病等以下划线拼接）,账单金额（数字）,年龄,编号（案件编号）,图片名/文件名,attach id,图片分类/票据类别,影像报告内容image_report,data_source：类别 如昆仑体检告知,线上页面与结果
+张颖,421023199012060444,2,市到大学深圳医院,,"宫腔内稍高回声团,考虑子宫内膜息肉",,34,M202444111993763,ile_TWzoqlM3_20241119142423324.jpg,,,"{'report_name': '', 'des_dic': '经阴道三维超声检查：\\n后位子宫  切面形态规则  体积不大  包膜完整  肌层回声分布均匀  未见明显肿块声像  内膜厚约8mm宫\\n腔内可见一个大小约9x4mm稍高回声团，  边界清  CDFI:  其内未见明显血流信号。\\n三维成像  ：双侧宫角可见显示  官腔形态未见异常。\\n双侧附件区未见明显异常包块回声。\\n子宫直肠窝未见游离液性暗区。\\n', 'con_dic': '宫腔内稍高回声团,  考虑子宫内膜息肉。\\n双侧附件区未见明显异常包块回声。\\n'}""",体检,"URL http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78472&risk_case_id=87234
+重疾 延期至术后或痊愈后
+医疗 延期至术后或痊愈后"
+马春兰,330621199503154709,2,,,子宫肌瘤可能,,29,M202431111993911,file_4BqWBucI_20241119194907173.jpg,,,"{'report_name': '', 'des_dic': '【子宫】  【经阴道】\\n子宫位置：  前位：  子宫大小：  长径  60mm,  左右径  65mm,  前后径  59mm;\\n子宫形态：  不规则：  子宫回声：  不均匀：  肌层彩色血流星点状,\\n内膜厚度12mm    宫颈长度  38mm\\n子宫后壁突起中低回声区：  54*50*50mm\\n', 'con_dic': '子宫肌瘤可能。\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78503&risk_case_id=87286
+1
+重疾 +0 
+医疗 对子宫疾病及其并发症除外"
+高刚正,440303198910301317,1,,,双肾结石(沙粒样),,35,M202444111893402,file_Oj01H8zK_20241118225440966.jpg,,,"{'report_name': '', 'des_dic': '双肾轮廓清晰。  切面形态大小正常：  表面光滑：  皮质回声正常  皮髓质分界清晰。  于双肾盏可见点\\n状强回声  后伴浅声影。  双肾集合系统排列规则，  未见分离。  CDFI  未见明显异常血流信号。\\n', 'con_dic': '双肾结石（沙粒样）\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78504&risk_case_id=87287
+重疾 +0
+医疗 除外泌尿系结石及其并发症"
+高刚正,440303198910301317,1,,,脂肪肝（中度）,,35,M202444111893402,file_Oj01H8zK_20241118225440966.jpg,,,"{'report_name': '', 'des_dic': '肝脏切面轮廊清晰，  右叶斜径约171mm  肝内回声前场增强细密，  后场稀疏衰减：  分布不均匀  肝内\\n管道结构隐约可见  出肝光带模糊。  肝内胆管未见明显扩张  门静脉主干未见明显扩张  CDFI  未见\\n明显异常血流信号。\\n', 'con_dic': '脂肪肝（中度）\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78504&risk_case_id=87287
+重疾 延期
+医疗 延期"
+郑序华,440582199008156187,2,,,双肾结石,,34,M202444111893285,file_n3wYhN9Y_20241118142225174.jpg,,,"{'report_name': '', 'des_dic': '双肾形态大小位置正常  包膜完整,  实质回声正常。  双肾可见强回\\n声伴声影：  右侧大小约3×2mm，  左侧数个：  较大约3×2mm。CD\\nF:  血流显示正常。\\n', 'con_dic': '双肾结石\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78429&risk_case_id=87159
+重疾 +0
+医疗 除外泌尿系结石及其并发症"
+郑序华,440582199008156187,2,,,右侧甲状腺囊性结节,,34,M202444111893285,file_n3wYhN9Y_20241118142225174.jpg,,,"{'report_name': '', 'des_dic': '甲状腺右侧叶可见边界尚清晰的无回声区  大小约3×2mm。  CDFI:\\n无回声区未见血流信号\\n', 'con_dic': '右侧甲状腺囊性结节\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78429&risk_case_id=87159
+重疾 +0
+医疗 除外"
+郑序华,440582199008156187,2,,,胆囊息肉,,34,M202444111893285,file_XSmn5uRt_20241118142225079.jpg,,,"{'report_name': '', 'des_dic': '胆囊形态大小正常  胆囊壁可见数枚稍高回声  较大约3×2mm\\n后方无声影  不随体位改变而移动  胆汁充盈尚可：  胆总管内径正\\n 常。\\n', 'con_dic': '胆囊息肉\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78429&risk_case_id=87159
+重疾 补充资料：B超
+医疗 补充资料：B超"
+边佳旎,310109197909304418,1,,,右侧甲状腺下极下方囊性灶，  考虑甲状旁腺来源可能,,45,M202431111793067,file_hBfQ7o5N_20241117151007897.jpg,,,"{'report_name': '', 'des_dic': '双侧甲状腺外形正常：  包膜光整,  内部回声均匀,左侧实质内未见明显异常结节\\n回声,  CDFI示甲状腺实质血供正常。  弹性成像示甲状腺实质硬度：  质中。\\n右侧甲状腺下极下方可见一个无回声，  大小约25×17mm  形状呈椭圆形,  内部回声\\n尚可,  边界尚清,  内部未见明显点状强回声，CDFI：  未见明显异常血流信号。\\n左侧甲状旁腺区未见明显占位性病变。\\n双侧颈部未见明显异常肿大淋巴结。\\n', 'con_dic': '右侧甲状腺下极下方囊性灶，  考虑甲状旁腺来源可能，  请结合临床\\n双侧甲状旁腺区未见明显异常\\n双侧颈部未见明显异常淋巴结\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78378&risk_case_id=87075
+重疾 延期
+医疗 延期"
+胡国前,500226198808013672,1,,,肝血管瘤,,36,M202433111692907,file_SjRHflUS_20241116235341122.jpg,,,"{'report_name': '', 'des_dic': '肝脏：  大小形声正常。  包膜光滑连续：  肝右叶可见无回声：  大小约5mm*5mm 形态规则，边界\\n清：  肝内可见稍高回声  大小约7mm*7mm，边界清  形态规则 内部回声欠均匀，CDFI 其内未见明\\n显血流信号\\n', 'con_dic': '肝囊肿\\n肝血管瘤\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78351&risk_case_id=87043
+重疾 拒保
+医疗 拒保"
+胡国前,500226198808013672,1,,,肝囊肿,,36,M202433111692907,file_SjRHflUS_20241116235341122.jpg,,,"{'report_name': '', 'des_dic': '肝脏：  大小形声正常。  包膜光滑连续：  肝右叶可见无回声：  大小约5mm*5mm 形态规则，边界\\n清：  肝内可见稍高回声  大小约7mm*7mm，边界清  形态规则 内部回声欠均匀，CDFI 其内未见明\\n显血流信号\\n', 'con_dic': '肝囊肿\\n肝血管瘤\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78351&risk_case_id=87043
+重疾 延期
+医疗 延期"
+胡国前,500226198808013672,1,,,双肺上叶微小结节，多为增殖灶,,36,M202433111692907,file_Pewd9Rfm_20241116235323289.jpg,,,"{'report_name': '', 'des_dic': '两侧胸廓对称。肺窗示双肺上叶见微小结节灶。直径约2mm，边界清。左肺极少许纤维条索影。\\n两肺门不大。纵隔窗示心影及大血管形态正常，纵隔内未见肿块及明显肿大淋巴结。无胸腔积\\n液及胸膜增厚\\n', 'con_dic': '双肺上叶微小结节\\n左肺纤维灶\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78351&risk_case_id=87043
+重疾 延期
+医疗 延期"
+胡国前,500226198808013672,1,,,双肾结晶,,36,M202433111692907,file_SjRHflUS_20241116235341122.jpg,,,"{'report_name': '', 'des_dic': '肾脏：  双肾大小形态正常，轮廓光滑规整，双肾肾窦内可见点状强回声。后无明显声影。集合系\\n统无分离\\n', 'con_dic': '双肾结晶\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78351&risk_case_id=87043
+重疾 +0
+医疗 对泌尿系结晶、结石及其并发症（感染、肾积水）作除外责任"
+刘金奇,230231199804210310,1,,,脂肪肝,,26,M202433111592530,file_ucqBt7rX_20241115183027173.jpg,,,"{'report_name': '', 'des_dic': '肝脏体积增大  形态饱满,  肝实质回声增强  光点细定。  远程回声衰减  肝内血管\\n网络欠清晰  门静脉内径正常。  左右肝内胆管未见扩张\\n', 'con_dic': '脂肪肝\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78340&risk_case_id=87029
+重疾 延期
+医疗 延期"
+冯婧,511623198911165821,2,,2021-1-13,右侧乳腺结节待查,,35,M202444111592396,file_PIgUczVd_20241115122533080.jpg,,,,体检,"URL 
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78310&risk_case_id=86977
+重疾 +0
+医疗 除外"
+刘楠,210911198601021020,2,,,右侧乳腺结节待查,,38,M202411111592400,file_Eug5JhxO_20241115130628434.jpg,,,"{'report_name': '', 'des_dic': '双侧乳腺腺体致密内部回声增强，  结构紊乱  分布不均腺管未见明\\n显扩张,  CDFI：未见明显异常血流信号  右侧乳腺乳头下方可见边界\\n清晰的低回声结节  大小约5×3mm  CDFI:血流未见明显异常\\n', 'con_dic': '乳腺增生\\n右侧乳腺结节待查\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78300&risk_case_id=86961
+重疾 +0
+医疗 除外"
+刘楠,210911198601021020,2,,,双侧甲状腺结节,,38,M202411111592400,file_Eug5JhxO_20241115130628434.jpg,,,"{'report_name': '', 'des_dic': '甲状腺双侧叶见边界尚清晰的低回声结节  较大位于右侧  大小约5\\n×3mm。CDFI:  血流未见明显异常\\n', 'con_dic': '双侧甲状腺结节\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78300&risk_case_id=86961
+重疾 除外
+医疗 除外"
+刘楠,210911198601021020,2,,,多发性胆囊息肉,,38,M202411111592400,file_Eug5JhxO_20241115130628434.jpg,,,"{'report_name': '', 'des_dic': '多发性胆囊息肉  最大约4×4mm\\n', 'con_dic': '多发性胆囊息肉\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78300&risk_case_id=86961
+重疾 补充资料：B超
+医疗 补充资料：B超"
+刘楠,210911198601021020,2,,,左肺上叶前段磨玻璃影,,38,M202411111592400,file_ZAzkugYw_20241115130706128.jpg,,,"{'report_name': '', 'des_dic': '胸廓对称：  纵隔居中。\\n右肺下叶局部少许点片模糊影。  左肺上叶（201-22）见磨玻璃\\n影,  大小约为9mm×7mm\\n气管及诸叶、段支气管尚通畅\\n心脏无明显增大：  大血管走行如常。纵隔未见明确增大淋巴结。双侧胸腔未见积液征象。\\n', 'con_dic': '左肺上叶前段磨玻璃影\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78300&risk_case_id=86961
+重疾 补充资料：延期
+医疗 补充资料：延期"
+林俊义,44050919900224121X,1,,,甲状腺右叶囊肿(ACRTI-RADS1类),,34,M202444111492189,file_vZMT7q1E_20241114214437443.jpg,,,"{'report_name': '', 'des_dic': '甲状腺形态大小正常  峡部厚度正常  包膜完整,  实质回声增粗\\n左侧叶上极内可见一个等回声区，  大小约11.  1mm×6.9mm  边界清  形态规则：  内回声不均匀  其\\n内可见无回声,  CDFI  周边及内部未见明显异常血流信号\\n右侧叶上极内可见一个无回声区，  大小约1.8mm×1.7mm  边界清  内透声可：  后方回声增\\n强：  CDFI  未见异常血流信号.峡部未见明显占位性病变\\n', 'con_dic': '甲状腺左叶结节（ACR  TI-RADS3类)\\n甲状腺右叶囊肿（ACR  TI-RADS  1类）\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78259&risk_case_id=86899
+重疾 +0
+医疗 除外"
+林俊义,44050919900224121X,1,,,甲状腺左叶结节(ACRTI-RADS3类),,34,M202444111492189,file_vZMT7q1E_20241114214437443.jpg,,,"{'report_name': '', 'des_dic': '甲状腺形态大小正常  峡部厚度正常  包膜完整,  实质回声增粗\\n左侧叶上极内可见一个等回声区，  大小约11.  1mm×6.9mm  边界清  形态规则：  内回声不均匀  其\\n内可见无回声,  CDFI  周边及内部未见明显异常血流信号\\n右侧叶上极内可见一个无回声区，  大小约1.8mm×1.7mm  边界清  内透声可：  后方回声增\\n强：  CDFI  未见异常血流信号.峡部未见明显占位性病变\\n', 'con_dic': '甲状腺左叶结节（ACR  TI-RADS3类)\\n甲状腺右叶囊肿（ACR  TI-RADS  1类）\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78259&risk_case_id=86899
+重疾 除外
+医疗 除外"
+林俊义,44050919900224121X,1,,,肝内胆管结石(多发),,34,M202444111492189,file_V9mjSWaU_20241114214436845.jpg,,,"{'report_name': '', 'des_dic': '肝脏形态大小正常：  包膜光滑,  管道结构清晰,  肝左内叶可见多个强光点  大者约4mm×3mm  后伴\\n淡声影  其旁可见裂隙样无回声  未见异常血流信号\\n', 'con_dic': '肝内胆管结石（多发）\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78259&risk_case_id=86899
+重疾 +0
+医疗 除外肝脏、胆囊及胰腺"
+张梦琪,362325199511181025,2,,,两肺多发小结节,,29,M202433102485289,file_qmDs0nF3_20241115093449541.jpg,,,"{'report_name': '', 'des_dic': '两肺纹理增多  双肺见多发结节  较大者\\n位于右肺下叶外基底段（SN4  Im185),  为实\\n性结节,  大小约为5×4mm;  余两肺内未见\\n明显异常。  所见各支气管腔通畅  肺门未见\\n增大,  纵隔未见肿大淋巴结  心脏形态及密\\度未见明显异常  两侧胸腔未见明显积液\\n胸膜未见明显增厚\\n', 'con_dic': '两肺多发小结节\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78291&risk_case_id=86948
+重疾 延期
+医疗 延期"
+张梦琪,362325199511181025,2,,,右乳囊性结节拟US-BI-RADS2类,,29,M202433102485289,file_uCCdCm0X_20241115094730718.jpg,,,"{'report_name': '', 'des_dic': '双侧乳房皮下脂肪厚度基本正常，  腺体厚\\n正常范围,  乳腺组织回声尚均匀  可见散在\\n条索状、斑块状回声减低区  CDFI乳腺内未\\n见明显异常血流信号\\n右乳9点钟方向见一枚囊性结节  大小约\\n3mmx2mm,  水平位生长,  边缘光整,  形态\\n规则,  后方回声增强。  CDFI显示AdlerO级\\n双侧乳腺乳头后方均见乳腺导管增宽，  较宽处均约2mm\\n双侧腋窝未探及明显异常肿大淋巴结。\\n', 'con_dic': '右乳囊性结节  拟US-BI-RADS2类\\n双乳乳腺扩张\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78291&risk_case_id=86948
+重疾 +0
+医疗 除外"
+朱玮霞,310228199411151040,2,上海市第六人民医院金山分院,2023-9-2,甲状腺右叶结节,,30,M202444111492248,file_yZLrp5oK_20241114221945136.jpg,,,"{'report_name': '', 'des_dic': '甲状腺：  大小形态正常。  右叶内见数个结节,  最大者大小约16mmX9mm，  边界尚清,  形态尚\\n规则,  CDFI:  周边见血流环抱。  余甲状腺轮廓尚清  形态规则,  内部回声粗,  分布不均匀。\\nCDFI:  未见明显异常\\n双侧甲状旁腺区未见明显异常占位回声。\\n双侧颈部见多个低回声区，  其内见高回声,  最大者大小约20mmX9mm  边界尚清,  形态尚规\\n则。  CDFI:  未见明显异常\\n', 'con_dic': '甲状腺右叶结节  （TI-RADS3级）\\n甲状腺质地不均\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78260&risk_case_id=86900
+重疾 除外
+医疗 除外"
+张艾楠,230121199305010017,1,黑龙江省传染病防治院,2024-11-9,右肺微小结节,,31,M202433111391322,file_4mqKgMp7_20241113105940334.jpg,,,"{'report_name': '', 'des_dic': '双侧胸廓对称,  纵隔居中,  右肺见微小结节影  直径约1-2mm  气管及各\\n分支气管通畅,  双肺门结构正常,  纵隔内未见异常肿大淋巴结，  双侧胸膜光\\n滑,  心影大小、形态正常。\\n', 'con_dic': '右肺微小结节\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78130&risk_case_id=86673
+重疾 除外。适用于核保政策支持期间；其余时间不能承保
+医疗 除外"
+王达,420116199304086233,1,,2023-4-25,轻度脂肪肝,,31,M202433111492008,file_dpYPxzar_20241114181533191.jpg,,,"{'report_name': '', 'des_dic': '肝脏大小正常  回声轻度增强  细密  分布均匀  远场回声衰\\n减不明显,  可见肝内管道和膜肌边界\\n', 'con_dic': '轻度脂肪肝\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78254&risk_case_id=86891
+重疾 +0
+医疗 +0"
+王达,420116199304086233,1,,2023-4-25,双肾结晶,,31,M202433111492008,file_dpYPxzar_20241114181533191.jpg,,,"{'report_name': '', 'des_dic': '双肾大小位置正常  包膜光滑  实质厚度正常,  双肾内均可见\\n数个偏强回声\\n', 'con_dic': '双肾结晶\\n'}""",体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78254&risk_case_id=86891
+重疾 +0
+医疗 对泌尿系结晶、结石及其并发症（感染、肾积水）作除外责任"
+王达,420116199304086233,1,,2023-4-25,窦性心律不齐,,31,M202433111492008,file_dpYPxzar_20241114181533191.jpg,,,,体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78254&risk_case_id=86891
+重疾  +0
+医疗  +0"
+戴琳,340403199304032627,2,,,桥本氏甲状腺炎,,31,M202411111391518,,,,,告知,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78210&risk_case_id=86813
+重疾 +0
+医疗 除外"
+戴琳,340403199304032627,2,,2024-4-14,颈椎病,,31,M202411111391518,file_YpWNASnq_20241113163916566.jpg,,,,体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78210&risk_case_id=86813
+重疾 +0
+医疗 除外"
+戴琳,340403199304032627,2,北京怡健殿诊所,,双肾结晶,,31,M202411111391518,file_X0EKOAV1_20241113163950976.jpg,,,,体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78210&risk_case_id=86813
+重疾 +0
+医疗 对泌尿系结晶、结石及其并发症（感染、肾积水）作除外责任"
+戴琳,340403199304032627,2,北京怡健殿诊所,,肺动脉少量反流,,31,M202411111391518,file_X0EKOAV1_20241113163950976.jpg,,,,体检,"URL
+http://yc-dev.smart-insight-service.com:41373/underwrite/Image_underwriting/detail.html?id=78210&risk_case_id=86813
+重疾 +0
+医疗 除外"
